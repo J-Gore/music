@@ -5,6 +5,19 @@
     <script type="text/javascript">
     function get_youtube()
     return;
+    <script type="text/javascript" language="javascript">
+    function get_youtube($url){
+      
+      return;
+      $.ajax({
+        url: 'find.php',
+        type: "POST",
+        data: { lat: lattitude }
+             }).done(function( msg ) {
+               alert(msg);
+             });
+           }
+
 
     </script>
   </head>
