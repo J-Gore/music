@@ -301,9 +301,9 @@ article#timeline section.card {
         -webkit-background-size: 567px auto;
         background-size: 567px auto; }
       article#timeline section.card .status .zilla-likes .zilla-likes-count:before {
-        content: 'Likes'; }
+        content: 'Likes '; }
       article#timeline section.card .status .zilla-likes .zilla-likes-count:after {
-        content: 'Liked'; }
+        content: ' people'; }
     article#timeline section.card .status .time {
       float: right;
       position: relative;
