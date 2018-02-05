@@ -301,9 +301,9 @@ article#timeline section.card {
         -webkit-background-size: 567px auto;
         background-size: 567px auto; }
       article#timeline section.card .status .zilla-likes .zilla-likes-count:before {
-        content: '縺�＞縺ｭ '; }
+        content: 'Likes'; }
       article#timeline section.card .status .zilla-likes .zilla-likes-count:after {
-        content: '莉ｶ'; }
+        content: 'Liked'; }
     article#timeline section.card .status .time {
       float: right;
       position: relative;
@@ -338,22 +338,6 @@ article#timeline section.card {
       margin-right: 10px; }
       article#timeline section.card .comment a:hover {
         color: #000; }
-  article#timeline section.card.asano .account {
-    color: #4dbe2f; }
-    article#timeline section.card.asano .account:before {
-      background-image: url(../img/common/account_asano.png); }
-    article#timeline section.card.asano .account em:after {
-      border-color: #4dbe2f; }
-  article#timeline section.card.asano .comment .name {
-    color: #4dbe2f; }
-  article#timeline section.card.dakota .account {
-    color: #ff4800; }
-    article#timeline section.card.dakota .account:before {
-      background-image: url(../img/common/account_dakota.png); }
-    article#timeline section.card.dakota .account em:after {
-      border-color: #ff4800; }
-  article#timeline section.card.dakota .comment .name {
-    color: #ff4800; }
   article#timeline section.card.fukuhara .account {
     color: #ffbdd6; }
     article#timeline section.card.fukuhara .account:before {
@@ -362,38 +346,6 @@ article#timeline section.card {
       border-color: #ffbdd6; }
   article#timeline section.card.fukuhara .comment .name {
     color: #ffbdd6; }
-  article#timeline section.card.ikeda .account {
-    color: #ff7800; }
-    article#timeline section.card.ikeda .account:before {
-      background-image: url(../img/common/account_ikeda.png); }
-    article#timeline section.card.ikeda .account em:after {
-      border-color: #ff7800; }
-  article#timeline section.card.ikeda .comment .name {
-    color: #ff7800; }
-  article#timeline section.card.itagaki .account {
-    color: #2fe2cf; }
-    article#timeline section.card.itagaki .account:before {
-      background-image: url(../img/common/account_itagaki.png); }
-    article#timeline section.card.itagaki .account em:after {
-      border-color: #2fe2cf; }
-  article#timeline section.card.itagaki .comment .name {
-    color: #2fe2cf; }
-  article#timeline section.card.koyama .account {
-    color: #afdb00; }
-    article#timeline section.card.koyama .account:before {
-      background-image: url(../img/common/account_koyama.png); }
-    article#timeline section.card.koyama .account em:after {
-      border-color: #afdb00; }
-  article#timeline section.card.koyama .comment .name {
-    color: #afdb00; }
-  article#timeline section.card.meimero .account {
-    color: #ff7eaf; }
-    article#timeline section.card.meimero .account:before {
-      background-image: url(../img/common/account_meimero.png); }
-    article#timeline section.card.meimero .account em:after {
-      border-color: #ff7eaf; }
-  article#timeline section.card.meimero .comment .name {
-    color: #ff7eaf; }
   article#timeline section.card.naomi {
     background-color: #e7387a;
     background-image: url(../img/timeline/naomi_bg_btm.png);
@@ -472,14 +424,6 @@ article#timeline section.card {
         color: #febbd5; }
         article#timeline section.card.naomi .comment a:hover {
           color: #fff; }
-  article#timeline section.card.ochi .account {
-    color: #88269d; }
-    article#timeline section.card.ochi .account:before {
-      background-image: url(../img/common/account_ochi.png); }
-    article#timeline section.card.ochi .account em:after {
-      border-color: #88269d; }
-  article#timeline section.card.ochi .comment .name {
-    color: #88269d; }
   article#timeline section.card.official .account {
     color: #4cb6ae; }
     article#timeline section.card.official .account:before {
@@ -488,70 +432,6 @@ article#timeline section.card {
       border-color: #4cb6ae; }
   article#timeline section.card.official .comment .name {
     color: #4cb6ae; }
-  article#timeline section.card.okiguchi .account {
-    color: #4e296d; }
-    article#timeline section.card.okiguchi .account:before {
-      background-image: url(../img/common/account_okiguchi.png); }
-    article#timeline section.card.okiguchi .account em:after {
-      border-color: #4e296d; }
-  article#timeline section.card.okiguchi .comment .name {
-    color: #4e296d; }
-  article#timeline section.card.sano .account {
-    color: #ff0000; }
-    article#timeline section.card.sano .account:before {
-      background-image: url(../img/common/account_sano.png); }
-    article#timeline section.card.sano .account em:after {
-      border-color: #ff0000; }
-  article#timeline section.card.sano .comment .name {
-    color: #ff0000; }
-  article#timeline section.card.sato .account {
-    color: #e63b7c; }
-    article#timeline section.card.sato .account:before {
-      background-image: url(../img/common/account_sato.png); }
-    article#timeline section.card.sato .account em:after {
-      border-color: #e63b7c; }
-  article#timeline section.card.sato .comment .name {
-    color: #e63b7c; }
-  article#timeline section.card.shimizu .account {
-    color: #7b47b6; }
-    article#timeline section.card.shimizu .account:before {
-      background-image: url(../img/common/account_shimizu.png); }
-    article#timeline section.card.shimizu .account em:after {
-      border-color: #7b47b6; }
-  article#timeline section.card.shimizu .comment .name {
-    color: #7b47b6; }
-  article#timeline section.card.shiozaki .account {
-    color: #3dcb84; }
-    article#timeline section.card.shiozaki .account:before {
-      background-image: url(../img/common/account_shiozaki.png); }
-    article#timeline section.card.shiozaki .account em:after {
-      border-color: #3dcb84; }
-  article#timeline section.card.shiozaki .comment .name {
-    color: #3dcb84; }
-  article#timeline section.card.usa .account {
-    color: #ffc000; }
-    article#timeline section.card.usa .account:before {
-      background-image: url(../img/common/account_usa.png); }
-    article#timeline section.card.usa .account em:after {
-      border-color: #ffc000; }
-  article#timeline section.card.usa .comment .name {
-    color: #ffc000; }
-  article#timeline section.card.yamazaki .account {
-    color: #a3d9be; }
-    article#timeline section.card.yamazaki .account:before {
-      background-image: url(../img/common/account_yamazaki.png); }
-    article#timeline section.card.yamazaki .account em:after {
-      border-color: #a3d9be; }
-  article#timeline section.card.yamazaki .comment .name {
-    color: #a3d9be; }
-  article#timeline section.card.yoshida .account {
-    color: #4937b5; }
-    article#timeline section.card.yoshida .account:before {
-      background-image: url(../img/common/account_yoshida.png); }
-    article#timeline section.card.yoshida .account em:after {
-      border-color: #4937b5; }
-  article#timeline section.card.yoshida .comment .name {
-    color: #4937b5; }
 
 article {
   width: 750px;
@@ -682,114 +562,18 @@ article#about {
     font-size: 28px;
     line-height: 38px;
     margin-top: 10px; }
-  article#about.asano .account {
-    color: #4dbe2f; }
-    article#about.asano .account:before {
-      background-image: url(../img/common/account_asano.png); }
-    article#about.asano .account em:after {
-      border-color: #4dbe2f; }
-  article#about.dakota .account {
-    color: #ff4800; }
-    article#about.dakota .account:before {
-      background-image: url(../img/common/account_dakota.png); }
-    article#about.dakota .account em:after {
-      border-color: #ff4800; }
   article#about.fukuhara .account {
     color: #ffbdd6; }
     article#about.fukuhara .account:before {
       background-image: url('/testsite/css/img/whitby_profile_pic.png'); }
     article#about.fukuhara .account em:after {
       border-color: #ffbdd6; }
-  article#about.ikeda .account {
-    color: #ff7800; }
-    article#about.ikeda .account:before {
-      background-image: url(../img/common/account_ikeda.png); }
-    article#about.ikeda .account em:after {
-      border-color: #ff7800; }
-  article#about.itagaki .account {
-    color: #2fe2cf; }
-    article#about.itagaki .account:before {
-      background-image: url(../img/common/account_itagaki.png); }
-    article#about.itagaki .account em:after {
-      border-color: #2fe2cf; }
-  article#about.koyama .account {
-    color: #afdb00; }
-    article#about.koyama .account:before {
-      background-image: url(../img/common/account_koyama.png); }
-    article#about.koyama .account em:after {
-      border-color: #afdb00; }
-  article#about.meimero .account {
-    color: #ff7eaf; }
-    article#about.meimero .account:before {
-      background-image: url(../img/common/account_meimero.png); }
-    article#about.meimero .account em:after {
-      border-color: #ff7eaf; }
-  article#about.naomi .account {
-    color: #676767; }
-    article#about.naomi .account:before {
-      background-image: url(../img/common/account_naomi.png); }
-    article#about.naomi .account em:after {
-      border-color: #676767; }
-  article#about.ochi .account {
-    color: #88269d; }
-    article#about.ochi .account:before {
-      background-image: url(../img/common/account_ochi.png); }
-    article#about.ochi .account em:after {
-      border-color: #88269d; }
   article#about.official .account {
     color: #4cb6ae; }
     article#about.official .account:before {
       background-image: url(../img/common/account_official.png); }
     article#about.official .account em:after {
       border-color: #4cb6ae; }
-  article#about.okiguchi .account {
-    color: #4e296d; }
-    article#about.okiguchi .account:before {
-      background-image: url(../img/common/account_okiguchi.png); }
-    article#about.okiguchi .account em:after {
-      border-color: #4e296d; }
-  article#about.sano .account {
-    color: #ff0000; }
-    article#about.sano .account:before {
-      background-image: url(../img/common/account_sano.png); }
-    article#about.sano .account em:after {
-      border-color: #ff0000; }
-  article#about.sato .account {
-    color: #e63b7c; }
-    article#about.sato .account:before {
-      background-image: url(../img/common/account_sato.png); }
-    article#about.sato .account em:after {
-      border-color: #e63b7c; }
-  article#about.shimizu .account {
-    color: #7b47b6; }
-    article#about.shimizu .account:before {
-      background-image: url(../img/common/account_shimizu.png); }
-    article#about.shimizu .account em:after {
-      border-color: #7b47b6; }
-  article#about.shiozaki .account {
-    color: #3dcb84; }
-    article#about.shiozaki .account:before {
-      background-image: url(../img/common/account_shiozaki.png); }
-    article#about.shiozaki .account em:after {
-      border-color: #3dcb84; }
-  article#about.usa .account {
-    color: #ffc000; }
-    article#about.usa .account:before {
-      background-image: url(../img/common/account_usa.png); }
-    article#about.usa .account em:after {
-      border-color: #ffc000; }
-  article#about.yamazaki .account {
-    color: #a3d9be; }
-    article#about.yamazaki .account:before {
-      background-image: url(../img/common/account_yamazaki.png); }
-    article#about.yamazaki .account em:after {
-      border-color: #a3d9be; }
-  article#about.yoshida .account {
-    color: #4937b5; }
-    article#about.yoshida .account:before {
-      background-image: url(../img/common/account_yoshida.png); }
-    article#about.yoshida .account em:after {
-      border-color: #4937b5; }
 
 article#timeline {
   position: relative;
