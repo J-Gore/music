@@ -411,7 +411,7 @@ article#timeline section.card {
     article#timeline section.card.naomi .account {
       color: #febbd5; }
       article#timeline section.card.naomi .account:before {
-        background-image: url(../img/common/account_naomi.png);
+        background-image: url('/testsite/css/img/account_naomi.png');
         width: 120px;
         height: 120px;
         border: 2px solid #fff;
@@ -582,7 +582,7 @@ article#about {
     left: 0;
     width: 100%;
     height: 51px;
-    background-image: url(../img/common/border.png);
+    background-image: url('/testsite/css/img/border.png');
     background-repeat: repeat-x; }
   article#about a.account {
     display: inline-block;
