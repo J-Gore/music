@@ -796,7 +796,7 @@ header nav {
 
 footer {
   position: relative;
-  background-image: url(../img/common/border.png);
+  background-image: url('/testsite/css/img/border.png');
   background-repeat: repeat-x;
   width: 750px;
   min-height: 190px;
