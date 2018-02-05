@@ -1,5 +1,5 @@
-<?php header('Content-Type: text/html; charset=utf-8'); ?>
 <html>
+<?php header('Content-Type: text/html; charset=utf-8'); ?>
 <head>
 <title>PHP Test</title>
 </head>
