@@ -97,7 +97,7 @@ article#timeline section.card {
     right: -14px;
     width: 10px;
     height: 100%;
-    background-image: url(../img/timeline/timeline_bg.png); }
+    background-image: url('testsite/css/img/timeline_bg.png'); }
   article#timeline section.card:after {
     content: '';
     position: absolute;
@@ -105,7 +105,7 @@ article#timeline section.card {
     left: 6px;
     width: 700px;
     height: 10px;
-    background-image: url(../img/timeline/timeline_bg.png); }
+    background-image: url('testsite/css/img/timeline_bg.png'); }
   article#timeline section.card a.account {
     float: left;
     margin: 20px 0 20px 140px;
