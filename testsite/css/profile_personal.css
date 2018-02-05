@@ -179,7 +179,7 @@ article#timeline section.card {
       article#timeline section.card .sns li.tw a {
         width: 70px;
         height: 70px;
-        background-image: url('../img/common/sprites-s3c727fd1b6.png');
+        background-image: url('/testsite/css/img/web_sprites.png');
         background-position: 0 -657px;
         background-repeat: no-repeat;
         -moz-background-size: 567px auto;
@@ -192,7 +192,7 @@ article#timeline section.card {
       article#timeline section.card .sns li.fb a {
         width: 70px;
         height: 70px;
-        background-image: url('../img/common/sprites-s3c727fd1b6.png');
+        background-image: url('/testsite/css/img/web_sprites.png');
         background-position: 0 -303px;
         background-repeat: no-repeat;
         -moz-background-size: 567px auto;
@@ -227,7 +227,7 @@ article#timeline section.card {
         margin: -50px 0 0 -50px;
         width: 104px;
         height: 114px;
-        background-image: url('../img/common/sprites-s3c727fd1b6.png');
+        background-image: url('/testsite/css/img/web_sprites.png');
         background-position: 0 -494px;
         background-repeat: no-repeat;
         -moz-background-size: 567px auto;
@@ -272,7 +272,7 @@ article#timeline section.card {
         left: -38px;
         width: 33px;
         height: 28px;
-        background-image: url('../img/common/sprites-s3c727fd1b6.png');
+        background-image: url('/testsite/css/img/web_sprites.png');
         background-position: 0 -374px;
         background-repeat: no-repeat;
         -moz-background-size: 567px auto;
@@ -293,7 +293,7 @@ article#timeline section.card {
       article#timeline section.card .status .zilla-likes.active:before {
         width: 33px;
         height: 28px;
-        background-image: url('../img/common/sprites-s3c727fd1b6.png');
+        background-image: url('/testsite/css/img/web_sprites.png');
         background-position: 0 -434px;
         background-repeat: no-repeat;
         -moz-background-size: 567px auto;
@@ -317,7 +317,7 @@ article#timeline section.card {
         left: -32px;
         width: 22px;
         height: 22px;
-        background-image: url('../img/common/sprites-s3c727fd1b6.png');
+        background-image: url('/testsite/css/img/web_sprites.png');
         background-position: 0 -609px;
         background-repeat: no-repeat;
         -moz-background-size: 567px auto;
@@ -431,7 +431,7 @@ article#timeline section.card {
         left: -39px;
         width: 35px;
         height: 30px;
-        background-image: url('../img/common/sprites-s3c727fd1b6.png');
+        background-image: url('/testsite/css/img/web_sprites.png');
         background-position: 0 -403px;
         background-repeat: no-repeat;
         -moz-background-size: 567px auto;
@@ -443,7 +443,7 @@ article#timeline section.card {
       article#timeline section.card.naomi .status .zilla-likes.active:before {
         width: 35px;
         height: 30px;
-        background-image: url('../img/common/sprites-s3c727fd1b6.png');
+        background-image: url('/testsite/css/img/web_sprites.png');
         background-position: 0 -463px;
         background-repeat: no-repeat;
         -moz-background-size: 567px auto;
@@ -457,7 +457,7 @@ article#timeline section.card {
         left: -32px;
         width: 24px;
         height: 24px;
-        background-image: url('../img/common/sprites-s3c727fd1b6.png');
+        background-image: url('/testsite/css/img/web_sprites.png');
         background-position: 0 -632px;
         background-repeat: no-repeat;
         -moz-background-size: 567px auto;
@@ -652,7 +652,7 @@ article#about {
   article#about .sns li.tw a {
     width: 70px;
     height: 70px;
-    background-image: url('../img/common/sprites-s3c727fd1b6.png');
+    background-image: url('/testsite/css/img/web_sprites.png');
     background-position: 0 -657px;
     background-repeat: no-repeat;
     -moz-background-size: 567px auto;
@@ -666,7 +666,7 @@ article#about {
   article#about .sns li.fb a {
     width: 70px;
     height: 70px;
-    background-image: url('../img/common/sprites-s3c727fd1b6.png');
+    background-image: url('/testsite/css/img/web_sprites.png');
     background-position: 0 -303px;
     background-repeat: no-repeat;
     -moz-background-size: 567px auto;
