@@ -871,7 +871,7 @@ footer {
 main {
   width: 100%;
   overflow: hidden;
-  background-image: url(../img/common/pc_bg.png); }
+  background-image: url('/testsite/css/img/pc_bg.png'); }
   @media screen and (min-width: 768px) {
     main {
       padding-right: 300px; } }
