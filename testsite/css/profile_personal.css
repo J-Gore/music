@@ -65,7 +65,7 @@ article#timeline #infscr-loading {
     margin-left: -83px;
     width: 166px;
     height: 30px;
-    background-image: url('../img/common/sprites-s3c727fd1b6.png');
+    background-image: url('/testsite/css/img/web_sprites.png');
     background-position: 0 -728px;
     background-repeat: no-repeat;
     -moz-background-size: 567px auto;
