@@ -697,7 +697,7 @@ article#about {
   article#about.fukuhara .account {
     color: #ffbdd6; }
     article#about.fukuhara .account:before {
-      background-image: url(../img/common/account_fukuhara.png); }
+      background-image: url('/testsite/css/img/whitby_profile.png'); }
     article#about.fukuhara .account em:after {
       border-color: #ffbdd6; }
   article#about.ikeda .account {
