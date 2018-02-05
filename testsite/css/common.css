@@ -78,7 +78,7 @@ header .menu-btn {
   border-radius: 50%;
   width: 125px;
   height: 124px;
-  background-image: url('../img/common/sprites-s3c727fd1b6.png');
+  background-image: url('/testsite/css/img/web_sprites.png');
   background-position: 0 -2072px;
   background-repeat: no-repeat;
   -moz-background-size: 567px auto;
@@ -222,7 +222,7 @@ header nav {
       header nav ul.global a.top {
         width: 119px;
         height: 44px;
-        background-image: url('../img/common/sprites-s3c727fd1b6.png');
+        background-image: url('/testsite/css/img/web_sprites.png');
         background-position: 0 -2385px;
         background-repeat: no-repeat;
         -moz-background-size: 567px auto;
@@ -235,7 +235,7 @@ header nav {
       header nav ul.global a.product {
         width: 173px;
         height: 45px;
-        background-image: url('../img/common/sprites-s3c727fd1b6.png');
+        background-image: url('/testsite/css/img/web_sprites.png');
         background-position: 0 -2243px;
         background-repeat: no-repeat;
         -moz-background-size: 567px auto;
@@ -248,7 +248,7 @@ header nav {
       header nav ul.global a.diagram {
         width: 274px;
         height: 45px;
-        background-image: url('../img/common/sprites-s3c727fd1b6.png');
+        background-image: url('/testsite/css/img/web_sprites.png');
         background-position: 0 -2197px;
         background-repeat: no-repeat;
         -moz-background-size: 567px auto;
@@ -261,7 +261,7 @@ header nav {
       header nav ul.global a.profile {
         width: 342px;
         height: 45px;
-        background-image: url('../img/common/sprites-s3c727fd1b6.png');
+        background-image: url('/testsite/css/img/web_sprites.png');
         background-position: 0 -2289px;
         background-repeat: no-repeat;
         -moz-background-size: 567px auto;
@@ -285,7 +285,7 @@ header nav {
       header nav ul.sub li.agreement a {
         width: 225px;
         height: 24px;
-        background-image: url('../img/common/sprites-s3c727fd1b6.png');
+        background-image: url('/testsite/css/img/web_sprites.png');
         background-position: 0 -2430px;
         background-repeat: no-repeat;
         -moz-background-size: 567px auto;
@@ -298,7 +298,7 @@ header nav {
       header nav ul.sub li.policy a {
         width: 204px;
         height: 23px;
-        background-image: url('../img/common/sprites-s3c727fd1b6.png');
+        background-image: url('/testsite/css/img/web_sprites.png');
         background-position: 0 -2524px;
         background-repeat: no-repeat;
         -moz-background-size: 567px auto;
@@ -311,7 +311,7 @@ header nav {
       header nav ul.sub li.official a {
         width: 288px;
         height: 24px;
-        background-image: url('../img/common/sprites-s3c727fd1b6.png');
+        background-image: url('/testsite/css/img/web_sprites.png');
         background-position: 0 -2499px;
         background-repeat: no-repeat;
         -moz-background-size: 567px auto;
@@ -324,7 +324,7 @@ header nav {
       header nav ul.sub li.guideline a {
         width: 264px;
         height: 24px;
-        background-image: url('../img/common/sprites-s3c727fd1b6.png');
+        background-image: url('/testsite/css/img/web_sprites.png');
         background-position: 0 -2474px;
         background-repeat: no-repeat;
         -moz-background-size: 567px auto;
@@ -359,7 +359,7 @@ header nav {
     header nav .sns .tw a {
       width: 70px;
       height: 70px;
-      background-image: url('../img/common/sprites-s3c727fd1b6.png');
+      background-image: url('/testsite/css/img/web_sprites.png');
       background-position: 0 -657px;
       background-repeat: no-repeat;
       -moz-background-size: 567px auto;
@@ -372,7 +372,7 @@ header nav {
     header nav .sns .fb a {
       width: 70px;
       height: 70px;
-      background-image: url('../img/common/sprites-s3c727fd1b6.png');
+      background-image: url('/testsite/css/img/web_sprites.png');
       background-position: 0 -303px;
       background-repeat: no-repeat;
       -moz-background-size: 567px auto;
@@ -386,7 +386,7 @@ header nav {
     margin: 0 auto 50px;
     width: 543px;
     height: 18px;
-    background-image: url('../img/common/sprites-s3c727fd1b6.png');
+    background-image: url('/testsite/css/img/web_sprites.png');
     background-position: 0 -2455px;
     background-repeat: no-repeat;
     -moz-background-size: 567px auto;
@@ -413,7 +413,7 @@ header nav {
     header nav .timeline h3 {
       width: 515px;
       height: 49px;
-      background-image: url('../img/common/sprites-s3c727fd1b6.png');
+      background-image: url('/testsite/css/img/web_sprites.png');
       background-position: 0 -2335px;
       background-repeat: no-repeat;
       -moz-background-size: 567px auto;
@@ -462,7 +462,7 @@ header nav {
           header nav .timeline ul a.fukuhara:after {
             width: 158px;
             height: 51px;
-            background-image: url('../img/common/sprites-s3c727fd1b6.png');
+            background-image: url('/testsite/css/img/web_sprites.png');
             background-position: 0 -1109px;
             background-repeat: no-repeat;
             -moz-background-size: 567px auto;
@@ -482,7 +482,7 @@ header nav {
           header nav .timeline ul a.sano:after {
             width: 150px;
             height: 71px;
-            background-image: url('../img/common/sprites-s3c727fd1b6.png');
+            background-image: url('/testsite/css/img/web_sprites.png');
             background-position: 0 -1586px;
             background-repeat: no-repeat;
             -moz-background-size: 567px auto;
@@ -502,7 +502,7 @@ header nav {
           header nav .timeline ul a.ochi:after {
             width: 147px;
             height: 51px;
-            background-image: url('../img/common/sprites-s3c727fd1b6.png');
+            background-image: url('/testsite/css/img/web_sprites.png');
             background-position: 0 -1462px;
             background-repeat: no-repeat;
             -moz-background-size: 567px auto;
@@ -522,7 +522,7 @@ header nav {
           header nav .timeline ul a.itagaki:after {
             width: 197px;
             height: 71px;
-            background-image: url('../img/common/sprites-s3c727fd1b6.png');
+            background-image: url('/testsite/css/img/web_sprites.png');
             background-position: 0 -1214px;
             background-repeat: no-repeat;
             -moz-background-size: 567px auto;
@@ -542,7 +542,7 @@ header nav {
           header nav .timeline ul a.usa:after {
             width: 162px;
             height: 51px;
-            background-image: url('../img/common/sprites-s3c727fd1b6.png');
+            background-image: url('/testsite/css/img/web_sprites.png');
             background-position: 0 -1876px;
             background-repeat: no-repeat;
             -moz-background-size: 567px auto;
@@ -562,7 +562,7 @@ header nav {
           header nav .timeline ul a.sato:after {
             width: 218px;
             height: 72px;
-            background-image: url('../img/common/sprites-s3c727fd1b6.png');
+            background-image: url('/testsite/css/img/web_sprites.png');
             background-position: 0 -1658px;
             background-repeat: no-repeat;
             -moz-background-size: 567px auto;
@@ -582,7 +582,7 @@ header nav {
           header nav .timeline ul a.meimero:after {
             width: 151px;
             height: 51px;
-            background-image: url('../img/common/sprites-s3c727fd1b6.png');
+            background-image: url('/testsite/css/img/web_sprites.png');
             background-position: 0 -1358px;
             background-repeat: no-repeat;
             -moz-background-size: 567px auto;
@@ -602,7 +602,7 @@ header nav {
           header nav .timeline ul a.dakota:after {
             width: 178px;
             height: 73px;
-            background-image: url('../img/common/sprites-s3c727fd1b6.png');
+            background-image: url('/testsite/css/img/web_sprites.png');
             background-position: 0 -1035px;
             background-repeat: no-repeat;
             -moz-background-size: 567px auto;
@@ -622,7 +622,7 @@ header nav {
           header nav .timeline ul a.ikeda:after {
             width: 163px;
             height: 52px;
-            background-image: url('../img/common/sprites-s3c727fd1b6.png');
+            background-image: url('/testsite/css/img/web_sprites.png');
             background-position: 0 -1161px;
             background-repeat: no-repeat;
             -moz-background-size: 567px auto;
@@ -642,7 +642,7 @@ header nav {
           header nav .timeline ul a.yoshida:after {
             width: 190px;
             height: 71px;
-            background-image: url('../img/common/sprites-s3c727fd1b6.png');
+            background-image: url('/testsite/css/img/web_sprites.png');
             background-position: 0 -2000px;
             background-repeat: no-repeat;
             -moz-background-size: 567px auto;
@@ -662,7 +662,7 @@ header nav {
           header nav .timeline ul a.shiozaki:after {
             width: 164px;
             height: 72px;
-            background-image: url('../img/common/sprites-s3c727fd1b6.png');
+            background-image: url('/testsite/css/img/web_sprites.png');
             background-position: 0 -1803px;
             background-repeat: no-repeat;
             -moz-background-size: 567px auto;
@@ -682,7 +682,7 @@ header nav {
           header nav .timeline ul a.yamazaki:after {
             width: 131px;
             height: 71px;
-            background-image: url('../img/common/sprites-s3c727fd1b6.png');
+            background-image: url('/testsite/css/img/web_sprites.png');
             background-position: 0 -1928px;
             background-repeat: no-repeat;
             -moz-background-size: 567px auto;
@@ -702,7 +702,7 @@ header nav {
           header nav .timeline ul a.koyama:after {
             width: 191px;
             height: 71px;
-            background-image: url('../img/common/sprites-s3c727fd1b6.png');
+            background-image: url('/testsite/css/img/web_sprites.png');
             background-position: 0 -1286px;
             background-repeat: no-repeat;
             -moz-background-size: 567px auto;
@@ -722,7 +722,7 @@ header nav {
           header nav .timeline ul a.asano:after {
             width: 191px;
             height: 71px;
-            background-image: url('../img/common/sprites-s3c727fd1b6.png');
+            background-image: url('/testsite/css/img/web_sprites.png');
             background-position: 0 -963px;
             background-repeat: no-repeat;
             -moz-background-size: 567px auto;
@@ -742,7 +742,7 @@ header nav {
           header nav .timeline ul a.shimizu:after {
             width: 192px;
             height: 71px;
-            background-image: url('../img/common/sprites-s3c727fd1b6.png');
+            background-image: url('/testsite/css/img/web_sprites.png');
             background-position: 0 -1731px;
             background-repeat: no-repeat;
             -moz-background-size: 567px auto;
@@ -762,7 +762,7 @@ header nav {
           header nav .timeline ul a.okiguchi:after {
             width: 192px;
             height: 71px;
-            background-image: url('../img/common/sprites-s3c727fd1b6.png');
+            background-image: url('/testsite/css/img/web_sprites.png');
             background-position: 0 -1514px;
             background-repeat: no-repeat;
             -moz-background-size: 567px auto;
@@ -782,7 +782,7 @@ header nav {
           header nav .timeline ul a.naomi:after {
             width: 145px;
             height: 51px;
-            background-image: url('../img/common/sprites-s3c727fd1b6.png');
+            background-image: url('/testsite/css/img/web_sprites.png');
             background-position: 0 -1410px;
             background-repeat: no-repeat;
             -moz-background-size: 567px auto;
@@ -813,7 +813,7 @@ footer {
   footer nav .top {
     width: 567px;
     height: 93px;
-    background-image: url('../img/common/sprites-s3c727fd1b6.png');
+    background-image: url('/testsite/css/img/web_sprites.png');
     background-position: 0 -209px;
     background-repeat: no-repeat;
     -moz-background-size: 567px auto;
@@ -826,7 +826,7 @@ footer {
   footer nav .diagram {
     width: 567px;
     height: 93px;
-    background-image: url('../img/common/sprites-s3c727fd1b6.png');
+    background-image: url('/testsite/css/img/web_sprites.png');
     background-position: 0 -21px;
     background-repeat: no-repeat;
     -moz-background-size: 567px auto;
@@ -839,7 +839,7 @@ footer {
   footer nav .profile {
     width: 567px;
     height: 93px;
-    background-image: url('../img/common/sprites-s3c727fd1b6.png');
+    background-image: url('/testsite/css/img/web_sprites.png');
     background-position: 0 -115px;
     background-repeat: no-repeat;
     -moz-background-size: 567px auto;
@@ -853,7 +853,7 @@ footer {
     margin: 0 auto;
     width: 96px;
     height: 20px;
-    background-image: url('../img/common/sprites-s3c727fd1b6.png');
+    background-image: url('/testsite/css/img/web_sprites.png');
     background-position: 0 0;
     background-repeat: no-repeat;
     -moz-background-size: 567px auto;
