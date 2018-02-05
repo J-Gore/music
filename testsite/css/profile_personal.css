@@ -303,7 +303,7 @@ article#timeline section.card {
       article#timeline section.card .status .zilla-likes .zilla-likes-count:before {
         content: 'Likes '; }
       article#timeline section.card .status .zilla-likes .zilla-likes-count:after {
-        content: ' people'; }
+        content: ' People'; }
     article#timeline section.card .status .time {
       float: right;
       position: relative;
