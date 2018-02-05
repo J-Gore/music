@@ -357,7 +357,7 @@ article#timeline section.card {
   article#timeline section.card.fukuhara .account {
     color: #ffbdd6; }
     article#timeline section.card.fukuhara .account:before {
-      background-image: url(../img/common/account_fukuhara.png); }
+      background-image: url('/testsite/css/img/whitby_profile_pic'); }
     article#timeline section.card.fukuhara .account em:after {
       border-color: #ffbdd6; }
   article#timeline section.card.fukuhara .comment .name {
