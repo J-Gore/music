@@ -1,0 +1,796 @@
+@charset "UTF-8";
+@keyframes flash {
+  0% {
+    opacity: 0.6; }
+  100% {
+    opacity: 1; } }
+article#timeline .banner {
+  height: 730px;
+  margin-bottom: 30px; }
+  article#timeline .banner img {
+    opacity: 0;
+    -moz-transition: opacity 0.5s linear 0.5s;
+    -o-transition: opacity 0.5s linear 0.5s;
+    -webkit-transition: opacity 0.5s linear;
+    -webkit-transition-delay: 0.5s;
+    transition: opacity 0.5s linear 0.5s; }
+    article#timeline .banner img.loaded {
+      opacity: 1; }
+  article#timeline .banner a:hover {
+    -moz-animation: flash 1s;
+    -webkit-animation: flash 1s;
+    animation: flash 1s; }
+article#timeline #infscr-loading {
+  position: relative;
+  z-index: 2000;
+  width: 100%; }
+  article#timeline #infscr-loading > img {
+    display: none; }
+  article#timeline #infscr-loading .alignnone {
+    display: none; }
+  article#timeline #infscr-loading:before {
+    content: '';
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    margin-left: -80px;
+    width: 160px;
+    height: 160px;
+    background-image: url('../img/common/sprites-s3c727fd1b6.png');
+    background-position: 0 -759px;
+    background-repeat: no-repeat;
+    -moz-background-size: 567px auto;
+    -o-background-size: 567px auto;
+    -webkit-background-size: 567px auto;
+    background-size: 567px auto;
+    -moz-animation: loading-naomi 8s linear 0s infinite;
+    -webkit-animation: loading-naomi 8s linear 0s infinite;
+    animation: loading-naomi 8s linear 0s infinite; }
+@keyframes loading-naomi {
+  0% {
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  100% {
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+  article#timeline #infscr-loading:after {
+    content: '';
+    position: absolute;
+    top: 200px;
+    left: 50%;
+    margin-left: -83px;
+    width: 166px;
+    height: 30px;
+    background-image: url('../img/common/sprites-s3c727fd1b6.png');
+    background-position: 0 -728px;
+    background-repeat: no-repeat;
+    -moz-background-size: 567px auto;
+    -o-background-size: 567px auto;
+    -webkit-background-size: 567px auto;
+    background-size: 567px auto; }
+  article#timeline #infscr-loading div {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold; }
+article#timeline section.card {
+  position: relative;
+  width: 700px;
+  border: 4px solid #231815;
+  padding-bottom: 45px;
+  margin: 0px 0 30px 20px;
+  opacity: 0; }
+  article#timeline section.card.inviewed {
+    -moz-transition: opacity 0.5s linear 0.5s;
+    -o-transition: opacity 0.5s linear 0.5s;
+    -webkit-transition: opacity 0.5s linear;
+    -webkit-transition-delay: 0.5s;
+    transition: opacity 0.5s linear 0.5s;
+    opacity: 1; }
+  article#timeline section.card:before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    right: -14px;
+    width: 10px;
+    height: 100%;
+    background-image: url(../img/timeline/timeline_bg.png); }
+  article#timeline section.card:after {
+    content: '';
+    position: absolute;
+    bottom: -14px;
+    left: 6px;
+    width: 700px;
+    height: 10px;
+    background-image: url(../img/timeline/timeline_bg.png); }
+  article#timeline section.card a.account {
+    float: left;
+    margin: 20px 0 20px 140px;
+    height: 100px; }
+    article#timeline section.card a.account:before {
+      content: '';
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      top: 20px;
+      left: 30px;
+      background-repeat: no-repeat;
+      background-size: contain;
+      -moz-transition: all 0.1s;
+      -o-transition: all 0.1s;
+      -webkit-transition: all 0.1s;
+      transition: all 0.1s; }
+    article#timeline section.card a.account .name {
+      display: block;
+      margin: 15px 0 10px;
+      font-size: 32px;
+      font-weight: bold;
+      color: #000; }
+    article#timeline section.card a.account em {
+      position: relative;
+      font-size: 24px;
+      font-weight: normal; }
+      article#timeline section.card a.account em:after {
+        content: '';
+        position: absolute;
+        top: 5px;
+        right: -15px;
+        width: 12px;
+        height: 12px;
+        border-top: 4px solid #000;
+        border-right: 4px solid #000;
+        -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+        -moz-border-radius: 2px;
+        -webkit-border-radius: 2px;
+        border-radius: 2px; }
+    article#timeline section.card a.account:hover:before {
+      -moz-transform: scale(1.06, 1.06);
+      -ms-transform: scale(1.06, 1.06);
+      -webkit-transform: scale(1.06, 1.06);
+      transform: scale(1.06, 1.06); }
+  article#timeline section.card .sns {
+    float: right;
+    margin: 35px 30px 0 0;
+    font-size: 0; }
+    article#timeline section.card .sns li {
+      display: inline-block;
+      margin-left: 10px; }
+      article#timeline section.card .sns li a {
+        display: block;
+        -moz-transform: scale(0.94, 0.94);
+        -ms-transform: scale(0.94, 0.94);
+        -webkit-transform: scale(0.94, 0.94);
+        transform: scale(0.94, 0.94);
+        -moz-transition: all 0.1s;
+        -o-transition: all 0.1s;
+        -webkit-transition: all 0.1s;
+        transition: all 0.1s; }
+        article#timeline section.card .sns li a:hover {
+          -moz-transform: scale(1, 1);
+          -ms-transform: scale(1, 1);
+          -webkit-transform: scale(1, 1);
+          transform: scale(1, 1); }
+      article#timeline section.card .sns li.tw a {
+        width: 70px;
+        height: 70px;
+        background-image: url('../img/common/sprites-s3c727fd1b6.png');
+        background-position: 0 -657px;
+        background-repeat: no-repeat;
+        -moz-background-size: 567px auto;
+        -o-background-size: 567px auto;
+        -webkit-background-size: 567px auto;
+        background-size: 567px auto;
+        text-indent: 100%;
+        white-space: nowrap;
+        overflow: hidden; }
+      article#timeline section.card .sns li.fb a {
+        width: 70px;
+        height: 70px;
+        background-image: url('../img/common/sprites-s3c727fd1b6.png');
+        background-position: 0 -303px;
+        background-repeat: no-repeat;
+        -moz-background-size: 567px auto;
+        -o-background-size: 567px auto;
+        -webkit-background-size: 567px auto;
+        background-size: 567px auto;
+        text-indent: 100%;
+        white-space: nowrap;
+        overflow: hidden; }
+  article#timeline section.card .photo {
+    clear: both;
+    width: 692px;
+    height: 692px;
+    overflow: hidden; }
+  article#timeline section.card .movie {
+    position: relative;
+    clear: both;
+    width: 692px;
+    height: 422px;
+    background-color: #000; }
+    article#timeline section.card .movie .play {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      cursor: pointer; }
+      article#timeline section.card .movie .play:before {
+        content: '';
+        position: absolute;
+        z-index: 1000;
+        top: 50%;
+        left: 50%;
+        margin: -50px 0 0 -50px;
+        width: 104px;
+        height: 114px;
+        background-image: url('../img/common/sprites-s3c727fd1b6.png');
+        background-position: 0 -494px;
+        background-repeat: no-repeat;
+        -moz-background-size: 567px auto;
+        -o-background-size: 567px auto;
+        -webkit-background-size: 567px auto;
+        background-size: 567px auto;
+        -moz-transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        -o-transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        -webkit-transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        -moz-transform: scale(0.9, 0.9);
+        -ms-transform: scale(0.9, 0.9);
+        -webkit-transform: scale(0.9, 0.9);
+        transform: scale(0.9, 0.9); }
+      article#timeline section.card .movie .play:hover:before {
+        -moz-transform: scale(1, 1);
+        -ms-transform: scale(1, 1);
+        -webkit-transform: scale(1, 1);
+        transform: scale(1, 1); }
+    article#timeline section.card .movie iframe {
+      display: none; }
+    article#timeline section.card .movie iframe, article#timeline section.card .movie img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 692px;
+      height: 422px; }
+  article#timeline section.card .status {
+    clear: both;
+    margin-top: 32px; }
+    article#timeline section.card .status .zilla-likes {
+      float: left;
+      position: relative;
+      margin-left: 70px;
+      font-size: 20px;
+      font-weight: bold;
+      color: #888888; }
+      article#timeline section.card .status .zilla-likes:before {
+        content: '';
+        position: absolute;
+        top: -4px;
+        left: -38px;
+        width: 33px;
+        height: 28px;
+        background-image: url('../img/common/sprites-s3c727fd1b6.png');
+        background-position: 0 -374px;
+        background-repeat: no-repeat;
+        -moz-background-size: 567px auto;
+        -o-background-size: 567px auto;
+        -webkit-background-size: 567px auto;
+        background-size: 567px auto;
+        -moz-transform: scale(0.85, 0.85);
+        -ms-transform: scale(0.85, 0.85);
+        -webkit-transform: scale(0.85, 0.85);
+        transform: scale(0.85, 0.85); }
+      article#timeline section.card .status .zilla-likes:hover {
+        color: #000; }
+        article#timeline section.card .status .zilla-likes:hover:before {
+          -moz-transform: scale(1, 1);
+          -ms-transform: scale(1, 1);
+          -webkit-transform: scale(1, 1);
+          transform: scale(1, 1); }
+      article#timeline section.card .status .zilla-likes.active:before {
+        width: 33px;
+        height: 28px;
+        background-image: url('../img/common/sprites-s3c727fd1b6.png');
+        background-position: 0 -434px;
+        background-repeat: no-repeat;
+        -moz-background-size: 567px auto;
+        -o-background-size: 567px auto;
+        -webkit-background-size: 567px auto;
+        background-size: 567px auto; }
+      article#timeline section.card .status .zilla-likes .zilla-likes-count:before {
+        content: '縺�＞縺ｭ '; }
+      article#timeline section.card .status .zilla-likes .zilla-likes-count:after {
+        content: '莉ｶ'; }
+    article#timeline section.card .status .time {
+      float: right;
+      position: relative;
+      margin-right: 30px;
+      font-size: 20px;
+      color: #888888; }
+      article#timeline section.card .status .time:before {
+        content: '';
+        position: absolute;
+        top: -1px;
+        left: -32px;
+        width: 22px;
+        height: 22px;
+        background-image: url('../img/common/sprites-s3c727fd1b6.png');
+        background-position: 0 -609px;
+        background-repeat: no-repeat;
+        -moz-background-size: 567px auto;
+        -o-background-size: 567px auto;
+        -webkit-background-size: 567px auto;
+        background-size: 567px auto; }
+  article#timeline section.card .comment {
+    clear: both;
+    padding-top: 20px;
+    margin: 0 30px;
+    font-size: 28px;
+    line-height: 38px; }
+    article#timeline section.card .comment .name {
+      font-weight: bold;
+      margin-right: 20px; }
+    article#timeline section.card .comment a {
+      color: #888;
+      margin-right: 10px; }
+      article#timeline section.card .comment a:hover {
+        color: #000; }
+  article#timeline section.card.asano .account {
+    color: #4dbe2f; }
+    article#timeline section.card.asano .account:before {
+      background-image: url(../img/common/account_asano.png); }
+    article#timeline section.card.asano .account em:after {
+      border-color: #4dbe2f; }
+  article#timeline section.card.asano .comment .name {
+    color: #4dbe2f; }
+  article#timeline section.card.dakota .account {
+    color: #ff4800; }
+    article#timeline section.card.dakota .account:before {
+      background-image: url(../img/common/account_dakota.png); }
+    article#timeline section.card.dakota .account em:after {
+      border-color: #ff4800; }
+  article#timeline section.card.dakota .comment .name {
+    color: #ff4800; }
+  article#timeline section.card.fukuhara .account {
+    color: #ffbdd6; }
+    article#timeline section.card.fukuhara .account:before {
+      background-image: url(../img/common/account_fukuhara.png); }
+    article#timeline section.card.fukuhara .account em:after {
+      border-color: #ffbdd6; }
+  article#timeline section.card.fukuhara .comment .name {
+    color: #ffbdd6; }
+  article#timeline section.card.ikeda .account {
+    color: #ff7800; }
+    article#timeline section.card.ikeda .account:before {
+      background-image: url(../img/common/account_ikeda.png); }
+    article#timeline section.card.ikeda .account em:after {
+      border-color: #ff7800; }
+  article#timeline section.card.ikeda .comment .name {
+    color: #ff7800; }
+  article#timeline section.card.itagaki .account {
+    color: #2fe2cf; }
+    article#timeline section.card.itagaki .account:before {
+      background-image: url(../img/common/account_itagaki.png); }
+    article#timeline section.card.itagaki .account em:after {
+      border-color: #2fe2cf; }
+  article#timeline section.card.itagaki .comment .name {
+    color: #2fe2cf; }
+  article#timeline section.card.koyama .account {
+    color: #afdb00; }
+    article#timeline section.card.koyama .account:before {
+      background-image: url(../img/common/account_koyama.png); }
+    article#timeline section.card.koyama .account em:after {
+      border-color: #afdb00; }
+  article#timeline section.card.koyama .comment .name {
+    color: #afdb00; }
+  article#timeline section.card.meimero .account {
+    color: #ff7eaf; }
+    article#timeline section.card.meimero .account:before {
+      background-image: url(../img/common/account_meimero.png); }
+    article#timeline section.card.meimero .account em:after {
+      border-color: #ff7eaf; }
+  article#timeline section.card.meimero .comment .name {
+    color: #ff7eaf; }
+  article#timeline section.card.naomi {
+    background-color: #e7387a;
+    background-image: url(../img/timeline/naomi_bg_btm.png);
+    background-repeat: no-repeat;
+    background-position: right bottom; }
+    article#timeline section.card.naomi:before {
+      background-image: url(../img/timeline/timeline_bg_naomi.png);
+      background-position: 21px 0; }
+    article#timeline section.card.naomi:after {
+      background-image: url(../img/timeline/timeline_bg_naomi.png);
+      background-position: 7px -2px; }
+    article#timeline section.card.naomi .inner {
+      background-image: url(../img/timeline/naomi_bg_top.png);
+      background-repeat: no-repeat; }
+    article#timeline section.card.naomi .account {
+      color: #febbd5; }
+      article#timeline section.card.naomi .account:before {
+        background-image: url(../img/common/account_naomi.png);
+        width: 120px;
+        height: 120px;
+        border: 2px solid #fff;
+        -moz-border-radius: 50%;
+        -webkit-border-radius: 50%;
+        border-radius: 50%;
+        top: 8px;
+        left: 8px; }
+      article#timeline section.card.naomi .account .name {
+        color: #fff; }
+      article#timeline section.card.naomi .account em:after {
+        border-color: #febbd5; }
+    article#timeline section.card.naomi .status .zilla-likes {
+      color: #febbd5; }
+      article#timeline section.card.naomi .status .zilla-likes:before {
+        top: -5px;
+        left: -39px;
+        width: 35px;
+        height: 30px;
+        background-image: url('../img/common/sprites-s3c727fd1b6.png');
+        background-position: 0 -403px;
+        background-repeat: no-repeat;
+        -moz-background-size: 567px auto;
+        -o-background-size: 567px auto;
+        -webkit-background-size: 567px auto;
+        background-size: 567px auto; }
+      article#timeline section.card.naomi .status .zilla-likes:hover {
+        color: #fff; }
+      article#timeline section.card.naomi .status .zilla-likes.active:before {
+        width: 35px;
+        height: 30px;
+        background-image: url('../img/common/sprites-s3c727fd1b6.png');
+        background-position: 0 -463px;
+        background-repeat: no-repeat;
+        -moz-background-size: 567px auto;
+        -o-background-size: 567px auto;
+        -webkit-background-size: 567px auto;
+        background-size: 567px auto; }
+    article#timeline section.card.naomi .status .time {
+      color: #febbd5; }
+      article#timeline section.card.naomi .status .time:before {
+        top: -2px;
+        left: -32px;
+        width: 24px;
+        height: 24px;
+        background-image: url('../img/common/sprites-s3c727fd1b6.png');
+        background-position: 0 -632px;
+        background-repeat: no-repeat;
+        -moz-background-size: 567px auto;
+        -o-background-size: 567px auto;
+        -webkit-background-size: 567px auto;
+        background-size: 567px auto; }
+    article#timeline section.card.naomi .comment {
+      color: #fff; }
+      article#timeline section.card.naomi .comment .name {
+        color: #eeec64; }
+      article#timeline section.card.naomi .comment a {
+        color: #febbd5; }
+        article#timeline section.card.naomi .comment a:hover {
+          color: #fff; }
+  article#timeline section.card.ochi .account {
+    color: #88269d; }
+    article#timeline section.card.ochi .account:before {
+      background-image: url(../img/common/account_ochi.png); }
+    article#timeline section.card.ochi .account em:after {
+      border-color: #88269d; }
+  article#timeline section.card.ochi .comment .name {
+    color: #88269d; }
+  article#timeline section.card.official .account {
+    color: #4cb6ae; }
+    article#timeline section.card.official .account:before {
+      background-image: url(../img/common/account_official.png); }
+    article#timeline section.card.official .account em:after {
+      border-color: #4cb6ae; }
+  article#timeline section.card.official .comment .name {
+    color: #4cb6ae; }
+  article#timeline section.card.okiguchi .account {
+    color: #4e296d; }
+    article#timeline section.card.okiguchi .account:before {
+      background-image: url(../img/common/account_okiguchi.png); }
+    article#timeline section.card.okiguchi .account em:after {
+      border-color: #4e296d; }
+  article#timeline section.card.okiguchi .comment .name {
+    color: #4e296d; }
+  article#timeline section.card.sano .account {
+    color: #ff0000; }
+    article#timeline section.card.sano .account:before {
+      background-image: url(../img/common/account_sano.png); }
+    article#timeline section.card.sano .account em:after {
+      border-color: #ff0000; }
+  article#timeline section.card.sano .comment .name {
+    color: #ff0000; }
+  article#timeline section.card.sato .account {
+    color: #e63b7c; }
+    article#timeline section.card.sato .account:before {
+      background-image: url(../img/common/account_sato.png); }
+    article#timeline section.card.sato .account em:after {
+      border-color: #e63b7c; }
+  article#timeline section.card.sato .comment .name {
+    color: #e63b7c; }
+  article#timeline section.card.shimizu .account {
+    color: #7b47b6; }
+    article#timeline section.card.shimizu .account:before {
+      background-image: url(../img/common/account_shimizu.png); }
+    article#timeline section.card.shimizu .account em:after {
+      border-color: #7b47b6; }
+  article#timeline section.card.shimizu .comment .name {
+    color: #7b47b6; }
+  article#timeline section.card.shiozaki .account {
+    color: #3dcb84; }
+    article#timeline section.card.shiozaki .account:before {
+      background-image: url(../img/common/account_shiozaki.png); }
+    article#timeline section.card.shiozaki .account em:after {
+      border-color: #3dcb84; }
+  article#timeline section.card.shiozaki .comment .name {
+    color: #3dcb84; }
+  article#timeline section.card.usa .account {
+    color: #ffc000; }
+    article#timeline section.card.usa .account:before {
+      background-image: url(../img/common/account_usa.png); }
+    article#timeline section.card.usa .account em:after {
+      border-color: #ffc000; }
+  article#timeline section.card.usa .comment .name {
+    color: #ffc000; }
+  article#timeline section.card.yamazaki .account {
+    color: #a3d9be; }
+    article#timeline section.card.yamazaki .account:before {
+      background-image: url(../img/common/account_yamazaki.png); }
+    article#timeline section.card.yamazaki .account em:after {
+      border-color: #a3d9be; }
+  article#timeline section.card.yamazaki .comment .name {
+    color: #a3d9be; }
+  article#timeline section.card.yoshida .account {
+    color: #4937b5; }
+    article#timeline section.card.yoshida .account:before {
+      background-image: url(../img/common/account_yoshida.png); }
+    article#timeline section.card.yoshida .account em:after {
+      border-color: #4937b5; }
+  article#timeline section.card.yoshida .comment .name {
+    color: #4937b5; }
+
+article {
+  width: 750px;
+  margin: 0 auto; }
+
+article#key-visual h1 {
+  width: 750px;
+  height: 930px;
+  font-size: 0; }
+  article#key-visual h1 img {
+    width: 750px;
+    height: 930px;
+    opacity: 0; }
+    article#key-visual h1 img.loaded {
+      -moz-transition: opacity 1s linear;
+      -o-transition: opacity 1s linear;
+      -webkit-transition: opacity 1s linear;
+      transition: opacity 1s linear;
+      opacity: 1; }
+
+article#about {
+  position: relative;
+  padding: 40px 30px 50px; }
+  article#about:before {
+    content: '';
+    position: absolute;
+    top: -28px;
+    left: 0;
+    width: 100%;
+    height: 51px;
+    background-image: url(../img/common/border.png);
+    background-repeat: repeat-x; }
+  article#about a.account {
+    display: inline-block;
+    height: 120px;
+    margin-left: 130px; }
+    article#about a.account:before {
+      content: '';
+      position: absolute;
+      width: 120px;
+      height: 120px;
+      top: 40px;
+      left: 30px;
+      background-repeat: no-repeat;
+      background-size: contain;
+      -moz-transition: all 0.1s;
+      -o-transition: all 0.1s;
+      -webkit-transition: all 0.1s;
+      transition: all 0.1s; }
+    article#about a.account .name {
+      display: block;
+      padding: 25px 0 10px;
+      font-size: 32px;
+      font-weight: bold;
+      color: #000; }
+    article#about a.account em {
+      position: relative;
+      font-size: 24px;
+      font-weight: normal; }
+      article#about a.account em:after {
+        content: '';
+        position: absolute;
+        top: 5px;
+        right: -15px;
+        width: 12px;
+        height: 12px;
+        border-top: 4px solid #000;
+        border-right: 4px solid #000;
+        -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+        -moz-border-radius: 2px;
+        -webkit-border-radius: 2px;
+        border-radius: 2px;
+        transition: all .2s; }
+    article#about a.account:hover:before {
+      -moz-transform: scale(1.08, 1.08);
+      -ms-transform: scale(1.08, 1.08);
+      -webkit-transform: scale(1.08, 1.08);
+      transform: scale(1.08, 1.08); }
+  article#about .sns li a {
+    position: absolute;
+    top: 64px;
+    -moz-transform: scale(0.8, 0.8);
+    -ms-transform: scale(0.8, 0.8);
+    -webkit-transform: scale(0.8, 0.8);
+    transform: scale(0.8, 0.8);
+    -moz-transition: all 0.1s;
+    -o-transition: all 0.1s;
+    -webkit-transition: all 0.1s;
+    transition: all 0.1s; }
+    article#about .sns li a:hover {
+      -moz-transform: scale(0.86, 0.86);
+      -ms-transform: scale(0.86, 0.86);
+      -webkit-transform: scale(0.86, 0.86);
+      transform: scale(0.86, 0.86); }
+  article#about .sns li.tw a {
+    width: 70px;
+    height: 70px;
+    background-image: url('../img/common/sprites-s3c727fd1b6.png');
+    background-position: 0 -657px;
+    background-repeat: no-repeat;
+    -moz-background-size: 567px auto;
+    -o-background-size: 567px auto;
+    -webkit-background-size: 567px auto;
+    background-size: 567px auto;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    right: 80px; }
+  article#about .sns li.fb a {
+    width: 70px;
+    height: 70px;
+    background-image: url('../img/common/sprites-s3c727fd1b6.png');
+    background-position: 0 -303px;
+    background-repeat: no-repeat;
+    -moz-background-size: 567px auto;
+    -o-background-size: 567px auto;
+    -webkit-background-size: 567px auto;
+    background-size: 567px auto;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    right: 15px; }
+  article#about .bio {
+    clear: both;
+    font-size: 28px;
+    line-height: 38px;
+    margin-top: 10px; }
+  article#about.asano .account {
+    color: #4dbe2f; }
+    article#about.asano .account:before {
+      background-image: url(../img/common/account_asano.png); }
+    article#about.asano .account em:after {
+      border-color: #4dbe2f; }
+  article#about.dakota .account {
+    color: #ff4800; }
+    article#about.dakota .account:before {
+      background-image: url(../img/common/account_dakota.png); }
+    article#about.dakota .account em:after {
+      border-color: #ff4800; }
+  article#about.fukuhara .account {
+    color: #ffbdd6; }
+    article#about.fukuhara .account:before {
+      background-image: url(../img/common/account_fukuhara.png); }
+    article#about.fukuhara .account em:after {
+      border-color: #ffbdd6; }
+  article#about.ikeda .account {
+    color: #ff7800; }
+    article#about.ikeda .account:before {
+      background-image: url(../img/common/account_ikeda.png); }
+    article#about.ikeda .account em:after {
+      border-color: #ff7800; }
+  article#about.itagaki .account {
+    color: #2fe2cf; }
+    article#about.itagaki .account:before {
+      background-image: url(../img/common/account_itagaki.png); }
+    article#about.itagaki .account em:after {
+      border-color: #2fe2cf; }
+  article#about.koyama .account {
+    color: #afdb00; }
+    article#about.koyama .account:before {
+      background-image: url(../img/common/account_koyama.png); }
+    article#about.koyama .account em:after {
+      border-color: #afdb00; }
+  article#about.meimero .account {
+    color: #ff7eaf; }
+    article#about.meimero .account:before {
+      background-image: url(../img/common/account_meimero.png); }
+    article#about.meimero .account em:after {
+      border-color: #ff7eaf; }
+  article#about.naomi .account {
+    color: #676767; }
+    article#about.naomi .account:before {
+      background-image: url(../img/common/account_naomi.png); }
+    article#about.naomi .account em:after {
+      border-color: #676767; }
+  article#about.ochi .account {
+    color: #88269d; }
+    article#about.ochi .account:before {
+      background-image: url(../img/common/account_ochi.png); }
+    article#about.ochi .account em:after {
+      border-color: #88269d; }
+  article#about.official .account {
+    color: #4cb6ae; }
+    article#about.official .account:before {
+      background-image: url(../img/common/account_official.png); }
+    article#about.official .account em:after {
+      border-color: #4cb6ae; }
+  article#about.okiguchi .account {
+    color: #4e296d; }
+    article#about.okiguchi .account:before {
+      background-image: url(../img/common/account_okiguchi.png); }
+    article#about.okiguchi .account em:after {
+      border-color: #4e296d; }
+  article#about.sano .account {
+    color: #ff0000; }
+    article#about.sano .account:before {
+      background-image: url(../img/common/account_sano.png); }
+    article#about.sano .account em:after {
+      border-color: #ff0000; }
+  article#about.sato .account {
+    color: #e63b7c; }
+    article#about.sato .account:before {
+      background-image: url(../img/common/account_sato.png); }
+    article#about.sato .account em:after {
+      border-color: #e63b7c; }
+  article#about.shimizu .account {
+    color: #7b47b6; }
+    article#about.shimizu .account:before {
+      background-image: url(../img/common/account_shimizu.png); }
+    article#about.shimizu .account em:after {
+      border-color: #7b47b6; }
+  article#about.shiozaki .account {
+    color: #3dcb84; }
+    article#about.shiozaki .account:before {
+      background-image: url(../img/common/account_shiozaki.png); }
+    article#about.shiozaki .account em:after {
+      border-color: #3dcb84; }
+  article#about.usa .account {
+    color: #ffc000; }
+    article#about.usa .account:before {
+      background-image: url(../img/common/account_usa.png); }
+    article#about.usa .account em:after {
+      border-color: #ffc000; }
+  article#about.yamazaki .account {
+    color: #a3d9be; }
+    article#about.yamazaki .account:before {
+      background-image: url(../img/common/account_yamazaki.png); }
+    article#about.yamazaki .account em:after {
+      border-color: #a3d9be; }
+  article#about.yoshida .account {
+    color: #4937b5; }
+    article#about.yoshida .account:before {
+      background-image: url(../img/common/account_yoshida.png); }
+    article#about.yoshida .account em:after {
+      border-color: #4937b5; }
+
+article#timeline {
+  position: relative;
+  padding-bottom: 50px; }
