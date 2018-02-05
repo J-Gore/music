@@ -338,13 +338,13 @@ article#timeline section.card {
       margin-right: 10px; }
       article#timeline section.card .comment a:hover {
         color: #000; }
-  article#timeline section.card.fukuhara .account {
+  article#timeline section.card.whitby .account {
     color: #ffbdd6; }
-    article#timeline section.card.fukuhara .account:before {
+    article#timeline section.card.whitby .account:before {
       background-image: url('/testsite/css/img/whitby_profile_pic.png'); }
-    article#timeline section.card.fukuhara .account em:after {
+    article#timeline section.card.whitby .account em:after {
       border-color: #ffbdd6; }
-  article#timeline section.card.fukuhara .comment .name {
+  article#timeline section.card.whitby .comment .name {
     color: #ffbdd6; }
   article#timeline section.card.naomi {
     background-color: #e7387a;
@@ -562,11 +562,11 @@ article#about {
     font-size: 28px;
     line-height: 38px;
     margin-top: 10px; }
-  article#about.fukuhara .account {
+  article#about.whitby .account {
     color: #ffbdd6; }
-    article#about.fukuhara .account:before {
+    article#about.whitby .account:before {
       background-image: url('/testsite/css/img/whitby_profile_pic.png'); }
-    article#about.fukuhara .account em:after {
+    article#about.whitby .account em:after {
       border-color: #ffbdd6; }
   article#about.official .account {
     color: #4cb6ae; }
