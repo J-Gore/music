@@ -2,7 +2,7 @@ function GetVidData(vidUrl){
 
   var url = ("https://www.googleapis.com/youtube/v3/videospart=statistics&id=" + vidUrl + "&key=AIzaSyD6XBI5r8UWTPCtF00EwJOb5ZlxunvxYTw");
 var likes;
-alert("Got vid url " + url);
+alert("Got vid url");
 $.getJSON(url,
     function(data){
       alert("in other bit of code");
