@@ -9,5 +9,5 @@ $.getJSON(url,
         likes = data.items[0].statistics.likeCount;
         alert(likes);
 });
-alert("made it passed code");
+alert("made it passed code " + likes);
 }
