@@ -395,6 +395,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 </div>
 </main>
+
+<div id="hint-naomi">
+	<div class="balloon">
+		<p>
+Hmm... Oh.. Delicious. Nice MIXXX!!    </p>
+	</div>
+</div>　
 <style>
 	.alignnone{
 		display: none;
