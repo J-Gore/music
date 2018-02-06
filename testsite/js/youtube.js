@@ -5,6 +5,7 @@ var likes;
 $.getJSON(url,
     function(response){
         likes = response.data.items[0].statistics.likeCount;
+        alert("in other bit of code");
         alert(likes);
 });
 }
