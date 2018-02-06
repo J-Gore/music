@@ -2,12 +2,12 @@ function GetVidData(vidUrl){
 
   var url = ("https://www.googleapis.com/youtube/v3/videospart=statistics&id=" + vidUrl + "&key=AIzaSyD6XBI5r8UWTPCtF00EwJOb5ZlxunvxYTw&callback=false&part=statistics");
 var likes;
-alert("Got vid url");
+//alert("Got vid url");
 $.getJSON(url,
     function(response){
-      alert("in other bit of code");
+      //alert("in other bit of code");
         likes = response.data.items[0].statistics.likeCount;
         alert(likes);
 });
-alert("made it passed code " + likes);
+//alert("made it passed code " + likes);
 }
