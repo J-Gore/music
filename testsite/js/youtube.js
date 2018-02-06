@@ -5,8 +5,8 @@ var likes;
 alert("Got vid url " + url);
 $.getJSON(url,
     function(response){
+      alert("in other bit of code");
         likes = response.data.items[0].statistics.likeCount;
-        alert("in other bit of code");
         alert(likes);
 });
 }
