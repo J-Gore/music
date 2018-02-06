@@ -4,9 +4,9 @@ function GetVidData(vidUrl){
 var likes;
 alert("Got vid url");
 $.getJSON(url,
-    function(data){
+    function(response){
       alert("in other bit of code");
-        likes = data.items[0].statistics.likeCount;
+        likes = response.data.items[0].statistics.likeCount;
         alert(likes);
 });
 alert("made it passed code " + likes);
