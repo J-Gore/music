@@ -346,7 +346,7 @@ article#timeline section.card {
       border-color: #ffbdd6; }
   article#timeline section.card.whitby .comment .name {
     color: #ffbdd6; }
-  article#timeline section.card.naomi {
+  /*article#timeline section.card.naomi {
     background-color: #e7387a;
     background-image: url(../img/timeline/naomi_bg_btm.png);
     background-repeat: no-repeat;
@@ -423,7 +423,7 @@ article#timeline section.card {
       article#timeline section.card.naomi .comment a {
         color: #febbd5; }
         article#timeline section.card.naomi .comment a:hover {
-          color: #fff; }
+          color: #fff; }*/
   article#timeline section.card.official .account {
     color: #4cb6ae; }
     article#timeline section.card.official .account:before {
