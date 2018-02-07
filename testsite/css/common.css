@@ -334,7 +334,7 @@ header nav {
         text-indent: 100%;
         white-space: nowrap;
         overflow: hidden; }
-  header nav .sns {
+  /*header nav .sns {
     margin: 40px 0;
     text-align: center;
     font-size: 0; }
@@ -381,7 +381,7 @@ header nav {
       background-size: 567px auto;
       text-indent: 100%;
       white-space: nowrap;
-      overflow: hidden; }
+      overflow: hidden; }*/
   header nav .copyright {
     margin: 0 auto 50px;
     width: 543px;
