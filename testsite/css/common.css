@@ -320,8 +320,8 @@ header nav {
         background-size: 567px auto;
         text-indent: 100%;
         white-space: nowrap;
-        overflow: hidden; }
-      header nav ul.sub li.guideline a {
+        overflow: hidden;}
+      header nav ul.sub li.guideline a{
         width: 264px;
         height: 24px;
         background-image: url('/testsite/css/img/web_sprites.png');
@@ -333,55 +333,7 @@ header nav {
         background-size: 567px auto;
         text-indent: 100%;
         white-space: nowrap;
-        overflow: hidden; }
-  /*header nav .sns {
-    margin: 40px 0;
-    text-align: center;
-    font-size: 0; }
-    header nav .sns li {
-      display: inline-block;
-      margin: 0 5px; }
-    header nav .sns a {
-      display: block;
-      -moz-transform: scale(0.94, 0.94);
-      -ms-transform: scale(0.94, 0.94);
-      -webkit-transform: scale(0.94, 0.94);
-      transform: scale(0.94, 0.94);
-      -moz-transition: all 0.1s;
-      -o-transition: all 0.1s;
-      -webkit-transition: all 0.1s;
-      transition: all 0.1s; }
-      header nav .sns a:hover {
-        -moz-transform: scale(1, 1);
-        -ms-transform: scale(1, 1);
-        -webkit-transform: scale(1, 1);
-        transform: scale(1, 1); }
-    header nav .sns .tw a {
-      width: 70px;
-      height: 70px;
-      background-image: url('/testsite/css/img/web_sprites.png');
-      background-position: 0 -657px;
-      background-repeat: no-repeat;
-      -moz-background-size: 567px auto;
-      -o-background-size: 567px auto;
-      -webkit-background-size: 567px auto;
-      background-size: 567px auto;
-      text-indent: 100%;
-      white-space: nowrap;
-      overflow: hidden; }
-    header nav .sns .fb a {
-      width: 70px;
-      height: 70px;
-      background-image: url('/testsite/css/img/web_sprites.png');
-      background-position: 0 -303px;
-      background-repeat: no-repeat;
-      -moz-background-size: 567px auto;
-      -o-background-size: 567px auto;
-      -webkit-background-size: 567px auto;
-      background-size: 567px auto;
-      text-indent: 100%;
-      white-space: nowrap;
-      overflow: hidden; }*/
+        overflow: hidden;}
   header nav .copyright {
     margin: 0 auto 50px;
     width: 543px;
