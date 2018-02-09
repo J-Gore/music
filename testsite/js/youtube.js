@@ -32,9 +32,9 @@ $.getJSON(url,
 						return;
 					}
 					var r = data.items[0].statistics;
-					dfrd2.resolve(r);
+					
 					$("<li></li>").text("View count: " + data.items[0].statistics.viewCount).appendTo("#video-data-2");
-					$("<li></li>").text("Like count: " + dfrd2.promise()).appendTo("#video-data-2");
+					$("<li></li>").text("Like count: " + r).appendTo("#video-data-2");
 				}).fail(function(jqXHR, textStatus, errorThrown) {
 					$("<p style='color: #F00;'></p>").text(jqXHR.responseText || errorThrown).appendTo("#video-data-1");
 				});
