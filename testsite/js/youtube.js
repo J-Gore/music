@@ -9,6 +9,7 @@ $.getJSON(url,
       //alert("in other bit of code");
         likes = response.data.items[0].statistics.likeCount;
         alert(likes);
+        alert("made it passed code " + likes + "..." + response);
 });
-alert("made it passed code " + likes);
+
 }
