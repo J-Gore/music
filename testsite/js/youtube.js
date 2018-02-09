@@ -13,6 +13,7 @@ $.getJSON(url,
 });*/
 				$("#video-data-1, #video-data-2").empty();
 				var videoid = vidUrl;
+				var dfrd2 = $.Deferred();
 				var matches = videoid.match(/^http:\/\/www\.youtube\.com\/.*[?&]v=([^&]+)/i) || videoid.match(/^http:\/\/youtu\.be\/([^?]+)/i);
 				if (matches) {
 					videoid = matches[1];
@@ -30,8 +31,10 @@ $.getJSON(url,
 						$("<p style='color: #F00;'>Video not found.</p>").appendTo("#video-data-1");
 						return;
 					}
+					var r = data.items[0].statistics.likeCount;
+					dfrd2.resolve(r);
 					$("<li></li>").text("View count: " + data.items[0].statistics.viewCount).appendTo("#video-data-2");
-					$("<li></li>").text("Like count: " + data.items[0].statistics.likeCount).appendTo("#video-data-2");
+					$("<li></li>").text("Like count: " + dfrd2.promise()).appendTo("#video-data-2");
 				}).fail(function(jqXHR, textStatus, errorThrown) {
 					$("<p style='color: #F00;'></p>").text(jqXHR.responseText || errorThrown).appendTo("#video-data-1");
 				});
