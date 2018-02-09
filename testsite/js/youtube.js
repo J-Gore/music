@@ -33,7 +33,6 @@ $.getJSON(url,
 					}
 
 					var r = promise(data.items[0].statistics.likeCount);
-r = JSON.stringify(data);
 					$("<li></li>").text("View count: " + data.items[0].statistics.viewCount).appendTo("#video-data-2");
 					$("<li></li>").text("Like count: " + r).appendTo("#video-data-2");
 				}).fail(function(jqXHR, textStatus, errorThrown) {
