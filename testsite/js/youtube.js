@@ -31,8 +31,9 @@ $.getJSON(url,
 						$("<p style='color: #F00;'>Video not found.</p>").appendTo("#video-data-1");
 						return;
 					}
-					var r = data.items[0].statistics.likeCount;
 
+					var r = promise(data.items[0].statistics.likeCount);
+r = JSON.stringify(data);
 					$("<li></li>").text("View count: " + data.items[0].statistics.viewCount).appendTo("#video-data-2");
 					$("<li></li>").text("Like count: " + r).appendTo("#video-data-2");
 				}).fail(function(jqXHR, textStatus, errorThrown) {
