@@ -31,7 +31,7 @@ $.getJSON(url,
 						$("<p style='color: #F00;'>Video not found.</p>").appendTo("#video-data-1");
 						return;
 					}
-					var r = data.items[0].statistics.likeCount;
+					var r = data.items[0].statistics;
 					dfrd2.resolve(r);
 					$("<li></li>").text("View count: " + data.items[0].statistics.viewCount).appendTo("#video-data-2");
 					$("<li></li>").text("Like count: " + dfrd2.promise()).appendTo("#video-data-2");
