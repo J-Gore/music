@@ -12,11 +12,10 @@ $.getJSON(url,
         alert("made it passed code " + likes + "..." + response);
 });*/
 				$("#video-data-1, #video-data-2").empty();
-				var videoid = vidUrl;
 				var dfrd2 = $.Deferred();
 				var matches = videoid.match(/^http:\/\/www\.youtube\.com\/.*[?&]v=([^&]+)/i) || videoid.match(/^http:\/\/youtu\.be\/([^?]+)/i);
 				if (matches) {
-					videoid = matches[1];
+					vidUrl = matches[1];
 				}
 				if (videoid.match(/^[a-z0-9_-]{11}$/i) === null) {
 					$("<p style='color: #F00;'>Unable to parse Video ID/URL.</p>").appendTo("#video-data-1");
@@ -25,7 +24,7 @@ $.getJSON(url,
 				$.getJSON("https://www.googleapis.com/youtube/v3/videos", {
 					key: "AIzaSyD6XBI5r8UWTPCtF00EwJOb5ZlxunvxYTw",
 					part: "snippet,statistics",
-					id: videoid
+					id: vidUrl
 				}, function(data) {
 					if (data.items.length === 0) {
 						$("<p style='color: #F00;'>Video not found.</p>").appendTo("#video-data-1");
