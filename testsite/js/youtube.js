@@ -35,7 +35,7 @@ alert(vidNo);
 						alert("Match Found");
 						vidUrl = matches[1];
 					}
-					if (videoid.match(/^[a-z0-9_-]{11}$/i) === null) {
+					if (vidUrl.match(/^[a-z0-9_-]{11}$/i) === null) {
 						$("<p style='color: #F00;'>Unable to parse Video ID/URL.</p>").appendTo(currentVid);
 						alert("Getting JSON");
 						return;
