@@ -35,7 +35,7 @@ var currentVid = "";
 									promise2.then(function(resolve){
 										var jsonData = JSON.stringify(resolve);
 
-								var r = resolve.items[0].statistics.likeCount;
+								var r = resolve.items[0].statistics.viewCount;
 								//var r = jsonData["likeCount"];
 
 								if(r == null) r = 34;
