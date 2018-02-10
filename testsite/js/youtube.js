@@ -14,6 +14,8 @@ $.getJSON(url,
 var vidNo = 1;
 var exit = false;
 var currentVid = "";
+var info = document.getElementById("vid_2").getAttribute("data-youtube");
+alert(info);
 do{
 	currentVid = "vid_" + vidNo + "_likes";
 	var getElement = document.getElementById(currentVid);
@@ -25,29 +27,30 @@ do{
 }while(exit == false);
 				var dfrd2 = $.Deferred();
 				alert(vidNo);
-				var matches = videoid.match(/^http:\/\/www\.youtube\.com\/.*[?&]v=([^&]+)/i) || videoid.match(/^http:\/\/youtu\.be\/([^?]+)/i);
-				if (matches) {
-					vidUrl = matches[1];
-				}
-				if (videoid.match(/^[a-z0-9_-]{11}$/i) === null) {
-					$("<p style='color: #F00;'>Unable to parse Video ID/URL.</p>").appendTo("#video-data-1");
-					return;
-				}
-				$.getJSON("https://www.googleapis.com/youtube/v3/videos", {
-					key: "AIzaSyD6XBI5r8UWTPCtF00EwJOb5ZlxunvxYTw",
-					part: "statistics",
-					id: vidUrl
-				}, function(data) {
-					if (data.items.length === 0) {
-						$("<p style='color: #F00;'>Video not found.</p>").appendTo("#video-data-1");
+				for(var i = 1; i < vidNo; i++){
+					var matches = videoid.match(/^http:\/\/www\.youtube\.com\/.*[?&]v=([^&]+)/i) || videoid.match(/^http:\/\/youtu\.be\/([^?]+)/i);
+					if (matches) {
+						vidUrl = matches[1];
+					}
+					if (videoid.match(/^[a-z0-9_-]{11}$/i) === null) {
+						$("<p style='color: #F00;'>Unable to parse Video ID/URL.</p>").appendTo("#video-data-1");
 						return;
 					}
+					$.getJSON("https://www.googleapis.com/youtube/v3/videos", {
+						key: "AIzaSyD6XBI5r8UWTPCtF00EwJOb5ZlxunvxYTw",
+						part: "statistics",
+						id: vidUrl
+					}, function(data) {
+						if (data.items.length === 0) {
+							$("<p style='color: #F00;'>Video not found.</p>").appendTo("#video-data-1");
+							return;
+						}
 
-					var r = data.items[0].statistics.likeCount;
-					$("<li></li>").text("View count: " + data.items[0].statistics.viewCount).appendTo("#video-data-2");
-					$("<li></li>").text("Like count: " + r).appendTo("#video-data-2");
-				}).fail(function(jqXHR, textStatus, errorThrown) {
-					$("<p style='color: #F00;'></p>").text(jqXHR.responseText || errorThrown).appendTo("#video-data-1");
-				});
-
+						var r = data.items[0].statistics.likeCount;
+						$("<li></li>").text("View count: " + data.items[0].statistics.viewCount).appendTo("#video-data-2");
+						$("<li></li>").text("Like count: " + r).appendTo("#video-data-2");
+					}).fail(function(jqXHR, textStatus, errorThrown) {
+						$("<p style='color: #F00;'></p>").text(jqXHR.responseText || errorThrown).appendTo("#video-data-1");
+					});
+				}
 }
