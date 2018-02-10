@@ -42,7 +42,7 @@ do{
 						part: "statistics",
 						id: vidUrl
 					})
-					.done( function(data) {
+					.then(function(data) {
 						if (data.items.length === 0) {
 							$("<p style='color: #F00;'>Video not found.</p>").appendTo(currentVid);
 							return;
