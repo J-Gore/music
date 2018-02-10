@@ -16,16 +16,13 @@ var exit = false;
 var currentVid = "";
 do{
 	currentVid = "vid_" + vidNo + "_likes";
-	var getElement = document.getElementById("vid_1_likes");
+	var getElement = document.getElementById(currentVid);
 	if(getElement != null){
-		alert("Found");
-		exit = true;
 		vidNo++;
 	}else {
 		exit = true;
 	}
 }while(exit == false);
-				$("#video-data-1, #video-data-2").empty();
 				var dfrd2 = $.Deferred();
 				alert(vidNo);
 				var matches = videoid.match(/^http:\/\/www\.youtube\.com\/.*[?&]v=([^&]+)/i) || videoid.match(/^http:\/\/youtu\.be\/([^?]+)/i);
