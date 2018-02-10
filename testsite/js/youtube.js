@@ -39,7 +39,8 @@ do{
 									alert("Second then. " + resolve);
 									var someData = JSON.stringify(resolve);
 									alert(someData);
-								var r = someData.items[0].statistics.likeCount;
+								//var r = resolve.items[0].statistics.likeCount;
+								var r = resolve["likeCount"];
 
 								if(r == null) r = 34;
 								alert("R = " + r);
