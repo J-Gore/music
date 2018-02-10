@@ -48,7 +48,6 @@ do{
 						if(r == null){
 							r = 34;
 						}
-						alert(r);
 						//$("<li></li>").text("View count: " + data.items[0].statistics.viewCount).appendTo("#video-data-2");
 						$("<li></li>").text("Like count: " + r).appendTo(currentVid);
 					}).fail(function(jqXHR, textStatus, errorThrown) {
