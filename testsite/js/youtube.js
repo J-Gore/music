@@ -20,8 +20,7 @@ var currentVid = "";
 							$("<p style='color: #F00;'>Unable to parse Video ID/URL.</p>").appendTo(currentVid);
 							return;
 						}
-									var promise = new Promise(function(resolve,reject){
-										$.getJSON("https://www.googleapis.com/youtube/v3/videos", {
+									var promise = $.getJSON("https://www.googleapis.com/youtube/v3/videos", {
 											key: "AIzaSyD6XBI5r8UWTPCtF00EwJOb5ZlxunvxYTw",
 											part: "statistics",
 											id: vidUrl
@@ -29,7 +28,7 @@ var currentVid = "";
 											if(data != null) resolve(data);
 											else reject("JSON Retrieval Error");
 										});
-									});
+									
 									let promise2 = promise.then(function(resolve){
 										return resolve;
 									});
