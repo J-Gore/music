@@ -43,10 +43,11 @@ do{
 											key: "AIzaSyD6XBI5r8UWTPCtF00EwJOb5ZlxunvxYTw",
 											part: "statistics",
 											id: vidUrl
-										},data);
-										alert(data);
-										if(data != null) resolve(data);
-										else reject("JSON Retrieval Error");
+										},function(data){
+											alert(data);
+											if(data != null) resolve(data);
+											else reject("JSON Retrieval Error");
+										});
 									})
 									promise.then(function(resolve) {
 										alert(resolve);
