@@ -31,10 +31,11 @@ do{
 										});
 									})
 									promise.then(function(resolve) {
+										alert("First then. " + resolve);
 										return resolve;
 									});
 									promise.then(function(resolve){
-
+									alert("Second then. " + resolve);
 
 								var r = resolve.items[0].statistics.likeCount;
 
