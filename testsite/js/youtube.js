@@ -26,7 +26,8 @@ var currentVid = "";
 											part: "statistics",
 											id: vidUrl
 										},function(data){
-											if(data != null) resolve(data);
+											var jsonData = $.parseJSON(data);
+											if(jsonData != null) resolve(jsonData);
 											else reject("JSON Retrieval Error");
 										});
 									});
@@ -34,9 +35,10 @@ var currentVid = "";
 										return resolve;
 									});
 									promise2.then(function(resolve){
-										var jsonData = JSON.parse(resolve);
-								var r = jsonData.items[0].statistics.likeCount;
-								//var r = resolve["likeCount"];
+										//var jsonData = JSON.parse(resolve);
+
+								//var r = jsonData.items[0].statistics.likeCount;
+								var r = resolve["likeCount"];
 								alert(jsonData.items[0].statistics.likeCount);
 								if(r == null) r = 34;
 								alert("R = " + r);
