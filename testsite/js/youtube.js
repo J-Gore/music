@@ -12,12 +12,9 @@ $.getJSON(url,
         alert("made it passed code " + likes + "..." + response);
 });*/
 var vidNo = 1;
-var vidId = '';
 var exit = false;
 do{
-	vidNo = 'vid_' + vidNo + '_likes';
-	alert(vidId);
-	if(document.getElementById(vidId)){
+	if(document.getElementById('vid_' + vidNo + '_likes')){
 		vidNo++;
 	}else {
 		exit = true;
