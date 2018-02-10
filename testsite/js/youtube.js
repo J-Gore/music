@@ -35,9 +35,10 @@ var currentVid = "";
 									});
 									promise2.then(function(resolve){
 										var jsonData = JSON.stringify(resolve);
-										
+
 								//var r = jsonData.items[0].statistics.likeCount;
 								var r = jsonData["likeCount"];
+								alert(r);
 								if(r == null) r = 34;
 
 								appendElement.innerHTML = r;
