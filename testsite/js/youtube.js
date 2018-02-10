@@ -15,10 +15,10 @@ var vidNo = 1;
 var exit = false;
 do{
 	var element = document.getElementById('vid_' + vidNo + '_likes');
-	if(element !== null){
-		vidNo++;
-	}else {
+	if(element === null){
 		exit = true;
+	}else {
+		vidNo++;
 	}
 }while(exit == false);
 alert(vidNo);
