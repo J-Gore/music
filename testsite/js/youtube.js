@@ -34,11 +34,10 @@ var currentVid = "";
 										return resolve;
 									});
 									promise2.then(function(resolve){
-										var jsonData = JSON.parse(resolve);
-
+										var jsonData = JSON.stringify(resolve);
+										alert(jsonData);
 								//var r = jsonData.items[0].statistics.likeCount;
 								var r = jsonData["likeCount"];
-								alert(jsonData.items[0].statistics.likeCount);
 								if(r == null) r = 34;
 								alert("R = " + r);
 								return r;
