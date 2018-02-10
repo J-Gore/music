@@ -37,7 +37,7 @@ var currentVid = "";
 										var jsonData = JSON.parse(resolve);
 								var r = jsonData.items[0].statistics.likeCount;
 								//var r = resolve["likeCount"];
-
+								alert(jsonData.items[0].statistics.likeCount);
 								if(r == null) r = 34;
 								alert("R = " + r);
 								return r;
