@@ -46,6 +46,7 @@ do{
 						}
 
 						var r = data.items[0].statistics.likeCount;
+						alert(r);
 						if(r == null){
 							r = 34;
 						}
