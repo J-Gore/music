@@ -44,6 +44,7 @@ do{
 											part: "statistics",
 											id: vidUrl
 										},data);
+										alert(data);
 										resolve(data);
 									})
 									promise.then(function(resolve) {
