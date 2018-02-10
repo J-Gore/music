@@ -44,7 +44,7 @@ var currentVid = "";
 								return r;
 							});
 							promise2.then(function(r){
-
+alert("R=" + r);
 
 								//$("<li></li>").text("View count: " + data.items[0].statistics.viewCount).appendTo("#video-data-2");
 
