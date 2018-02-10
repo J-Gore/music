@@ -1,24 +1,11 @@
-function GetVidData(){
-	alert("Running code");
-var vidNo = 1;
-var exit = false;
+function GetVidData(vidUrl,vidNo){
+alert("Running code");
 var currentVid = "";
-do{
-	currentVid = "vid_" + vidNo + "_likes";
-	var getElement = document.getElementById(currentVid);
-	if(getElement != null) vidNo++;
-	else exit = true;
-}while(exit == false);
-				var vidUrl = "";
 				var appendElement;
-				var w = 1;
 				alert("Entering Function");
-				function loop(w){
-					alert("Entered Function");
-					if(w < vidNo){
-								currentVid = "vid_" + w + "_likes";
+								currentVid = "vid_" + vidNo + "_likes";
 								appendElement = document.getElementById(currentVid);
-								vidUrl = document.getElementById("vid_" + w).getAttribute("data-youtube");
+								vidUrl = document.getElementById("vid_" + VidNo).getAttribute("data-youtube");
 								var matches = vidUrl.match(/^http:\/\/www\.youtube\.com\/.*[?&]v=([^&]+)/i) || vidUrl.match(/^http:\/\/youtu\.be\/([^?]+)/i);
 								if (matches) vidUrl = matches[1];
 								if (vidUrl.match(/^[a-z0-9_-]{11}$/i) === null) {
@@ -54,10 +41,7 @@ do{
 										appendElement.innerHTML = r;
 										//$("").text("Like count: " + r).appendTo(currentVid);
 									});
-									w++;
-									loop(w);
-					}else break;
-					
+
 }
 
 }
