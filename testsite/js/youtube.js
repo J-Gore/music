@@ -38,13 +38,11 @@ do{
 						$("<p style='color: #F00;'>Unable to parse Video ID/URL.</p>").appendTo(currentVid);
 						return;
 					}
-							setTimeout(function(){
 								$.getJSON("https://www.googleapis.com/youtube/v3/videos", {
 									key: "AIzaSyD6XBI5r8UWTPCtF00EwJOb5ZlxunvxYTw",
 									part: "statistics",
 									id: vidUrl
-								})
-						.then(function(data) {
+								},function(data) {
 							if (data.items.length === 0) {
 								$("<p style='color: #F00;'>Video not found.</p>").appendTo(currentVid);
 								return;
@@ -60,8 +58,5 @@ do{
 						.fail(function(jqXHR, textStatus, errorThrown) {
 							$("<p style='color: #F00;'></p>").text(jqXHR.responseText || errorThrown).appendTo(currentVid);
 						});
-					},3000); 
-
-
 				}
 }
