@@ -38,14 +38,15 @@ do{
 							return;
 						}
 						alert("Entering Promise");
-									var promise = new Promise(function (resolve,reject){
+									var promise = new Promise(function(resolve,reject){
 										$.getJSON("https://www.googleapis.com/youtube/v3/videos", {
 											key: "AIzaSyD6XBI5r8UWTPCtF00EwJOb5ZlxunvxYTw",
 											part: "statistics",
 											id: vidUrl
 										},data);
 										alert(data);
-										resolve(data);
+										if(data != null) resolve(data);
+										else reject("JSON Retrieval Error");
 									})
 									promise.then(function(resolve) {
 										alert(resolve);
