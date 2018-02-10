@@ -2,12 +2,6 @@ function GetVidData(w){
 var vidNo = 1;
 var exit = false;
 var currentVid = "";
-/*do{
-	currentVid = "vid_" + vidNo + "_likes";
-	var getElement = document.getElementById(currentVid);
-	if(getElement != null) vidNo++;
-	else exit = true;
-}while(exit == false);*/
 				var vidUrl = "";
 				var appendElement;
 				//for(w = 1; w < vidNo; w++){
@@ -20,35 +14,15 @@ var currentVid = "";
 							$("<p style='color: #F00;'>Unable to parse Video ID/URL.</p>").appendTo(currentVid);
 							return;
 						}
-									var promise = $.getJSON("https://www.googleapis.com/youtube/v3/videos", {
+									$.getJSON("https://www.googleapis.com/youtube/v3/videos", {
 											key: "AIzaSyD6XBI5r8UWTPCtF00EwJOb5ZlxunvxYTw",
 											part: "statistics",
 											id: vidUrl
 										},function(data){
-											if(data != null) resolve(data);
-											else reject("JSON Retrieval Error");
+											var r = data.items[0].statistics.viewCount;
+											if(r == null) r = 34;
+											alert("The value of r is: " + r);
+											appendElement.innerHTML = r;
 										});
-
-									let promise2 = promise.then(function(resolve){
-										return resolve;
-									});
-									promise2.then(function(resolve){
-										var jsonData = JSON.stringify(resolve);
-
-								var r = resolve.items[0].statistics.viewCount;
-								//var r = jsonData["likeCount"];
-
-								if(r == null) r = 34;
-								alert("The value of r is: " + r);
-								appendElement.innerHTML = r;
-								return r;
-							});
-							promise2.then(function(r){
-alert("R=" + r);
-
-								//$("<li></li>").text("View count: " + data.items[0].statistics.viewCount).appendTo("#video-data-2");
-
-								//$("").text("Like count: " + r).appendTo(currentVid);
-							});
 				//}
 }
