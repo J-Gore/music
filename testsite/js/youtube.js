@@ -26,7 +26,6 @@ do{
 				var vidUrl = "";
 				var appendElement;
 				for(w = 1; w < vidNo; w++){
-					setTimeout(function(){
 						currentVid = "vid_" + w + "_likes";
 						appendElement = document.getElementById(currentVid);
 						vidUrl = document.getElementById("vid_" + w).getAttribute("data-youtube");
@@ -65,6 +64,5 @@ do{
 							promise.fail(function(jqXHR, textStatus, errorThrown) {
 								$("<p style='color: #F00;'></p>").text(jqXHR.responseText || errorThrown).appendTo(currentVid);
 							});
-					},3000);
 				}
 }
