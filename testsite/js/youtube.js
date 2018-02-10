@@ -42,7 +42,7 @@ var currentVid = "";
 								alert("R = " + r);
 								return r;
 							});
-							promise.then(function(r){
+							promise2.then(function(r){
               alert("got r: " + r);
 
 								//$("<li></li>").text("View count: " + data.items[0].statistics.viewCount).appendTo("#video-data-2");
