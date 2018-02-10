@@ -401,8 +401,8 @@ infinite_scroll = jQuery.parseJSON(infinite_scroll);
 jQuery( infinite_scroll.contentSelector ).infinitescroll( infinite_scroll, function(newElements, data, url) { eval(infinite_scroll.callback); });
 </script>
 <script type="text/javascript">
-for(i = 1;i < GetNoVids;i++){alert(i); window.onload = GetVidData(i)};
-window.onload = GetVidData(1);
+for(i = 1;i < GetNoVids();i++){alert(i); window.onload = GetVidData(i)};
+/*window.onload = GetVidData(1);
 window.onload = GetVidData(2);
 window.onload = GetVidData(3);
 window.onload = GetVidData(4);
@@ -413,7 +413,7 @@ window.onload = GetVidData(8);
 window.onload = GetVidData(9);
 window.onload = GetVidData(10);
 window.onload = GetVidData(11);
-window.onload = GetVidData(12);
+window.onload = GetVidData(12);*/
 </script>
 </body>
 </html>
