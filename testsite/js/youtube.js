@@ -27,9 +27,7 @@ do{
 				var appendElement;
 				for(w = 1; w < vidNo; w++){
 					currentVid = "vid_" + w + "_likes";
-					alert(currentVid);
 					appendElement = document.getElementById(currentVid);
-					alert(appendElement.getAttribute("id"));
 					vidUrl = document.getElementById("vid_" + w).getAttribute("data-youtube");
 					var matches = vidUrl.match(/^http:\/\/www\.youtube\.com\/.*[?&]v=([^&]+)/i) || vidUrl.match(/^http:\/\/youtu\.be\/([^?]+)/i);
 					if (matches) {
@@ -59,5 +57,4 @@ do{
 						$("<p style='color: #F00;'></p>").text(jqXHR.responseText || errorThrown).appendTo(currentVid);
 					});
 				}
-				alert("Code Finished");
 }
