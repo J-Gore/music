@@ -25,7 +25,7 @@ do{
 }while(exit == false);
 				currentVid = "vid_" + i + "_likes";
 				var vidUrl = "";
-				for(var i = 1; i < vidNo; i++){
+				for(i = 1; i < vidNo; i++){
 					vidUrl = document.getElementById("vid_" + i).getAttribute("data-youtube");
 					var matches = videoid.match(/^http:\/\/www\.youtube\.com\/.*[?&]v=([^&]+)/i) || videoid.match(/^http:\/\/youtu\.be\/([^?]+)/i);
 					if (matches) {
@@ -44,7 +44,6 @@ do{
 							$("<p style='color: #F00;'>Video not found.</p>").appendTo(currentVid);
 							return;
 						}
-
 						var r = data.items[0].statistics.likeCount;
 						alert(r);
 						if(r == null){
