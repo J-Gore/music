@@ -13,8 +13,11 @@ $.getJSON(url,
 });*/
 var vidNo = 1;
 var exit = false;
+var currentVid = "";
 do{
-	if($("#vid_" + vidNo + "_likes")[0]){
+	currentVid = "#vid_" + vidNo + "_likes";
+	alert(currentVid);
+	if($(currentVid)[0]){
 		vidNo++;
 	}else {
 		exit = true;
