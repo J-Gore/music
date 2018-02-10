@@ -15,6 +15,7 @@ var vidNo = 1;
 var exit = false;
 do{
 	var element = document.getElementById('vid_' + vidNo + '_likes');
+	alert(element);
 	if(element === null){
 		exit = true;
 	}else {
