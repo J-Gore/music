@@ -46,10 +46,18 @@ do{
 							$("<p style='color: #F00;'>Video not found.</p>").appendTo(currentVid);
 							return;
 						}
-						var r = data.items[0].statistics.likeCount;
-						if(r == null){
-							r = 34;
-						}
+						var r = new Promise(function(resolve,reject){
+							if(data.items[0].statistics.likeCount != null)
+							{
+								resolve(data.items[0].statistics.likeCount);
+							}else{
+								reject(34);
+							}
+
+						})
+						//if(r == null){
+						//	r = 34;
+						//}
 						//$("<li></li>").text("View count: " + data.items[0].statistics.viewCount).appendTo("#video-data-2");
 						appendElement.innerHTML = r;
 						//$("").text("Like count: " + r).appendTo(currentVid);
