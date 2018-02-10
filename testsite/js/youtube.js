@@ -35,9 +35,8 @@ var currentVid = "";
 										return resolve;
 									});
 									promise.then(function(resolve){
-									var someData = JSON.stringify(resolve);
-								//var r = resolve.items[0].statistics.likeCount;
-								var r = resolve["likeCount"];
+								var r = resolve.items[0].statistics.likeCount;
+								//var r = resolve["likeCount"];
 
 								if(r == null) r = 34;
 								alert("R = " + r);
