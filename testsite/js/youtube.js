@@ -30,7 +30,7 @@ alert(vidNo);
 					alert("Entered For Loop");
 					vidUrl = document.getElementById("vid_" + w).getAttribute("data-youtube");
 					alert("Vid Url = " + vidUrl);
-					var matches = videoid.match(/^http:\/\/www\.youtube\.com\/.*[?&]v=([^&]+)/i) || videoid.match(/^http:\/\/youtu\.be\/([^?]+)/i);
+					var matches = vidUrl.match(/^http:\/\/www\.youtube\.com\/.*[?&]v=([^&]+)/i) || vidUrl.match(/^http:\/\/youtu\.be\/([^?]+)/i);
 					if (matches) {
 						alert("Match Found");
 						vidUrl = matches[1];
