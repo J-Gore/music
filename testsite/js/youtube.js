@@ -24,12 +24,12 @@ do{
 	}
 }while(exit == false);
 alert(vidNo);
-
 				var vidUrl = "";
 				for(i = 1; i < vidNo; i++){
-									currentVid = "vid_" + i + "_likes";
+					currentVid = "vid_" + i + "_likes";
 					alert("Entered For Loop");
 					vidUrl = document.getElementById("vid_" + i).getAttribute("data-youtube");
+					alert("Vid Url = " + vidUrl);
 					var matches = videoid.match(/^http:\/\/www\.youtube\.com\/.*[?&]v=([^&]+)/i) || videoid.match(/^http:\/\/youtu\.be\/([^?]+)/i);
 					if (matches) {
 						vidUrl = matches[1];
