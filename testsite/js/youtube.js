@@ -16,7 +16,7 @@ var vidId;
 var exit = false;
 do{
 	vidNo = 'vid_' + vidNo + '_likes';
-	alert(vidId)
+	alert(vidId);
 	if(document.getElementById(vidId)){
 		vidNo++;
 	}else {
