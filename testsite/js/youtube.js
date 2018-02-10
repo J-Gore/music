@@ -14,7 +14,8 @@ $.getJSON(url,
 var vidNo = 1;
 var exit = false;
 do{
-	if(document.getElementById('vid_' + vidNo + '_likes')){
+	var element = document.getElementById('vid_' + vidNo + '_likes')
+	if(element !== null){
 		vidNo++;
 	}else {
 		exit = true;
