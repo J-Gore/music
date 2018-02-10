@@ -14,12 +14,10 @@ $.getJSON(url,
 var vidNo = 1;
 var exit = false;
 do{
-	var element = document.getElementById('vid_' + vidNo + '_likes');
-	alert(element);
-	if(element === null){
-		exit = true;
-	}else {
+	if($("vid_" + vidNo + "_likes")[0]){
 		vidNo++;
+	}else {
+		exit = true;
 	}
 }while(exit == false);
 alert(vidNo);
