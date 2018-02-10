@@ -65,8 +65,5 @@ do{
 								appendElement.innerHTML = r;
 								//$("").text("Like count: " + r).appendTo(currentVid);
 							});
-							promise.fail(function(jqXHR, textStatus, errorThrown) {
-								$("<p style='color: #F00;'></p>").text(jqXHR.responseText || errorThrown).appendTo(currentVid);
-							});
 				}
 }
