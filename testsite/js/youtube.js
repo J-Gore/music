@@ -43,10 +43,12 @@ alert(vidNo);
 						part: "statistics",
 						id: vidUrl
 					}, function(data) {
+						alert("Got JSON");
 						if (data.items.length === 0) {
 							$("<p style='color: #F00;'>Video not found.</p>").appendTo(currentVid);
 							return;
 						}
+						alert("About to get r");
 						var r = data.items[0].statistics.likeCount;
 						alert(r);
 						if(r == null){
