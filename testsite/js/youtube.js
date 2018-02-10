@@ -1,5 +1,4 @@
-function GetVidData(vidUrl,vidNo){
-alert("Running code");
+function GetVidData(vidNo){
 var currentVid = "";
 				var appendElement;
 				alert("Entering Function");
