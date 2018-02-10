@@ -32,11 +32,13 @@ do{
 									})
 									promise.then(function(resolve) {
 								var r = resolve.items[0].statistics.likeCount;
+
 								if(r == null) r = 34;
+								alert("R = " + r);
 return r;
 							});
 							promise.then(function(r){
-alert("got r: " + r);
+//alert("got r: " + r);
 
 								//$("<li></li>").text("View count: " + data.items[0].statistics.viewCount).appendTo("#video-data-2");
 								appendElement.innerHTML = r;
