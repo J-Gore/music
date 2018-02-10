@@ -46,12 +46,12 @@ do{
 										},data);
 										resolve(data);
 									})
-									promise.done(function(data) {
-								if (data.items.length === 0) {
+									promise.then(function(resolve) {
+								if (resolve.items.length === 0) {
 									$("<p style='color: #F00;'>Video not found.</p>").appendTo(currentVid);
 									return;
 								}
-								var r = data.items[0].statistics.likeCount;
+								var r = resolve.items[0].statistics.likeCount;
 								if(r == null){
 									r = 34;
 								}
