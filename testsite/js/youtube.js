@@ -38,14 +38,14 @@ var currentVid = "";
 
 								//var r = jsonData.items[0].statistics.likeCount;
 								var r = jsonData["likeCount"];
-								alert(r);
+
 								if(r == null) r = 34;
 
-								appendElement.innerHTML = r;
+
 								return r;
 							});
 							promise2.then(function(r){
-
+appendElement.innerHTML = r;
 
 								//$("<li></li>").text("View count: " + data.items[0].statistics.viewCount).appendTo("#video-data-2");
 
