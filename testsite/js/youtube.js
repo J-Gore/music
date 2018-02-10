@@ -11,7 +11,9 @@ do{
 				var vidUrl = "";
 				var appendElement;
 				var w = 1;
+				alert("Entering Function");
 				function loop(w) {
+					alert("Entered Function");
 					if(w < vidNo){
 								currentVid = "vid_" + w + "_likes";
 								appendElement = document.getElementById(currentVid);
