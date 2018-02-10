@@ -16,8 +16,10 @@ var exit = false;
 var currentVid = "";
 do{
 	currentVid = "vid_" + vidNo + "_likes";
-	var getElement = document.getElementById(currentVid);
+	var getElement = document.getElementById("vid_1_likes");
 	if(getElement != null){
+		alert("Found");
+		exit = true;
 		vidNo++;
 	}else {
 		exit = true;
