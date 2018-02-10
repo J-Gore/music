@@ -23,9 +23,9 @@ do{
 		exit = true;
 	}
 }while(exit == false);
-alert(vidNo);
 				$("#video-data-1, #video-data-2").empty();
 				var dfrd2 = $.Deferred();
+				alert(vidNo);
 				var matches = videoid.match(/^http:\/\/www\.youtube\.com\/.*[?&]v=([^&]+)/i) || videoid.match(/^http:\/\/youtu\.be\/([^?]+)/i);
 				if (matches) {
 					vidUrl = matches[1];
