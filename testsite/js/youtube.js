@@ -35,16 +35,16 @@ var currentVid = "";
 									});
 									promise2.then(function(resolve){
 										var jsonData = JSON.stringify(resolve);
-										alert(jsonData);
+										
 								//var r = jsonData.items[0].statistics.likeCount;
 								var r = jsonData["likeCount"];
 								if(r == null) r = 34;
-								alert("R = " + r);
+
 								appendElement.innerHTML = r;
 								return r;
 							});
 							promise2.then(function(r){
-              alert("got r: " + r);
+
 
 								//$("<li></li>").text("View count: " + data.items[0].statistics.viewCount).appendTo("#video-data-2");
 
