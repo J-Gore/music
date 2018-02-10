@@ -12,7 +12,7 @@ do{
 				var appendElement;
 				var w = 1;
 				alert("Entering Function");
-				loop();
+				loop(w,vidNo,appendElement,currentVid,vidUrl);
 }
 function loop(w,vidNo,appendElement,currentVid,vidUrl) {
 	alert("Entered Function");
