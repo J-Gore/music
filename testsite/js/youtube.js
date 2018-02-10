@@ -1,16 +1,16 @@
-function GetVidData(){
+function GetVidData(w){
 var vidNo = 1;
 var exit = false;
 var currentVid = "";
-do{
+/*do{
 	currentVid = "vid_" + vidNo + "_likes";
 	var getElement = document.getElementById(currentVid);
 	if(getElement != null) vidNo++;
 	else exit = true;
-}while(exit == false);
+}while(exit == false);*/
 				var vidUrl = "";
 				var appendElement;
-				for(w = 1; w < vidNo; w++){
+				//for(w = 1; w < vidNo; w++){
 					alert("Trying");
 						currentVid = "vid_" + w + "_likes";
 						appendElement = document.getElementById(currentVid);
@@ -32,13 +32,10 @@ do{
 										});
 									});
 									promise.then(function(resolve) {
-										alert("First then. " + resolve);
 										return resolve;
 									});
 									promise.then(function(resolve){
-									alert("Second then. " + resolve);
 									var someData = JSON.stringify(resolve);
-									alert(someData);
 								//var r = resolve.items[0].statistics.likeCount;
 								var r = resolve["likeCount"];
 
@@ -53,5 +50,5 @@ do{
 								appendElement.innerHTML = r;
 								//$("").text("Like count: " + r).appendTo(currentVid);
 							});
-				}
+				//}
 }
