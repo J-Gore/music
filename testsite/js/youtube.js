@@ -20,7 +20,7 @@ do{
 	}else {
 		exit = true;
 	}
-}while(exit == false)
+}while(exit == false);
 alert(vidNo);
 				$("#video-data-1, #video-data-2").empty();
 				var dfrd2 = $.Deferred();
