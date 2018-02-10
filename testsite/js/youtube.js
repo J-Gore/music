@@ -49,7 +49,8 @@ do{
 							r = 34;
 						}
 						//$("<li></li>").text("View count: " + data.items[0].statistics.viewCount).appendTo("#video-data-2");
-						$("<li></li>").text("Like count: " + r).appendTo(currentVid);
+						$("").text("Like count: " + r).appendTo(currentVid);
+						alert("Appended Likes");
 					}).fail(function(jqXHR, textStatus, errorThrown) {
 						$("<p style='color: #F00;'></p>").text(jqXHR.responseText || errorThrown).appendTo(currentVid);
 					});
