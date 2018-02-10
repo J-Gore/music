@@ -16,7 +16,8 @@ var exit = false;
 var currentVid = "";
 do{
 	currentVid = "#vid_" + vidNo + "_likes";
-	if($(currentVid).length > 0){
+	var getElement = document.getElementById(currentVid);
+	if(getElement != null){
 		vidNo++;
 	}else {
 		exit = true;
