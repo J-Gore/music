@@ -4,7 +4,6 @@ var exit = false;
 var currentVid = "";
 				var vidUrl = "";
 				var appendElement;
-				//for(w = 1; w < vidNo; w++){
 						currentVid = "vid_" + w + "_likes";
 						appendElement = document.getElementById(currentVid);
 						vidUrl = document.getElementById("vid_" + w).getAttribute("data-youtube");
@@ -23,7 +22,6 @@ var currentVid = "";
 											if(r == null) r = 34;
 											appendElement.innerHTML = r;
 										});
-				//}
 }
 function GetNoVids(){
 	var vidNo = 1;
