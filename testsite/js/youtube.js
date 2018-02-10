@@ -52,10 +52,11 @@ do{
 						}
 						//$("<li></li>").text("View count: " + data.items[0].statistics.viewCount).appendTo("#video-data-2");
 						appendElement.innerHTML = r;
+						alert(appendElement.getAttribute("id"));
 						//$("").text("Like count: " + r).appendTo(currentVid);
-						alert("Appended Likes");
 					}).fail(function(jqXHR, textStatus, errorThrown) {
 						$("<p style='color: #F00;'></p>").text(jqXHR.responseText || errorThrown).appendTo(currentVid);
 					});
 				}
+				alert("Code Finished");
 }
