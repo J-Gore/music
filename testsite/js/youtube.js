@@ -32,10 +32,12 @@ alert(vidNo);
 					alert("Vid Url = " + vidUrl);
 					var matches = videoid.match(/^http:\/\/www\.youtube\.com\/.*[?&]v=([^&]+)/i) || videoid.match(/^http:\/\/youtu\.be\/([^?]+)/i);
 					if (matches) {
+						alert("Match Found");
 						vidUrl = matches[1];
 					}
 					if (videoid.match(/^[a-z0-9_-]{11}$/i) === null) {
 						$("<p style='color: #F00;'>Unable to parse Video ID/URL.</p>").appendTo(currentVid);
+						alert("Getting JSON");
 						return;
 					}
 					$.getJSON("https://www.googleapis.com/youtube/v3/videos", {
