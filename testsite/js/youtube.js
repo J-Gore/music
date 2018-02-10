@@ -52,7 +52,7 @@ do{
 								resolve(data.items[0].statistics.likeCount);
 							}else{
 								reject(34);
-							}
+							};
 
 						})
 						//if(r == null){
