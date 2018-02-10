@@ -11,6 +11,16 @@ $.getJSON(url,
         alert(likes);
         alert("made it passed code " + likes + "..." + response);
 });*/
+var vidNo = 1;
+var exit = false;
+do{
+	if(document.getElementById('vid_' + vidNo + '_likes')){
+		vidNo++;
+	}else {
+		exit = true;
+	}
+}while(exit == false)
+alert(vidNo);
 				$("#video-data-1, #video-data-2").empty();
 				var dfrd2 = $.Deferred();
 				var matches = videoid.match(/^http:\/\/www\.youtube\.com\/.*[?&]v=([^&]+)/i) || videoid.match(/^http:\/\/youtu\.be\/([^?]+)/i);
@@ -23,7 +33,7 @@ $.getJSON(url,
 				}
 				$.getJSON("https://www.googleapis.com/youtube/v3/videos", {
 					key: "AIzaSyD6XBI5r8UWTPCtF00EwJOb5ZlxunvxYTw",
-					part: "snippet,statistics",
+					part: "statistics",
 					id: vidUrl
 				}, function(data) {
 					if (data.items.length === 0) {
