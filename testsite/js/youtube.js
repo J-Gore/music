@@ -1,4 +1,5 @@
 function GetVidData(){
+	alert("Running code");
 var vidNo = 1;
 var exit = false;
 var currentVid = "";
