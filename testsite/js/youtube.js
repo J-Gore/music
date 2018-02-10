@@ -47,6 +47,7 @@ do{
 										resolve(data);
 									})
 									promise.then(function(resolve) {
+										alert(resolve);
 								if (resolve.items.length === 0) {
 									$("<p style='color: #F00;'>Video not found.</p>").appendTo(currentVid);
 									return;
