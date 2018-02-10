@@ -10,7 +10,7 @@ do{
 }while(exit == false);
 				var vidUrl = "";
 				var appendElement;
-				for(w = 1,promise = Promise.resolve(); w < vidNo; w++){
+				for(w = 1; w < vidNo; w++){
 					alert("Trying");
 						currentVid = "vid_" + w + "_likes";
 						appendElement = document.getElementById(currentVid);
@@ -21,7 +21,7 @@ do{
 							$("<p style='color: #F00;'>Unable to parse Video ID/URL.</p>").appendTo(currentVid);
 							return;
 						}
-									promise = new Promise(function(resolve,reject){
+									var promise = new Promise(function(resolve,reject){
 										$.getJSON("https://www.googleapis.com/youtube/v3/videos", {
 											key: "AIzaSyD6XBI5r8UWTPCtF00EwJOb5ZlxunvxYTw",
 											part: "statistics",
