@@ -38,10 +38,10 @@ do{
 									promise.then(function(resolve){
 									alert("Second then. " + resolve);
 
-								var r = resolve.items[0].statistics.likeCount;
+								var r = JSON.stringify(resolve.items[0].statistics.likeCount);
 
 								if(r == null) r = 34;
-								alert("R = " + r.toString());
+								alert("R = " + r);
 								return r;
 							});
 							promise.then(function(r){
