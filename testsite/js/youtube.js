@@ -16,8 +16,7 @@ var exit = false;
 var currentVid = "";
 do{
 	currentVid = "#vid_" + vidNo + "_likes";
-	alert(currentVid);
-	if($(currentVid)[0]){
+	if($(currentVid).length > 0){
 		vidNo++;
 	}else {
 		exit = true;
