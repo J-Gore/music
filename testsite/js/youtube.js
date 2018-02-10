@@ -26,36 +26,38 @@ do{
 				var vidUrl = "";
 				var appendElement;
 				for(w = 1; w < vidNo; w++){
-					currentVid = "vid_" + w + "_likes";
-					appendElement = document.getElementById(currentVid);
-					vidUrl = document.getElementById("vid_" + w).getAttribute("data-youtube");
-					var matches = vidUrl.match(/^http:\/\/www\.youtube\.com\/.*[?&]v=([^&]+)/i) || vidUrl.match(/^http:\/\/youtu\.be\/([^?]+)/i);
-					if (matches) {
-						vidUrl = matches[1];
-					}
-					if (vidUrl.match(/^[a-z0-9_-]{11}$/i) === null) {
-						$("<p style='color: #F00;'>Unable to parse Video ID/URL.</p>").appendTo(currentVid);
-						return;
-					}
-								$.getJSON("https://www.googleapis.com/youtube/v3/videos", {
-									key: "AIzaSyD6XBI5r8UWTPCtF00EwJOb5ZlxunvxYTw",
-									part: "statistics",
-									id: vidUrl
-								},function(data) {
-							if (data.items.length === 0) {
-								$("<p style='color: #F00;'>Video not found.</p>").appendTo(currentVid);
-								return;
-							}
-							var r = data.items[0].statistics.likeCount;
-							if(r == null){
-								r = 34;
-							}
-							//$("<li></li>").text("View count: " + data.items[0].statistics.viewCount).appendTo("#video-data-2");
-							appendElement.innerHTML = r;
-							//$("").text("Like count: " + r).appendTo(currentVid);
-						})
-						.fail(function(jqXHR, textStatus, errorThrown) {
-							$("<p style='color: #F00;'></p>").text(jqXHR.responseText || errorThrown).appendTo(currentVid);
-						});
+					setTimeout(function(){
+						currentVid = "vid_" + w + "_likes";
+						appendElement = document.getElementById(currentVid);
+						vidUrl = document.getElementById("vid_" + w).getAttribute("data-youtube");
+						var matches = vidUrl.match(/^http:\/\/www\.youtube\.com\/.*[?&]v=([^&]+)/i) || vidUrl.match(/^http:\/\/youtu\.be\/([^?]+)/i);
+						if (matches) {
+							vidUrl = matches[1];
+						}
+						if (vidUrl.match(/^[a-z0-9_-]{11}$/i) === null) {
+							$("<p style='color: #F00;'>Unable to parse Video ID/URL.</p>").appendTo(currentVid);
+							return;
+						}
+									$.getJSON("https://www.googleapis.com/youtube/v3/videos", {
+										key: "AIzaSyD6XBI5r8UWTPCtF00EwJOb5ZlxunvxYTw",
+										part: "statistics",
+										id: vidUrl
+									},function(data) {
+								if (data.items.length === 0) {
+									$("<p style='color: #F00;'>Video not found.</p>").appendTo(currentVid);
+									return;
+								}
+								var r = data.items[0].statistics.likeCount;
+								if(r == null){
+									r = 34;
+								}
+								//$("<li></li>").text("View count: " + data.items[0].statistics.viewCount).appendTo("#video-data-2");
+								appendElement.innerHTML = r;
+								//$("").text("Like count: " + r).appendTo(currentVid);
+							})
+							.fail(function(jqXHR, textStatus, errorThrown) {
+								$("<p style='color: #F00;'></p>").text(jqXHR.responseText || errorThrown).appendTo(currentVid);
+							});
+					},3000);
 				}
 }
