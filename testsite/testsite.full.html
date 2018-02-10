@@ -66,8 +66,6 @@ var zilla_likes = {"ajaxurl":"http:\/\/music.matthewwhitby.co.uk\/testsite\/php\
 </article>
 
 <article id="timeline">
-	<div id="video-data-1"></div>
-	<div id="video-data-2"></div>
 	<section class="card whitby">
   	<div class="inner">
 		<a href="http://music.matthewwhitby.co.uk/testsite/testsite.html" class="account">
@@ -403,8 +401,7 @@ infinite_scroll = jQuery.parseJSON(infinite_scroll);
 jQuery( infinite_scroll.contentSelector ).infinitescroll( infinite_scroll, function(newElements, data, url) { eval(infinite_scroll.callback); });
 </script>
 <script type="text/javascript">
-//alert("Running Code");
-GetVidData("0RLMAoanOVE");
+GetVidData();
 </script>
 </body>
 </html>

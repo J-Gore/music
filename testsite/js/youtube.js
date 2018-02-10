@@ -1,4 +1,4 @@
-function GetVidData(vidUrl){
+function GetVidData(){
 
   /*var url = ("https://www.googleapis.com/youtube/v3/videospart=statistics&id=" + vidUrl + "&key=AIzaSyD6XBI5r8UWTPCtF00EwJOb5ZlxunvxYTw&callback=false&part=statistics");
   url = "https://www.googleapis.com/youtube/v3/videos?key=AIzaSyD6XBI5r8UWTPCtF00EwJOb5ZlxunvxYTw&part=statistics&id=" + vidUrl;
@@ -26,14 +26,16 @@ do{
 	}
 }while(exit == false);
 				var dfrd2 = $.Deferred();
-				alert(vidNo);
+				currentVid = "vid_" + i + "_likes";
+				var vidUrl = "";
 				for(var i = 1; i < vidNo; i++){
+					vidUrl = document.getElementById("vid_" + i).getAttribute("data-youtube");
 					var matches = videoid.match(/^http:\/\/www\.youtube\.com\/.*[?&]v=([^&]+)/i) || videoid.match(/^http:\/\/youtu\.be\/([^?]+)/i);
 					if (matches) {
 						vidUrl = matches[1];
 					}
 					if (videoid.match(/^[a-z0-9_-]{11}$/i) === null) {
-						$("<p style='color: #F00;'>Unable to parse Video ID/URL.</p>").appendTo("#video-data-1");
+						$("<p style='color: #F00;'>Unable to parse Video ID/URL.</p>").appendTo(currentVid);
 						return;
 					}
 					$.getJSON("https://www.googleapis.com/youtube/v3/videos", {
@@ -42,15 +44,18 @@ do{
 						id: vidUrl
 					}, function(data) {
 						if (data.items.length === 0) {
-							$("<p style='color: #F00;'>Video not found.</p>").appendTo("#video-data-1");
+							$("<p style='color: #F00;'>Video not found.</p>").appendTo(currentVid);
 							return;
 						}
 
 						var r = data.items[0].statistics.likeCount;
-						$("<li></li>").text("View count: " + data.items[0].statistics.viewCount).appendTo("#video-data-2");
-						$("<li></li>").text("Like count: " + r).appendTo("#video-data-2");
+						if(r == null){
+							r = 34;
+						}
+						//$("<li></li>").text("View count: " + data.items[0].statistics.viewCount).appendTo("#video-data-2");
+						$("<li></li>").text("Like count: " + r).appendTo(currentVid);
 					}).fail(function(jqXHR, textStatus, errorThrown) {
-						$("<p style='color: #F00;'></p>").text(jqXHR.responseText || errorThrown).appendTo("#video-data-1");
+						$("<p style='color: #F00;'></p>").text(jqXHR.responseText || errorThrown).appendTo(currentVid);
 					});
 				}
 }
