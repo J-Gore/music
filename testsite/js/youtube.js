@@ -11,7 +11,6 @@ var currentVid = "";
 				var vidUrl = "";
 				var appendElement;
 				//for(w = 1; w < vidNo; w++){
-					alert("Trying");
 						currentVid = "vid_" + w + "_likes";
 						appendElement = document.getElementById(currentVid);
 						vidUrl = document.getElementById("vid_" + w).getAttribute("data-youtube");
@@ -31,10 +30,10 @@ var currentVid = "";
 											else reject("JSON Retrieval Error");
 										});
 									});
-									promise.then(function(resolve) {
+									let promise2 = promise.then(function(resolve){
 										return resolve;
 									});
-									promise.then(function(resolve){
+									promise2.then(function(resolve){
 										var jsonData = JSON.parse(resolve);
 								var r = jsonData.items[0].statistics.likeCount;
 								//var r = resolve["likeCount"];
