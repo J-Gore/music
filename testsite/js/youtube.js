@@ -46,15 +46,14 @@ do{
 							$("<p style='color: #F00;'>Video not found.</p>").appendTo(currentVid);
 							return;
 						}
-						var r = new Promise(function(resolve,reject){
-							if(data.items[0].statistics.likeCount != null)
-							{
-								resolve(data.items[0].statistics.likeCount);
-							}else{
-								reject(34);
-							}
+						var promise = new Promise(function(resolve,reject){
+							resolve(data.items[0].statistics.likeCount);
+							});
+							promise.then(function(response){
+								var r = data.items[0].statistics.likeCount;
+							})
 
-						});
+
 						//if(r == null){
 						//	r = 34;
 						//}
