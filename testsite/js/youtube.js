@@ -45,7 +45,7 @@ do{
 								return r;
 							});
 							promise.then(function(r){
-//alert("got r: " + r);
+              alert("got r: " + r);
 
 								//$("<li></li>").text("View count: " + data.items[0].statistics.viewCount).appendTo("#video-data-2");
 								appendElement.innerHTML = r;
