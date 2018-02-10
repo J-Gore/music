@@ -38,11 +38,14 @@ do{
 							$("<p style='color: #F00;'>Unable to parse Video ID/URL.</p>").appendTo(currentVid);
 							return;
 						}
-									var promise = $.getJSON("https://www.googleapis.com/youtube/v3/videos", {
-										key: "AIzaSyD6XBI5r8UWTPCtF00EwJOb5ZlxunvxYTw",
-										part: "statistics",
-										id: vidUrl
-									},data);
+									var promise = new Promise(function (resolve){
+										$.getJSON("https://www.googleapis.com/youtube/v3/videos", {
+											key: "AIzaSyD6XBI5r8UWTPCtF00EwJOb5ZlxunvxYTw",
+											part: "statistics",
+											id: vidUrl
+										},data);
+										resolve(data);
+									})
 									promise.done(function(data) {
 								if (data.items.length === 0) {
 									$("<p style='color: #F00;'>Video not found.</p>").appendTo(currentVid);
