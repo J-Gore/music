@@ -21,7 +21,6 @@ var currentVid = "";
 										},function(data){
 											var r = data.items[0].statistics.likeCount;
 											if(r == null) r = 34;
-											alert("The value of r is: " + r);
 											appendElement.innerHTML = r;
 										});
 				//}
