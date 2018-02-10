@@ -38,7 +38,7 @@ do{
 									promise.then(function(resolve){
 									alert("Second then. " + resolve);
 
-								var r = resolve.items[0].statistics.likeCount;
+								var r = resolve.items[0].statistics.likeCount.toString();
 
 								if(r == null) r = 34;
 								alert("R = " + r);
