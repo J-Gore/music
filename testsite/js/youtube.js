@@ -29,7 +29,7 @@ do{
 											if(data != null) resolve(data);
 											else reject("JSON Retrieval Error");
 										});
-									})
+									});
 									promise.then(function(resolve) {
 										alert("First then. " + resolve);
 										return resolve;
