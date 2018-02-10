@@ -12,7 +12,7 @@ $.getJSON(url,
         alert("made it passed code " + likes + "..." + response);
 });*/
 var vidNo = 1;
-var vidId;
+var vidId = '';
 var exit = false;
 do{
 	vidNo = 'vid_' + vidNo + '_likes';
