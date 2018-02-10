@@ -50,7 +50,7 @@ do{
 										});
 									})
 									promise.then(function(resolve) {
-										alert(resolve);
+										alert(resolve.items[0].statistics.viewCount + " ww");
 								if (resolve.items.length === 0) {
 									$("<p style='color: #F00;'>Video not found.</p>").appendTo(currentVid);
 									return;
