@@ -28,14 +28,14 @@ var currentVid = "";
 											if(data != null) resolve(data);
 											else reject("JSON Retrieval Error");
 										});
-									
+
 									let promise2 = promise.then(function(resolve){
 										return resolve;
 									});
 									promise2.then(function(resolve){
 										var jsonData = JSON.stringify(resolve);
 
-								var r = jsonData.items[0].statistics.likeCount;
+								var r = jsonData.items[0].statistics['likeCount'];
 								//var r = jsonData["likeCount"];
 
 								if(r == null) r = 34;
