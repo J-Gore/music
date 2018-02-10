@@ -42,7 +42,8 @@ do{
 										key: "AIzaSyD6XBI5r8UWTPCtF00EwJOb5ZlxunvxYTw",
 										part: "statistics",
 										id: vidUrl
-									},function(data) {
+									},data);
+									.then(function(data) {
 								if (data.items.length === 0) {
 									$("<p style='color: #F00;'>Video not found.</p>").appendTo(currentVid);
 									return;
