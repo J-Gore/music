@@ -44,7 +44,7 @@ do{
 											part: "statistics",
 											id: vidUrl
 										},function(data){
-											alert(data);
+											alert(data.items[0].statistics.viewCount);
 											if(data != null) resolve(data);
 											else reject("JSON Retrieval Error");
 										});
