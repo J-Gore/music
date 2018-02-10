@@ -14,8 +14,6 @@ $.getJSON(url,
 var vidNo = 1;
 var exit = false;
 var currentVid = "";
-var info = document.getElementById("vid_2").getAttribute("data-youtube");
-alert(info);
 do{
 	currentVid = "vid_" + vidNo + "_likes";
 	var getElement = document.getElementById(currentVid);
@@ -25,7 +23,6 @@ do{
 		exit = true;
 	}
 }while(exit == false);
-				var dfrd2 = $.Deferred();
 				currentVid = "vid_" + i + "_likes";
 				var vidUrl = "";
 				for(var i = 1; i < vidNo; i++){
