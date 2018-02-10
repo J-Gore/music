@@ -27,7 +27,6 @@
 <script src="/testsite/js/cover.min.js"></script>
 <script src="/testsite/js/timeline.min.js"></script>
 <script src="/testsite/js/youtube.js"></script>
-<script src="https://apis.google.com/js/api.js"></script>
 <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>-->
 
 <link rel="stylesheet" href="/testsite/css/common.min.css" type="text/css" media="all">
@@ -437,8 +436,8 @@ var infinite_scroll = "{\"loading\":{\"msgText\":\"<img alt=\\\"\\\" src=\\\"htt
 infinite_scroll = jQuery.parseJSON(infinite_scroll);
 jQuery( infinite_scroll.contentSelector ).infinitescroll( infinite_scroll, function(newElements, data, url) { eval(infinite_scroll.callback); });
 </script>
-<!--<script type="text/javascript">
-GetVidData();
-</script>-->
+<script type="text/javascript">
+for(i = 1;i < GetNoVids;i++) GetVidData(i);
+</script>
 </body>
 </html>

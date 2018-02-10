@@ -25,3 +25,15 @@ var currentVid = "";
 										});
 				//}
 }
+function GetNoVids(){
+	var vidNo = 1;
+	var exit = false;
+	var currentVid = "";
+	do{
+		currentVid = "vid_" + vidNo + "_likes";
+		var getElement = document.getElementById(currentVid);
+		if(getElement != null) vidNo++;
+		else exit = true;
+	}while(exit == false);
+	return vidNo;
+}
