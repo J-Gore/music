@@ -822,7 +822,6 @@ footer {
 
 main {
   position: absolute;
-  z-index: -1;
   width: 100%;
   overflow: hidden;
   background-image: url('/testsite/css/img/pc_bg.png'); }
@@ -830,6 +829,7 @@ main {
     main {
       padding-right: 300px; } }
   main .contents {
+    z-index: -1;
     width: 750px;
     margin: 0 auto;
     background-color: #fff; }
