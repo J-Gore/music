@@ -6,6 +6,7 @@
     opacity: 1; } }
      .subscribe_button{
        margin-top: -50px;
+       margin-bottom: -38px;
        z-index: 0;
       position: relative;
       width: 149px;
