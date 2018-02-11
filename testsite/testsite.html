@@ -13,12 +13,6 @@
 <meta property="og:image" content="/testsite/css/img/whitby_profile.png">
 <meta property="og:type" content="article"/>
 
-<!--<meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:url" content="http://music.matthewwhitby.co.uk/testsite/testsite.html"/>
-<meta name="twitter:title" content="Whitbyfish"/>
-<meta name="twitter:image:src" content="/testsite/css/img/whitby_profile.png"/>
-<meta name="twitter:site" content="Whitbyfish"/>-->
-
 <link rel="shortcut icon" href="/testsite/css/img/whitby_icon.ico">
 
 <script src="//code.jquery.com/jquery-1.12.4.min.js"></script>
@@ -47,6 +41,8 @@ var zilla_likes = {"ajaxurl":"http:\/\/music.matthewwhitby.co.uk\/testsite\/php\
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WS5JBZ" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 
+<div class="subscribe"></div>
+
 <main>
 <div class="contents">
 
@@ -72,7 +68,7 @@ var zilla_likes = {"ajaxurl":"http:\/\/music.matthewwhitby.co.uk\/testsite\/php\
 			<em>Timeline</em>
 		</a>
 <div class="movie" data-youtube="0RLMAoanOVE" id="vid_1">
-	<img data-src="/testsite/css/img/atarashi.png" alt="" />
+	<img data-src="/testsite/css/img/kakushinteki.png" alt="" />
 	<div class="play" onClick="ga('send', 'event', 'Youtube', 'click', '1466_fukuhara_0RLMAoanOVE', '1');"></div>
 </div>
 <div class="status">
@@ -400,7 +396,7 @@ infinite_scroll = jQuery.parseJSON(infinite_scroll);
 jQuery( infinite_scroll.contentSelector ).infinitescroll( infinite_scroll, function(newElements, data, url) { eval(infinite_scroll.callback); });
 </script>
 <script type="text/javascript">
-for(i = 1;i < GetNoVids();i++) window.onload = GetVidData(i);
+GetVidData();
 </script>
 </body>
 </html>
