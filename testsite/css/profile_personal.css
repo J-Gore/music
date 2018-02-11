@@ -4,6 +4,9 @@
     opacity: 0.6; }
   100% {
     opacity: 1; } }
+    div .subscribe{
+      
+    }
 article#timeline .banner {
   height: 730px;
   margin-bottom: 30px; }
