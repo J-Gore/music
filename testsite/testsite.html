@@ -48,7 +48,7 @@ var zilla_likes = {"ajaxurl":"http:\/\/music.matthewwhitby.co.uk\/testsite\/php\
 		    var element = $('.subscribe_button'),
 		        originalY = element.offset().top;
 		    // Space between element and top of screen (when scrolling)
-		    var topMargin = (screen.height/2) - 50;
+		    var topMargin = (screen.height/2) - (screen.height/10);
 		    $(window).on('scroll', function(event) {
 		        var scrollTop = $(window).scrollTop();
 		        element.stop(false, false).animate({
