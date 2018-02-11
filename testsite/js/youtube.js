@@ -13,12 +13,14 @@ function GetYoutubeData(w){
 	}
 	$.getJSON("https://www.googleapis.com/youtube/v3/videos", {
 		key: "AIzaSyD6XBI5r8UWTPCtF00EwJOb5ZlxunvxYTw",
-		part: "statistics",
+		part: "statistics,snippet",
 		id: vidUrl
 	},function(data){
 		var r = data.items[0].statistics.likeCount;
+		var p = data.items[0].snippet.thumbnails.maxres.url;
 		if(r == null) r = 34;
 		appendElement.innerHTML = r;
+
 	});
 }
 function GetChannelStats(){
@@ -31,8 +33,8 @@ function GetChannelStats(){
 		var r = data.items[0].statistics.subscriberCount;
 		appendElement.innerHTML += " " + r;
 		var y = data.items[0].statistics.viewCount;
-		var appendElement2 = document.getElementById("total_views");
-		appendElement2.innerHTML += " Total Channel Views: " + y + "!";
+		var appendElement = document.getElementById("total_views");
+		appendElement.innerHTML += " Total Channel Views: " + y + "!";
 	});
 }
 function GetNoVids(){
