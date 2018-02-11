@@ -29,6 +29,7 @@ function GetSubscriberCount(){
 		id: "UCNGt4x8CYzKLCUGlfe-TQkg"
 	},function(data){
 		var r = data.items[0].statistics.subscriberCount;
+		alert(r);
 		appendElement.innerHTML += " " + r;
 	});
 }
