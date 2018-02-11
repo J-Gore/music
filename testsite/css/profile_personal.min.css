@@ -5,7 +5,7 @@
   100% {
     opacity: 1; } }
      .subscribe_button{
-       position: relative;
+       position: fixed;
       width: 149px;
       height: 38px;
       border-radius: 20px;
