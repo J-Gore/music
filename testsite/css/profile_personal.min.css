@@ -13,7 +13,7 @@
       left:100%;
       border-color: black;
       border-width: 2px;
-      background: radial-gradient(#00f9ff, #00c0c5);
+      background: radial-gradient(#00f9ff 70%, #00c0c5 30%);
       font-weight: bold;
       font-size: 15px;
       text-transform: capitalize;
