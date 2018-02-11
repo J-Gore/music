@@ -16,8 +16,8 @@
       border-width: 2px;
       background-color: #00FFFF;
       font-weight: bold;
-      text-shadow: 1px 1px #808080;
-      box-shadow: 2px 2px #808080;
+      text-shadow: 0.5px 0.5px #808080;
+      box-shadow: 1px 1px #808080;
     }
 article#timeline .banner {
   height: 730px;
