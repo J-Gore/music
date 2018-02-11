@@ -6,6 +6,8 @@
     opacity: 1; } }
     div .subscribe_button{
       position: relative;
+      width: 393px;
+      height: 110px;
     }
 article#timeline .banner {
   height: 730px;
