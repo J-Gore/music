@@ -475,6 +475,8 @@ main {
     main {
       padding-right: 300px; } }
   main .contents {
+    margin-top: -10px;
+    padding-top: -10px;
     z-index: 1;
     width: 750px;
     margin: 0 auto;
