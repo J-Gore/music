@@ -33,7 +33,7 @@ function GetChannelStats(){
 		var r = data.items[0].statistics.subscriberCount;
 		appendElement.innerHTML += " " + r;
 		var y = data.items[0].statistics.viewCount;
-		var appendElement = document.getElementById("total_views");
+		appendElement = document.getElementById("total_views");
 		appendElement.innerHTML += " Total Channel Views: " + y + "!";
 	});
 }
