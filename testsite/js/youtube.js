@@ -21,7 +21,7 @@ function GetYoutubeData(w){
 		appendElement.innerHTML = r;
 	});
 }
-function GetSubscriberCount(){
+function GetChannelStats(){
 	var appendElement = document.getElementById("subscribe_button");
 	$.getJSON("https://www.googleapis.com/youtube/v3/channels", {
 		key: "AIzaSyD6XBI5r8UWTPCtF00EwJOb5ZlxunvxYTw",
@@ -30,6 +30,9 @@ function GetSubscriberCount(){
 	},function(data){
 		var r = data.items[0].statistics.subscriberCount;
 		appendElement.innerHTML += " " + r;
+		var y = data,items[0].statistics.viewCount;
+		appendElement = document.getElementById("total_views");
+		appendElement.innerHTML += "Total Channel Views = " + y + "!";
 	});
 }
 function GetNoVids(){

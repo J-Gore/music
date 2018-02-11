@@ -59,6 +59,7 @@ var zilla_likes = {"ajaxurl":"http:\/\/music.matthewwhitby.co.uk\/testsite\/php\
 		</a>
 		<div class="bio">
 			A super cool boi.
+			<span id="total_views"></span>
 		</div>
 </article>
 
@@ -401,7 +402,7 @@ jQuery( infinite_scroll.contentSelector ).infinitescroll( infinite_scroll, funct
 </script>
 <script type="text/javascript">
 for(i=1;i<GetNoVids();i++) window.onload = GetYoutubeData(i);
-GetSubscriberCount();
+GetChannelStats();
 </script>
 </body>
 </html>
