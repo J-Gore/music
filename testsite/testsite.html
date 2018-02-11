@@ -398,7 +398,7 @@ infinite_scroll = jQuery.parseJSON(infinite_scroll);
 jQuery( infinite_scroll.contentSelector ).infinitescroll( infinite_scroll, function(newElements, data, url) { eval(infinite_scroll.callback); });
 </script>
 <script type="text/javascript">
-GetVidData();
+for(i=1;i<GetNoVids();i++) window.onload = GetVidData(i);
 </script>
 </body>
 </html>
