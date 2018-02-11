@@ -11,10 +11,9 @@
       height: 38px;
       border-radius: 20px;
       left:100%;
-      top:50%;
       border-color: black;
       border-width: 2px;
-      background-color: #00FFFF;
+      background: radial-gradient(#9efafd, #56e2e5);
       font-weight: bold;
       font-size: 15px;
       text-transform: capitalize;
