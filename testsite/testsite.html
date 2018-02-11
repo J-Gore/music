@@ -55,8 +55,19 @@ var zilla_likes = {"ajaxurl":"http:\/\/music.matthewwhitby.co.uk\/testsite\/php\
 		            top: scrollTop < originalY
 		                    ? 0
 		                    : scrollTop - originalY + topMargin
-		        }, 300);
+		        }, {duration:200,queue: false});
+						$(window).on('scroll',function(event) {
+							$({deg:0}).animate({deg:360},{
+								duration: 200,
+								step:function(now){
+									element.css({
+										transform: 'rotate(' + now + 'deg)'
+									});
+								}
+							});
+						})
 		    });
+				$window.on()
 		})(jQuery);
 		</script>
 <div class="contents">
