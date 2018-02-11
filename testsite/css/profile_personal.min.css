@@ -4,6 +4,9 @@
     opacity: 0.6; }
   100% {
     opacity: 1; } }
+    main{
+      position:absolute;
+    }
      .subscribe_button{
       position: relative;
       width: 149px;
