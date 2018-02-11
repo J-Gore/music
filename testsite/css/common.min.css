@@ -479,7 +479,6 @@ main {
     width: 750px;
     margin: 0 auto;
     margin-top: -100px;
-    padding-top: -100px;
     background-color: #fff; }
     @media screen and (min-width: 768px) {
       main .contents {
