@@ -829,7 +829,7 @@ main {
     main {
       padding-right: 300px; } }
   main .contents {
-    z-index: -1;
+    top: 0;
     width: 750px;
     margin: 0 auto;
     background-color: #fff; }
