@@ -6,8 +6,9 @@
     opacity: 1; } }
     div .subscribe_button{
       position: relative;
-      width: 393px;
-      height: 110px;
+      width: 149px;
+      height: 38px;
+      border-radius: 2px;
     }
 article#timeline .banner {
   height: 730px;
