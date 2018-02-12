@@ -3,6 +3,8 @@
         originalY = element.offset().top;
     // Space between element and top of screen (when scrolling)
     var topMargin = (screen.height/2) - (screen.height/9);
+    var screenright = screen.width - (screen.width/10);
+    element.style.left = screenright;
     $(window).on('scroll', function(event) {
         var scrollTop = $(window).scrollTop();
         element.stop(false, false).animate({
@@ -16,4 +18,5 @@
             queue: false,
             step:function(now){
               element.css({
-                transform: 'rotate(' + now + 'deg)'});}});})})(jQuery);
+                transform: 'rotate(' + now + 'deg)'});}});})
+              })(jQuery);
