@@ -1,6 +1,7 @@
 function GetYoutubeData(w){
 	var vidUrl="";
-	vidUrl=document.getElementById("vid_"+w).getAttribute("data-youtube");
+	currentVid=document.getElementById("vid_"+w);
+	vidUrl=currentVid.getAttribute("data-youtube");
 	var matches=vidUrl.match(/^http:\/\/www\.youtube\.com\/.*[?&]v=([^&]+)/i)||vidUrl.match(/^http:\/\/youtu\.be\/([^?]+)/i);
 	if(matches)vidUrl=matches[1];
 	if(vidUrl.match(/^[a-z0-9_-]{11}$/i)===null){
