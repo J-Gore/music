@@ -1,7 +1,7 @@
 function GetYoutubeData(w){
 	alert("Made it in");
 	var c=document.getElementById("vid_"+w);
-	var vidUrl=c.getElementsByClassName("movie").getAttribute("data-youtube");
+	var vidUrl=c.getElementsByClassName("movie")[0].getAttribute("data-youtube");
 	alert("Made it here: " + vidUrl);
 	var matches=vidUrl.match(/^http:\/\/www\.youtube\.com\/.*[?&]v=([^&]+)/i)||vidUrl.match(/^http:\/\/youtu\.be\/([^?]+)/i);
 	if(matches)vidUrl=matches[1];
@@ -13,13 +13,13 @@ function GetYoutubeData(w){
 		var r=data.items[0].statistics.likeCount;
 		var p=data.items[0].snippet.thumbnails.maxres.url;
 		if(r==null)r=34;
-		c.getElementsByClassName("zilla-likes-count").innerHTML=r;
+		c.getElementsByClassName("zilla-likes-count")[0].innerHTML=r;
 		c.getElementsByTagName("img")[0].setAttribute("data-src",p);
 		var d=data.items[0].snippet.publishedAt;
 		var x=d.substring(0,10);
 		var s=x.split('-');
 		var z=s[0]+"/"+s[1]+"/"+s[2];
-		c.getElementsByClassName("time").innerHTML=z;
+		c.getElementsByClassName("time")[0].innerHTML=z;
 
 	});
 }
