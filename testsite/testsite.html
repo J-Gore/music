@@ -385,7 +385,10 @@ jQuery( infinite_scroll.contentSelector ).infinitescroll( infinite_scroll, funct
 var e=GetNoVids();
 for(i=1;i<e;i++)window.onload=GetYoutubeData(i);
 GetChannelStats();
-document.getElementsByClassName("account").style.cursor = "pointer";
+var accounts=document.getElementsByClassName("account");
+for(i=0;i<accounts.length;i++){
+	accounts(i).style.cursor = "pointer";
+}
 </script>
 </body>
 </html>
