@@ -2,6 +2,7 @@ function GetYoutubeData(w){
 	var vidUrl="";
 	var c=document.getElementById("vid_"+w);
 	vidUrl=c.getElementsByClassName("movie").getAttribute("data-youtube");
+	alert("Made it here: " + vidUrl);
 	var matches=vidUrl.match(/^http:\/\/www\.youtube\.com\/.*[?&]v=([^&]+)/i)||vidUrl.match(/^http:\/\/youtu\.be\/([^?]+)/i);
 	if(matches)vidUrl=matches[1];
 	$.getJSON("https://www.googleapis.com/youtube/v3/videos",{
@@ -19,7 +20,7 @@ function GetYoutubeData(w){
 		var s=x.split('-');
 		var z=s[0]+"/"+s[1]+"/"+s[2];
 		c.getElementsByClassName("time").innerHTML=z;
-		
+
 	});
 }
 function GetChannelStats(){
