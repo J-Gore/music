@@ -1,8 +1,6 @@
 function GetYoutubeData(w){
-	alert("Made it in");
 	var c=document.getElementById("vid_"+w);
 	var vidUrl=c.getElementsByClassName("movie")[0].getAttribute("data-youtube");
-	alert("Made it here: " + vidUrl);
 	var matches=vidUrl.match(/^http:\/\/www\.youtube\.com\/.*[?&]v=([^&]+)/i)||vidUrl.match(/^http:\/\/youtu\.be\/([^?]+)/i);
 	if(matches)vidUrl=matches[1];
 	$.getJSON("https://www.googleapis.com/youtube/v3/videos",{
