@@ -10,7 +10,6 @@
       width: 149px;
       height: 38px;
       border-radius: 20px;
-      left:100%;
       border-color: black;
       border-width: 2px;
       background: radial-gradient(#00f9ff, #00c0c5);
@@ -408,7 +407,7 @@ article#about {
   article#about a.account {
     display: inline-block;
     height: 120px;
-    margin-left: 130px; 
+    margin-left: 130px;
   cursor: pointer;}
     article#about a.account:before {
       content: '';
