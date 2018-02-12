@@ -1,6 +1,6 @@
 $(function(){
   function e(){
-    _ua.Mobile[0]?$("head").prepend('<meta name="viewport" content="width=750">'):$("head").prepend('<meta name="viewport" content="width=1260">')
+    _ua.Mobile[0]?$("head").prepend('<meta name="viewport" content="width=750">'):$("head").prepend('<meta name="viewport" content="width=1260">') //if Mobile, set viewport width=750, else set viewport width=1260
   }
   function t(){
     m=u.scrollTop(),u.scrollTop(g),p.css({position:"fixed",top:-m})
@@ -11,13 +11,13 @@ $(function(){
   function o(e){
     e.data("src")&&(e.attr("src",e.data("src")),e.addClass("loaded"))
   }
-  function n(e,t){
-    if(t){
-      var i=$(t);
-      if(void 0!==i.offset()){
-        var o=i.offset().top+.5*i.height();
-        e.each(function(){
-          $(this).offset().top<=o&&$(this).addClass("reverse")
+  function n(motionclass,urlAnchor){
+    if(urlAnchor){ //if there is a url anchor
+      var fooUrlAnchor=$(urlAnchor); //sets variable to something to do with the url anchor
+      if(void 0!==fooUrlAnchor.offset()){ //checks if the offset is not 0
+        var distance=fooUrlAnchor.offset().top+.5*fooUrlAnchor.height(); //offset + 0.5*height
+        motionclass.each(function(){ //for each motionclass
+          $(this).offset().top<=distance&&$(this).addClass("reverse") //sets top of motionclass to value less than the distance and adds class reverse to it
         }
       )}
     }
@@ -57,14 +57,17 @@ $(function(){
       var o=e.getAttribute("id"),n=e.getAttribute("data-client"),a="https://share.sc",r=document.title,d=document.referrer||"",f=e.getAttribute("data-url")||encodeURIComponent(location.href),l=e.getAttribute("data-text")||r,c=e.getAttribute("data-hashtags")||"",h=e.getAttribute("data-referrer")||"";
       "twitter-share-button-cs"==o&&e.setAttribute("data-link",a+"/tweet/?key="+n+"&referrer="+d+"&url="+f+"&text="+l+"&hashtags="+c+"&sns=twitter"),"fb-share-button-cs"==o&&e.setAttribute("data-link",a+"/fb/?key="+n+"&referrer="+d+"&url="+f+"&text="+l+"&hashtags="+c+"&sns=facebook"),s(e.getAttribute("data-link"),t,i)
     }
-    var f=$("header .menu-btn"),l=$("header nav"),c=$("header .nav-bg"),h=$("body, html"),u=$(window),p=$("main"),b=$("#modal"),m=0,g=0;e(),n($(".motion-trigger"),location.hash),setTimeout(function(){
+    //sets f to the menu button div, sets l to the <header> <nav> element, sets c to the nav-bg div under header, sets h to the body, sets u to the window, sets p to main, sets b to unexistant element, sets m,g to 0,
+    var f=$("header .menu-btn"),l=$("header nav"),c=$("header .nav-bg"),h=$("body, html"),u=$(window),p=$("main"),b=$("#modal"),m=0,g=0;
+    //calls f(e) which sets up pc or mobile, calls f(n) which takes
+    e(),n($(".motion-trigger"),location.hash),setTimeout(function(){ //timeout set to 100ms
       u.scrollTop(u.scrollTop()+1)},100),a(location.hash),"#deletecookie"==location.hash&&b.length>0&&$.removeCookie("firstmodal"),_ua.PC?(0==b.length||$.cookie("firstmodal"))&&r(location.pathname):r(location.pathname),f.on("click",function(){
         f.toggleClass("close"),l.toggleClass("show"),l.fadeToggle(),c.fadeToggle(),f.hasClass("close")?t():i()}),$("img").one("inview",function(){
           o($(this))
         }),
-        $(".motion-trigger").one("inview",function(){
+        /*$(".motion-trigger").one("inview",function(){
           $(this).parent().addClass("inviewed")
-        }),
+        }),*/
         $("body").on("click",".sns a",function(){
           return $(this).parent().hasClass("tw")?d(this,560,450):s(this.href,560,600),!1
         }),
