@@ -43,7 +43,7 @@ function GetNoVids(){
 	var e=false;
 	var c="";
 	do{
-		c="vid_"+v+"_likes";
+		c="vid_"+v;
 		var g=document.getElementById(c);
 		if(g!=null)v++;
 		else e=true;
