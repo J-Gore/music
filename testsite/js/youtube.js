@@ -48,5 +48,6 @@ function GetNoVids(){
 		if(g!=null)v++;
 		else e=true;
 	}while(e==false);
+	alert(v);
 	return v;
 }
