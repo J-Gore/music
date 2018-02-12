@@ -123,11 +123,11 @@ article#timeline section.card {
     width: 700px;
     height: 10px;
     background-image: url('/testsite/css/img/timeline_bg.png'); }
-  article#timeline section.card a.account {
+  article#timeline section.card button.account {
     float: left;
     margin: 20px 0 20px 140px;
     height: 100px; }
-    article#timeline section.card a.account:before {
+    article#timeline section.card button.account:before {
       content: '';
       position: absolute;
       width: 100px;
@@ -140,17 +140,17 @@ article#timeline section.card {
       -o-transition: all 0.1s;
       -webkit-transition: all 0.1s;
       transition: all 0.1s; }
-    article#timeline section.card a.account .name {
+    article#timeline section.card button.account .name {
       display: block;
       margin: 15px 0 10px;
       font-size: 32px;
       font-weight: bold;
       color: #000; }
-    article#timeline section.card a.account em {
+    article#timeline section.card button.account em {
       position: relative;
       font-size: 24px;
       font-weight: normal; }
-      article#timeline section.card a.account em:after {
+      article#timeline section.card button.account em:after {
         content: '';
         position: absolute;
         top: 5px;
@@ -166,7 +166,7 @@ article#timeline section.card {
         -moz-border-radius: 2px;
         -webkit-border-radius: 2px;
         border-radius: 2px; }
-    article#timeline section.card a.account:hover:before {
+    article#timeline section.card button.account:hover:before {
       -moz-transform: scale(1.06, 1.06);
       -ms-transform: scale(1.06, 1.06);
       -webkit-transform: scale(1.06, 1.06);
