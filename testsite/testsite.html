@@ -26,13 +26,6 @@ var zilla_likes = {"ajaxurl":"http:\/\/music.matthewwhitby.co.uk\/testsite\/php\
 	<button class="subscribe_button" id="subscribe_button">SUBSCRIBE</button>
 	<script type='text/javascript'>
 	!function(e){var o=e(".subscribe_button"),n=o.offset().top,t=screen.height/2-screen.height/9;e(window).on("scroll",function(i){var r=e(window).scrollTop();o.stop(!1,!1).animate({top:r<n?0:r-n+t},{duration:1e3,queue:!1})}),e(window).on("scroll",function(n){e({deg:0}).animate({deg:360},{duration:1e3,queue:!1,step:function(e){o.css({transform:"rotate("+e+"deg)"})}})})}(jQuery);
-	$('.account').onclick(function(){
-	window.scroll({
-  top: 2500,
-  left: 0,
-  behavior: 'smooth'
-});
-});
 	</script>
 <div class="contents">
 
@@ -80,10 +73,10 @@ var zilla_likes = {"ajaxurl":"http:\/\/music.matthewwhitby.co.uk\/testsite\/php\
 
 	<section class="card whitby"id="vid_2">
   	<div class="inner">
-		<div  class="account">
+		<a href="http://music.matthewwhitby.co.uk/testsite/testsite.html" class="account">
 			<span class="name">Whitbyfish</span>
 			<em>Timeline</em>
-		</div>
+		</a>
 <div class="movie" data-youtube="aRP9l_sGdbo" >
 	<img data-src=""/>
 	<div class="play"></div>
