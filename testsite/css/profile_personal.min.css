@@ -408,7 +408,8 @@ article#about {
   article#about a.account {
     display: inline-block;
     height: 120px;
-    margin-left: 130px; }
+    margin-left: 130px; 
+  cursor: pointer;}
     article#about a.account:before {
       content: '';
       position: absolute;
