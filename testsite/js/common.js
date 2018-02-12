@@ -31,7 +31,7 @@ $(function(){
       },50)
     }
   }
-  function r(e){
+  /*function r(e){
     var t=$("#hint-naomi");
     if(t.is(":visible")&&!t.hasClass("show")){
       var i;
@@ -48,7 +48,7 @@ $(function(){
           $("#hint-naomi").addClass(i).addClass("show")
         },1e3*o)
       }
-    }
+    }*/
     function s(e,t,i){
       var o=window.screenX+(window.innerWidth-t)/2,n=window.screenY+(window.innerHeight-i)/2,a=window.open(e,"sns","width="+t+", height="+i+", left="+o+", top="+n+"  menubar=no, toolbar=no, scrollbars=yes");
       a.focus()
