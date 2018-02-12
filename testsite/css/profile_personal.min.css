@@ -99,7 +99,8 @@ article#timeline section.card {
   border: 4px solid #231815;
   padding-bottom: 45px;
   margin: 0px 0 30px 20px;
-  opacity: 0; }
+  opacity: 0;
+border-radius: 5px;}
   article#timeline section.card.inviewed {
     -moz-transition: opacity 0.5s linear 0.5s;
     -o-transition: opacity 0.5s linear 0.5s;
