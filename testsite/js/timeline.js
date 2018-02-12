@@ -1,4 +1,5 @@
 $(function(){
+  document.getElementsByClassName("account").style.cursor = "pointer";
   function LoadVideo(movie){ //recieves movie class containing youtube video
     if(0!=movie.length&&0==movie.children("iframe").length){ //checks there is elements contained within the movie div and that none of them are a youtube video already loaded in
       var vidUrl=movie.data("youtube"); //gets Url from movie div tag's youtube attribute
