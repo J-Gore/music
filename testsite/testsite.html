@@ -387,9 +387,11 @@ for(i=1;i<e;i++)window.onload=GetYoutubeData(i);
 GetChannelStats();
 var accounts=document.getElementsByClassName("account");
 alert(accounts.length);
+alert("Before: " + accounts(1).style.cursor);
 for(i=0;i<accounts.length;i++){
 	accounts(i).style.cursor = "pointer";
 }
+alert("After: " + accounts(1).style.cursor);
 </script>
 </body>
 </html>
