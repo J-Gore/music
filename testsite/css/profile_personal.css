@@ -126,7 +126,8 @@ article#timeline section.card {
   article#timeline section.card a.account {
     float: left;
     margin: 20px 0 20px 140px;
-    height: 100px; }
+    height: 100px;
+  cursor: pointer;}
     article#timeline section.card a.account:before {
       content: '';
       position: absolute;
