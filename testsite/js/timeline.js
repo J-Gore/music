@@ -16,7 +16,7 @@ $(function(){
     $(this).fadeOut(),$(this).parent().children("img").fadeOut(); //fades out the images above the video and fades in video + plays
   var videoFrame=$(this).parent().children("iframe"); //gets the parent(movie class)'s child called iframe which was generated upon being inview
   PlayVideo(videoFrame,"playVideo"),videoFrame.fadeIn(1e3) //calls play video and fades the video in
-})
+}),
 $("#timeline").on("click",".account",function(){
   window.scroll({
   top: 2500,
