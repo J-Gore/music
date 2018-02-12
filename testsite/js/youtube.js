@@ -1,6 +1,4 @@
 function GetYoutubeData(w){
-	try{
-		alert("Entered code");
 		var c=document.getElementById("vid_"+w);
 		var v=c.getElementsByClassName("movie")[0].getAttribute("data-youtube");
 		var matches=v.match(/^http:\/\/www\.youtube\.com\/.*[?&]v=([^&]+)/i)||v.match(/^http:\/\/youtu\.be\/([^?]+)/i);
@@ -21,10 +19,6 @@ function GetYoutubeData(w){
 			var z=s[0]+"/"+s[1]+"/"+s[2];
 			c.getElementsByClassName("time")[0].innerHTML=z;
 		});
-	}catch{
-		alert("Failed");
-	}
-
 }
 function GetChannelStats(){
 	$.getJSON("https://www.googleapis.com/youtube/v3/channels",{
@@ -48,6 +42,5 @@ function GetNoVids(){
 		if(g!=null)v++;
 		else e=true;
 	}while(e==false);
-	alert(v);
 	return v;
 }
