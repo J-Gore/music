@@ -1,15 +1,15 @@
 jQuery(function($) {
 
-  $('#timeline').on('click', '.zilla-likes', function() {
-    var link = $(this);
-    if (link.hasClass('active')) return false;
+  $('#timeline').on('click', '.zilla-likes', function() {//when zilla-likes is clicked
+    var link = $(this);//gets the div zilla-likes
+    if (link.hasClass('active')) return false; //if it has already been liked, exit
 
-    link.addClass('active');
+    link.addClass('active'); //else mark as liked
 
-    var id = $(this).attr('id'),
-        postfix = link.find('.zilla-likes-postfix').text();
+    var id = $(this).attr('id'),//gets attribute Id
+        postfix = link.find('.zilla-likes-postfix').text();//gets text after likes (which is blank)
 
-    $.ajax({
+    $.ajax({ //ajax to check if it has already been liked
       type: 'POST',
       url: zilla_likes.ajaxurl,
       data: {
