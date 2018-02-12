@@ -12,6 +12,7 @@
 	<script src="/testsite/js/common.min.js"></script>
 	<script src="/testsite/js/timeline.min.js"></script>
 	<script src="/testsite/js/youtube.js"></script>
+	<script src="/testsite/js/anim8.js"></script>
 
 	<link rel="stylesheet" href="/testsite/css/common.min.css" type="text/css" media="all">
 	<link rel="stylesheet" href="/testsite/css/profile_personal.min.css" type="text/css" media="all">
@@ -372,6 +373,6 @@ var infinite_scroll = "{\"loading\":{\"msgText\":\"<img alt=\\\"\\\" src=\\\"htt
 <script type='text/javascript' src='/testsite/js/jquery/jquery.infinitescroll.js?ver=2.6.1'></script>
 <script type="text/javascript">// Because the `wp_localize_script` method makes everything a string
 infinite_scroll = jQuery.parseJSON(infinite_scroll);jQuery( infinite_scroll.contentSelector ).infinitescroll( infinite_scroll, function(newElements, data, url) { eval(infinite_scroll.callback); });</script>
-<script type="text/javascript">var e=GetNoVids();for(i=1;i<e;i++)window.onload=GetYoutubeData(i);GetChannelStats();</script>
+<script type="text/javascript">var e=GetNoVids();for(i=1;i<e;i++)window.onload=GetYoutubeData(i);GetChannelStats();MoveSubscribe();</script>
 </body>
 </html>
