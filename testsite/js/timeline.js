@@ -9,8 +9,8 @@ $(function(){
     var contentFrame=videoFrame[0].contentWindow;//gets the content window of the iframe containing the video
     contentFrame.postMessage('{"event":"command","func":"'+command+'","args":""}',"*") //sends command to youtube video instructing it to begin playing
   }
-  $("#timeline").on("inview","section.card",function(i,n){ //when section card comes into view
-    contentFrame&&this==i.target&&($(this).addClass("inviewed"),LoadVideo($(this).find(".movie"))) //change class to inviewed on movie
+  $("#timeline").on("inview","section.card",function(eventTrigger,n){ //when section card comes into view
+    n&&this==eventTrigger.target&&($(this).addClass("inviewed"),LoadVideo($(this).find(".movie"))) //change class to inviewed on movie, 'this' is the section card 
   }),
   $("#timeline").on("click",".play",function(){ //when the div with the play class is clicked in the timeline...
     $(this).fadeOut(),$(this).parent().children("img").fadeOut(); //fades out the images above the video and fades in video + plays
