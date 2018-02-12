@@ -100,7 +100,7 @@ article#timeline section.card {
   padding-bottom: 45px;
   margin: 0px 0 30px 20px;
   opacity: 0;
-border-radius: 100px;}
+border-radius: 10px;}
   article#timeline section.card.inviewed {
     -moz-transition: opacity 0.5s linear 0.5s;
     -o-transition: opacity 0.5s linear 0.5s;
