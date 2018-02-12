@@ -1,12 +1,12 @@
 function GetYoutubeData(w){
 	var c=document.getElementById("vid_"+w);
-	var vidUrl=c.getElementsByClassName("movie")[0].getAttribute("data-youtube");
-	var matches=vidUrl.match(/^http:\/\/www\.youtube\.com\/.*[?&]v=([^&]+)/i)||vidUrl.match(/^http:\/\/youtu\.be\/([^?]+)/i);
-	if(matches)vidUrl=matches[1];
+	var v=c.getElementsByClassName("movie")[0].getAttribute("data-youtube");
+	var matches=v.match(/^http:\/\/www\.youtube\.com\/.*[?&]v=([^&]+)/i)||v.match(/^http:\/\/youtu\.be\/([^?]+)/i);
+	if(matches)v=matches[1];
 	$.getJSON("https://www.googleapis.com/youtube/v3/videos",{
 		key:"AIzaSyD6XBI5r8UWTPCtF00EwJOb5ZlxunvxYTw",
 		part:"statistics,snippet",
-		id:vidUrl
+		id:v
 	},function(data){
 		var r=data.items[0].statistics.likeCount;
 		var p=data.items[0].snippet.thumbnails.maxres.url;
@@ -18,7 +18,6 @@ function GetYoutubeData(w){
 		var s=x.split('-');
 		var z=s[0]+"/"+s[1]+"/"+s[2];
 		c.getElementsByClassName("time")[0].innerHTML=z;
-
 	});
 }
 function GetChannelStats(){
@@ -34,14 +33,14 @@ function GetChannelStats(){
 	});
 }
 function GetNoVids(){
-	var vidNo=1;
-	var exit=false;
-	var currentVid="";
+	var v=1;
+	var e=false;
+	var c="";
 	do{
-		currentVid="vid_"+vidNo+"_likes";
-		var getElement=document.getElementById(currentVid);
-		if(getElement!=null)vidNo++;
-		else exit=true;
-	}while(exit==false);
-	return vidNo;
+		c="vid_"+v+"_likes";
+		var g=document.getElementById(c);
+		if(g!=null)v++;
+		else e=true;
+	}while(e==false);
+	return v;
 }
