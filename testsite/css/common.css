@@ -449,20 +449,6 @@ footer {
     text-indent: 100%;
     white-space: nowrap;
     overflow: hidden; }
-  footer .copyright {
-    margin: 0 auto;
-    width: 96px;
-    height: 20px;
-    background-image: url('/testsite/css/img/web_sprites.png');
-    background-position: 0 0;
-    background-repeat: no-repeat;
-    -moz-background-size: 567px auto;
-    -o-background-size: 567px auto;
-    -webkit-background-size: 567px auto;
-    background-size: 567px auto;
-    text-indent: 100%;
-    white-space: nowrap;
-    overflow: hidden; }
 .motion-trigger {
   position: absolute;
   width: 10px; }
