@@ -1,19 +1,20 @@
 $(function(){
-  function e(e){
-    if(0!=e.length&&0==e.children("iframe").length){
-      var i=e.data("youtube");
-      e.prepend('<iframe src="https://www.youtube.com/embed/'+i+'?enablejsapi=1&rel=0" frameborder="0" allowfullscreen></iframe>')
+  function LoadVideo(movie){ //recieves movie class containing youtube video
+    if(0!=movie.length&&0==movie.children("iframe").length){ //checks there is elements contained within the movie div and that none of them are a youtube video already loaded in
+      var vidUrl=movie.data("youtube"); //gets Url from movie div tag's youtube attribute
+      movie.prepend('<iframe src="https://www.youtube.com/embed/'+vidUrl+'?enablejsapi=1&rel=0" frameborder="0" allowfullscreen></iframe>')//inserts the video into the item frame
     }
   }
-  function i(e,i){
-    var contentFrame=e[0].contentWindow;
-    contentFrame.postMessage('{"event":"command","func":"'+i+'","args":""}',"*")
+  function PlayVideo(videoFrame,command){
+    var contentFrame=videoFrame[0].contentWindow;//gets the content window of the iframe containing the video
+    contentFrame.postMessage('{"event":"command","func":"'+command+'","args":""}',"*") //sends command to youtube video instructing it to begin playing
   }
-  $("#timeline").on("inview","section.card",function(i,n){
-    contentFrame&&this==i.target&&($(this).addClass("inviewed"),e($(this).find(".movie")))
+  $("#timeline").on("inview","section.card",function(i,n){ //when section card comes into view
+    contentFrame&&this==i.target&&($(this).addClass("inviewed"),LoadVideo($(this).find(".movie"))) //change class to inviewed on movie
   }),
-  $("#timeline").on("click",".play",function(){
-    $(this).fadeOut(),$(this).parent().children("img").fadeOut();
-  var e=$(this).parent().children("iframe");i(e,"playVideo"),e.fadeIn(1e3)
+  $("#timeline").on("click",".play",function(){ //when the div with the play class is clicked in the timeline...
+    $(this).fadeOut(),$(this).parent().children("img").fadeOut(); //fades out the images above the video and fades in video + plays
+  var videoFrame=$(this).parent().children("iframe"); //gets the parent(movie class)'s child called iframe which was generated upon being inview
+  PlayVideo(videoFrame,"playVideo"),videoFrame.fadeIn(1e3) //calls play video and fades the video in
 })
 });
