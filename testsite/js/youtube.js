@@ -18,7 +18,7 @@ function GetYoutubeData(w){
 		document.getElementById("vid_" + w + "_likes").innerHTML = r;
 		document.getElementById("vid_" + w + "_img").setAttribute("data-src",p);
 		var d = data.items[0].snippet.publishedAt;
-		var x = d.substring(0,11);
+		var x = d.substring(0,10);
 		var s = x.split('-');
 		var z = s[0] + "/" + s[1] + "/" + s[2];
 		document.getElementById("vid_" + w + "_time").innerHTML = z;
