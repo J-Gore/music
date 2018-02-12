@@ -17,52 +17,41 @@ time, mark, audio, video {
   font: inherit;
   font-size: 100%;
   vertical-align: baseline; }
-
 html {
   line-height: 1; }
-
 ol, ul {
   list-style: none; }
-
 table {
   border-collapse: collapse;
   border-spacing: 0; }
-
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle; }
-
 q, blockquote {
   quotes: none; }
   q:before, q:after, blockquote:before, blockquote:after {
     content: "";
     content: none; }
-
 a img {
   border: none; }
-
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block; }
-
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   outline: 0; }
-
 body {
   font-family: sans-serif;
   font-size: 14px;
   -webkit-text-size-adjust: 100%; }
-
 a {
   text-decoration: none; }
   a[href^="tel"] {
     color: inherit;
     text-decoration: underline;
     cursor: default; }
-
 @keyframes flash {
   0% {
     opacity: 0.6; }
@@ -405,347 +394,6 @@ header nav {
           position: absolute;
           top: 182px;
           left: 50%; }
-        header nav .timeline ul a.fukuhara {
-          background-image: url(../img/common/account_fukuhara.png);
-          background-color: #ffbdd6;
-          color: #ffbdd6; }
-          header nav .timeline ul a.fukuhara:hover {
-            border-color: #ffbdd6; }
-          header nav .timeline ul a.fukuhara:after {
-            width: 158px;
-            height: 51px;
-            background-image: url('/testsite/css/img/web_sprites.png');
-            background-position: 0 -1109px;
-            background-repeat: no-repeat;
-            -moz-background-size: 567px auto;
-            -o-background-size: 567px auto;
-            -webkit-background-size: 567px auto;
-            background-size: 567px auto;
-            text-indent: 100%;
-            white-space: nowrap;
-            overflow: hidden;
-            margin-left: -79px; }
-        header nav .timeline ul a.sano {
-          background-image: url(../img/common/account_sano.png);
-          background-color: #ff0000;
-          color: #ff0000; }
-          header nav .timeline ul a.sano:hover {
-            border-color: #ff0000; }
-          header nav .timeline ul a.sano:after {
-            width: 150px;
-            height: 71px;
-            background-image: url('/testsite/css/img/web_sprites.png');
-            background-position: 0 -1586px;
-            background-repeat: no-repeat;
-            -moz-background-size: 567px auto;
-            -o-background-size: 567px auto;
-            -webkit-background-size: 567px auto;
-            background-size: 567px auto;
-            text-indent: 100%;
-            white-space: nowrap;
-            overflow: hidden;
-            margin-left: -75px; }
-        header nav .timeline ul a.ochi {
-          background-image: url(../img/common/account_ochi.png);
-          background-color: #88269d;
-          color: #88269d; }
-          header nav .timeline ul a.ochi:hover {
-            border-color: #88269d; }
-          header nav .timeline ul a.ochi:after {
-            width: 147px;
-            height: 51px;
-            background-image: url('/testsite/css/img/web_sprites.png');
-            background-position: 0 -1462px;
-            background-repeat: no-repeat;
-            -moz-background-size: 567px auto;
-            -o-background-size: 567px auto;
-            -webkit-background-size: 567px auto;
-            background-size: 567px auto;
-            text-indent: 100%;
-            white-space: nowrap;
-            overflow: hidden;
-            margin-left: -73.5px; }
-        header nav .timeline ul a.itagaki {
-          background-image: url(../img/common/account_itagaki.png);
-          background-color: #2fe2cf;
-          color: #2fe2cf; }
-          header nav .timeline ul a.itagaki:hover {
-            border-color: #2fe2cf; }
-          header nav .timeline ul a.itagaki:after {
-            width: 197px;
-            height: 71px;
-            background-image: url('/testsite/css/img/web_sprites.png');
-            background-position: 0 -1214px;
-            background-repeat: no-repeat;
-            -moz-background-size: 567px auto;
-            -o-background-size: 567px auto;
-            -webkit-background-size: 567px auto;
-            background-size: 567px auto;
-            text-indent: 100%;
-            white-space: nowrap;
-            overflow: hidden;
-            margin-left: -98.5px; }
-        header nav .timeline ul a.usa {
-          background-image: url(../img/common/account_usa.png);
-          background-color: #ffc000;
-          color: #ffc000; }
-          header nav .timeline ul a.usa:hover {
-            border-color: #ffc000; }
-          header nav .timeline ul a.usa:after {
-            width: 162px;
-            height: 51px;
-            background-image: url('/testsite/css/img/web_sprites.png');
-            background-position: 0 -1876px;
-            background-repeat: no-repeat;
-            -moz-background-size: 567px auto;
-            -o-background-size: 567px auto;
-            -webkit-background-size: 567px auto;
-            background-size: 567px auto;
-            text-indent: 100%;
-            white-space: nowrap;
-            overflow: hidden;
-            margin-left: -81px; }
-        header nav .timeline ul a.sato {
-          background-image: url(../img/common/account_sato.png);
-          background-color: #e63b7c;
-          color: #e63b7c; }
-          header nav .timeline ul a.sato:hover {
-            border-color: #e63b7c; }
-          header nav .timeline ul a.sato:after {
-            width: 218px;
-            height: 72px;
-            background-image: url('/testsite/css/img/web_sprites.png');
-            background-position: 0 -1658px;
-            background-repeat: no-repeat;
-            -moz-background-size: 567px auto;
-            -o-background-size: 567px auto;
-            -webkit-background-size: 567px auto;
-            background-size: 567px auto;
-            text-indent: 100%;
-            white-space: nowrap;
-            overflow: hidden;
-            margin-left: -109px; }
-        header nav .timeline ul a.meimero {
-          background-image: url(../img/common/account_meimero.png);
-          background-color: #ff7eaf;
-          color: #ff7eaf; }
-          header nav .timeline ul a.meimero:hover {
-            border-color: #ff7eaf; }
-          header nav .timeline ul a.meimero:after {
-            width: 151px;
-            height: 51px;
-            background-image: url('/testsite/css/img/web_sprites.png');
-            background-position: 0 -1358px;
-            background-repeat: no-repeat;
-            -moz-background-size: 567px auto;
-            -o-background-size: 567px auto;
-            -webkit-background-size: 567px auto;
-            background-size: 567px auto;
-            text-indent: 100%;
-            white-space: nowrap;
-            overflow: hidden;
-            margin-left: -75.5px; }
-        header nav .timeline ul a.dakota {
-          background-image: url(../img/common/account_dakota.png);
-          background-color: #ff4800;
-          color: #ff4800; }
-          header nav .timeline ul a.dakota:hover {
-            border-color: #ff4800; }
-          header nav .timeline ul a.dakota:after {
-            width: 178px;
-            height: 73px;
-            background-image: url('/testsite/css/img/web_sprites.png');
-            background-position: 0 -1035px;
-            background-repeat: no-repeat;
-            -moz-background-size: 567px auto;
-            -o-background-size: 567px auto;
-            -webkit-background-size: 567px auto;
-            background-size: 567px auto;
-            text-indent: 100%;
-            white-space: nowrap;
-            overflow: hidden;
-            margin-left: -85px; }
-        header nav .timeline ul a.ikeda {
-          background-image: url(../img/common/account_ikeda.png);
-          background-color: #ff7800;
-          color: #ff7800; }
-          header nav .timeline ul a.ikeda:hover {
-            border-color: #ff7800; }
-          header nav .timeline ul a.ikeda:after {
-            width: 163px;
-            height: 52px;
-            background-image: url('/testsite/css/img/web_sprites.png');
-            background-position: 0 -1161px;
-            background-repeat: no-repeat;
-            -moz-background-size: 567px auto;
-            -o-background-size: 567px auto;
-            -webkit-background-size: 567px auto;
-            background-size: 567px auto;
-            text-indent: 100%;
-            white-space: nowrap;
-            overflow: hidden;
-            margin-left: -81.5px; }
-        header nav .timeline ul a.yoshida {
-          background-image: url(../img/common/account_yoshida.png);
-          background-color: #4937b5;
-          color: #4937b5; }
-          header nav .timeline ul a.yoshida:hover {
-            border-color: #4937b5; }
-          header nav .timeline ul a.yoshida:after {
-            width: 190px;
-            height: 71px;
-            background-image: url('/testsite/css/img/web_sprites.png');
-            background-position: 0 -2000px;
-            background-repeat: no-repeat;
-            -moz-background-size: 567px auto;
-            -o-background-size: 567px auto;
-            -webkit-background-size: 567px auto;
-            background-size: 567px auto;
-            text-indent: 100%;
-            white-space: nowrap;
-            overflow: hidden;
-            margin-left: -95px; }
-        header nav .timeline ul a.shiozaki {
-          background-image: url(../img/common/account_shiozaki.png);
-          background-color: #3dcb84;
-          color: #3dcb84; }
-          header nav .timeline ul a.shiozaki:hover {
-            border-color: #3dcb84; }
-          header nav .timeline ul a.shiozaki:after {
-            width: 164px;
-            height: 72px;
-            background-image: url('/testsite/css/img/web_sprites.png');
-            background-position: 0 -1803px;
-            background-repeat: no-repeat;
-            -moz-background-size: 567px auto;
-            -o-background-size: 567px auto;
-            -webkit-background-size: 567px auto;
-            background-size: 567px auto;
-            text-indent: 100%;
-            white-space: nowrap;
-            overflow: hidden;
-            margin-left: -82px; }
-        header nav .timeline ul a.yamazaki {
-          background-image: url(../img/common/account_yamazaki.png);
-          background-color: #a3d9be;
-          color: #a3d9be; }
-          header nav .timeline ul a.yamazaki:hover {
-            border-color: #a3d9be; }
-          header nav .timeline ul a.yamazaki:after {
-            width: 131px;
-            height: 71px;
-            background-image: url('/testsite/css/img/web_sprites.png');
-            background-position: 0 -1928px;
-            background-repeat: no-repeat;
-            -moz-background-size: 567px auto;
-            -o-background-size: 567px auto;
-            -webkit-background-size: 567px auto;
-            background-size: 567px auto;
-            text-indent: 100%;
-            white-space: nowrap;
-            overflow: hidden;
-            margin-left: -65.5px; }
-        header nav .timeline ul a.koyama {
-          background-image: url(../img/common/account_koyama.png);
-          background-color: #afdb00;
-          color: #afdb00; }
-          header nav .timeline ul a.koyama:hover {
-            border-color: #afdb00; }
-          header nav .timeline ul a.koyama:after {
-            width: 191px;
-            height: 71px;
-            background-image: url('/testsite/css/img/web_sprites.png');
-            background-position: 0 -1286px;
-            background-repeat: no-repeat;
-            -moz-background-size: 567px auto;
-            -o-background-size: 567px auto;
-            -webkit-background-size: 567px auto;
-            background-size: 567px auto;
-            text-indent: 100%;
-            white-space: nowrap;
-            overflow: hidden;
-            margin-left: -95.5px; }
-        header nav .timeline ul a.asano {
-          background-image: url(../img/common/account_asano.png);
-          background-color: #4dbe2f;
-          color: #4dbe2f; }
-          header nav .timeline ul a.asano:hover {
-            border-color: #4dbe2f; }
-          header nav .timeline ul a.asano:after {
-            width: 191px;
-            height: 71px;
-            background-image: url('/testsite/css/img/web_sprites.png');
-            background-position: 0 -963px;
-            background-repeat: no-repeat;
-            -moz-background-size: 567px auto;
-            -o-background-size: 567px auto;
-            -webkit-background-size: 567px auto;
-            background-size: 567px auto;
-            text-indent: 100%;
-            white-space: nowrap;
-            overflow: hidden;
-            margin-left: -95.5px; }
-        header nav .timeline ul a.shimizu {
-          background-image: url(../img/common/account_shimizu.png);
-          background-color: #7b47b6;
-          color: #7b47b6; }
-          header nav .timeline ul a.shimizu:hover {
-            border-color: #7b47b6; }
-          header nav .timeline ul a.shimizu:after {
-            width: 192px;
-            height: 71px;
-            background-image: url('/testsite/css/img/web_sprites.png');
-            background-position: 0 -1731px;
-            background-repeat: no-repeat;
-            -moz-background-size: 567px auto;
-            -o-background-size: 567px auto;
-            -webkit-background-size: 567px auto;
-            background-size: 567px auto;
-            text-indent: 100%;
-            white-space: nowrap;
-            overflow: hidden;
-            margin-left: -96px; }
-        header nav .timeline ul a.okiguchi {
-          background-image: url(../img/common/account_okiguchi.png);
-          background-color: #4e296d;
-          color: #4e296d; }
-          header nav .timeline ul a.okiguchi:hover {
-            border-color: #4e296d; }
-          header nav .timeline ul a.okiguchi:after {
-            width: 192px;
-            height: 71px;
-            background-image: url('/testsite/css/img/web_sprites.png');
-            background-position: 0 -1514px;
-            background-repeat: no-repeat;
-            -moz-background-size: 567px auto;
-            -o-background-size: 567px auto;
-            -webkit-background-size: 567px auto;
-            background-size: 567px auto;
-            text-indent: 100%;
-            white-space: nowrap;
-            overflow: hidden;
-            margin-left: -96px; }
-        header nav .timeline ul a.naomi {
-          background-image: url(../img/common/account_naomi.png);
-          background-color: #676767;
-          color: #676767; }
-          header nav .timeline ul a.naomi:hover {
-            border-color: #676767; }
-          header nav .timeline ul a.naomi:after {
-            width: 145px;
-            height: 51px;
-            background-image: url('/testsite/css/img/web_sprites.png');
-            background-position: 0 -1410px;
-            background-repeat: no-repeat;
-            -moz-background-size: 567px auto;
-            -o-background-size: 567px auto;
-            -webkit-background-size: 567px auto;
-            background-size: 567px auto;
-            text-indent: 100%;
-            white-space: nowrap;
-            overflow: hidden;
-            margin-left: -72.5px; }
-
 footer {
   position: relative;
   background-image: url('/testsite/css/img/border.png');
@@ -815,12 +463,11 @@ footer {
     text-indent: 100%;
     white-space: nowrap;
     overflow: hidden; }
-
 .motion-trigger {
   position: absolute;
   width: 10px; }
-
 main {
+  position: absolute;
   width: 100%;
   overflow: hidden;
   background-image: url('/testsite/css/img/pc_bg.png'); }
@@ -830,6 +477,7 @@ main {
   main .contents {
     width: 750px;
     margin: 0 auto;
+    margin-top: -100px;
     background-color: #fff; }
     @media screen and (min-width: 768px) {
       main .contents {
