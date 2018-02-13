@@ -268,7 +268,7 @@ border-radius: 10px;}
         transform: scale(1, 1); }
         article#timeline section.card .movie .play .vid_title{
           z-index: 10000;
-          font-size: 50px;
+          font-size: 20px;
           color: whitesmoke;
         }
     article#timeline section.card .movie iframe {
