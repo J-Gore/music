@@ -291,7 +291,7 @@ border-radius: 10px;}
       margin-left: 70px;
       font-size: 20px;
       font-weight: bold;
-      margin-right: 250px;
+      /*margin-right: 250px;*/
       color: #888888; }
       article#timeline section.card .status .likes:before {
         content: '';
@@ -331,6 +331,7 @@ border-radius: 10px;}
         article#timeline section.card .status .views{
           display: inline-block;
           align-self: center;
+          text-align: center;
           position:relative;
           margin-right: 100px;
           font-size: 20px;
