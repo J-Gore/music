@@ -268,7 +268,7 @@ border-radius: 10px;}
         transform: scale(1, 1); }
         article#timeline section.card .movie .play .vid_title{
           z-index: 5000;
-          font-size: 20px;
+          font-size: 30px;
           color: whitesmoke;
           text-shadow: 2px 0 0 #c483ff, -2px 0 0 #c483ff, 0 2px 0 #c483ff, 0 -2px 0 #c483ff, 1px 1px #c483ff, -1px -1px 0 #c483ff, 1px -1px 0 #c483ff, -1px 1px 0 #c483ff;
         }
