@@ -349,7 +349,7 @@ header nav {
       height: 51px;
       top: -50px;
       left: 0;
-      background-image: url(../img/common/border.png);
+      background-image: url('/testsite/css/img/border.png');
       background-repeat: repeat-x; }
     header nav .timeline h3 {
       width: 515px;
