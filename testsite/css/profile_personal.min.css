@@ -288,7 +288,7 @@ border-radius: 10px;}
     article#timeline section.card .status .likes {
       float: left;
       position: relative;
-      margin-left: 70px;
+      width:33%;
       font-size: 20px;
       font-weight: bold;
       margin-right: 80px;
@@ -335,6 +335,7 @@ border-radius: 10px;}
         article#timeline section.card .status .views{
           align-self: center;
           position:relative;
+          width:33%;
           margin-right: 10px;
           font-size: 20px;
           font-weight: bold;
@@ -354,7 +355,8 @@ border-radius: 10px;}
     article#timeline section.card .status .time {
       float: right;
       position: relative;
-      margin-right: 30px;
+      /*margin-right: 30px;*/
+      width:30%
       font-size: 20px;
       color: #888888; }
       article#timeline section.card .status .time:before {
