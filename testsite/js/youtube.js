@@ -11,6 +11,7 @@ function GetYoutubeData(w){
 			var r=data.items[0].statistics.likeCount;
 			var p=data.items[0].snippet.thumbnails.maxres.url;
 			var t=data.items[0].snippet.title;
+			var v=data.items[0].statistics.viewCount;
 			if(r==null)r=34;
 			c.getElementsByClassName("likes-count")[0].innerHTML=r;
 			c.getElementsByTagName("img")[0].setAttribute("data-src",p);
@@ -20,6 +21,7 @@ function GetYoutubeData(w){
 			var z=s[0]+"/"+s[1]+"/"+s[2];
 			c.getElementsByClassName("time")[0].innerHTML=z;
 			c.getElementsByClassName("vid_title")[0].innerHTML=t;
+			c.getElementsByClassName("views")[0].innerHTML=v;
 		});
 }
 function GetChannelStats(){
