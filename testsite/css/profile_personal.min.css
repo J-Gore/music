@@ -285,14 +285,14 @@ border-radius: 10px;}
   article#timeline section.card .status {
     clear: both;
     margin-top: 32px; }
-    article#timeline section.card .status .zilla-likes {
+    article#timeline section.card .status .likes {
       float: left;
       position: relative;
       margin-left: 70px;
       font-size: 20px;
       font-weight: bold;
       color: #888888; }
-      article#timeline section.card .status .zilla-likes:before {
+      article#timeline section.card .status .likes:before {
         content: '';
         position: absolute;
         top: -4px;
@@ -310,14 +310,14 @@ border-radius: 10px;}
         -ms-transform: scale(0.85, 0.85);
         -webkit-transform: scale(0.85, 0.85);
         transform: scale(0.85, 0.85); }
-      article#timeline section.card .status .zilla-likes:hover {
+      article#timeline section.card .status .likes:hover {
         color: #000; }
-        article#timeline section.card .status .zilla-likes:hover:before {
+        article#timeline section.card .status .likes:hover:before {
           -moz-transform: scale(1, 1);
           -ms-transform: scale(1, 1);
           -webkit-transform: scale(1, 1);
           transform: scale(1, 1); }
-      article#timeline section.card .status .zilla-likes.active:before {
+      article#timeline section.card .status .likes.active:before {
         width: 33px;
         height: 28px;
         background-image: url('/testsite/css/img/web_sprites.png');
@@ -327,9 +327,9 @@ border-radius: 10px;}
         -o-background-size: 567px auto;
         -webkit-background-size: 567px auto;
         background-size: 567px auto; }
-      article#timeline section.card .status .zilla-likes .zilla-likes-count:before {
+      article#timeline section.card .status .likes .likes-count:before {
         content: 'Likes '; }
-      article#timeline section.card .status .zilla-likes .zilla-likes-count:after {
+      article#timeline section.card .status .likes .likes-count:after {
         content: ' People'; }
     article#timeline section.card .status .time {
       float: right;

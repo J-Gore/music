@@ -12,7 +12,7 @@ function GetYoutubeData(w){
 			var p=data.items[0].snippet.thumbnails.maxres.url;
 			var t=data.items[0].snippet.title;
 			if(r==null)r=34;
-			c.getElementsByClassName("zilla-likes-count")[0].innerHTML=r;
+			c.getElementsByClassName("likes-count")[0].innerHTML=r;
 			c.getElementsByTagName("img")[0].setAttribute("data-src",p);
 			var d=data.items[0].snippet.publishedAt;
 			var x=d.substring(0,10);

@@ -1,19 +1,19 @@
 jQuery(function($) {
 
-  $('#timeline').on('click', '.zilla-likes', function() {//when zilla-likes is clicked
-    var link = $(this);//gets the div zilla-likes
+  $('#timeline').on('click', '.likes', function() {//when likes is clicked
+    var link = $(this);//gets the div likes
     if (link.hasClass('active')) return false; //if it has already been liked, exit
 
     link.addClass('active'); //else mark as liked
 
     var id = $(this).attr('id'),//gets attribute Id
-        postfix = link.find('.zilla-likes-postfix').text();//gets text after likes (which is blank)
+        postfix = link.find('.likes-postfix').text();//gets text after likes (which is blank)
 
     $.ajax({ //ajax to check if it has already been liked
       type: 'POST',
-      url: zilla_likes.ajaxurl,
+      url: likes.ajaxurl,
       data: {
-        action: 'zilla-likes',
+        action: 'likes',
         likes_id: id,
         postfix: postfix,
       },
@@ -28,11 +28,11 @@ jQuery(function($) {
     return false;
   });
 
-  if ($('body.ajax-zilla-likes').length) {
-    $('.zilla-likes').each(function() {
+  if ($('body.ajax-likes').length) {
+    $('.likes').each(function() {
       var id = $(this).attr('id');
-      $(this).load(zilla_likes.ajaxurl, {
-        action: 'zilla-likes',
+      $(this).load(likes.ajaxurl, {
+        action: 'likes',
         post_id: id,
       });
     });
