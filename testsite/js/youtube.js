@@ -11,6 +11,7 @@ function GetYoutubeData(w){
 			var r=data.items[0].statistics.likeCount;
 			var p=data.items[0].snippet.thumbnails.maxres.url;
 			var t=data.itesm[0].snippet.title;
+			alert(t);
 			if(r==null)r=34;
 			c.getElementsByClassName("zilla-likes-count")[0].innerHTML=r;
 			c.getElementsByTagName("img")[0].setAttribute("data-src",p);
