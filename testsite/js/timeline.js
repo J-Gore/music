@@ -17,7 +17,7 @@ $(function(){
   var videoFrame=$(this).parent().children("iframe"); //gets the parent(movie class)'s child called iframe which was generated upon being inview
   PlayVideo(videoFrame,"playVideo"),videoFrame.fadeIn(1e3) //calls play video and fades the video in
 }),
-$("#timeline").on("click",".account",function(){
+$("#contents").on("click",".account",function(){
   window.scroll({
   top: 0,
   left: 0,
