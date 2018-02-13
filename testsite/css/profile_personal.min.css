@@ -60,10 +60,10 @@ article#timeline #infscr-loading {
     -o-background-size: 567px auto;
     -webkit-background-size: 567px auto;
     background-size: 567px auto;
-    -moz-animation: loading-naomi 8s linear 0s infinite;
-    -webkit-animation: loading-naomi 8s linear 0s infinite;
-    animation: loading-naomi 8s linear 0s infinite; }
-/*@keyframes loading-naomi {
+    -moz-animation: loading-page 8s linear 0s infinite;
+    -webkit-animation: loading-page 8s linear 0s infinite;
+    animation: loading-page 8s linear 0s infinite; }
+@keyframes loading-page {
   0% {
     -moz-transform: rotate(0deg);
     -ms-transform: rotate(0deg);
@@ -73,7 +73,7 @@ article#timeline #infscr-loading {
     -moz-transform: rotate(360deg);
     -ms-transform: rotate(360deg);
     -webkit-transform: rotate(360deg);
-    transform: rotate(360deg); } }*/
+    transform: rotate(360deg); } }
   article#timeline #infscr-loading:after {
     content: '';
     position: absolute;
