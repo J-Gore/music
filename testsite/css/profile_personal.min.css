@@ -330,8 +330,6 @@ border-radius: 10px;}
         background-size: 567px auto; }
       article#timeline section.card .status .likes .likes-count:before {
         content: 'Likes '; }
-      article#timeline section.card .status .likes .likes-count:after {
-        content: ' People'; }
         article#timeline section.card .status .views{
           align-self: center;
           position:relative;
@@ -544,7 +542,6 @@ article#about {
       background-image: url(../img/common/account_official.png); }
     article#about.official .account em:after {
       border-color: #4cb6ae; }
-
 article#timeline {
   position: relative;
   padding-bottom: 50px; }
