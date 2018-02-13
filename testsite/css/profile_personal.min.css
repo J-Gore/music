@@ -291,6 +291,7 @@ border-radius: 10px;}
       margin-left: 70px;
       font-size: 20px;
       font-weight: bold;
+      margin-right: 30px;
       color: #888888; }
       article#timeline section.card .status .likes:before {
         content: '';
@@ -331,6 +332,25 @@ border-radius: 10px;}
         content: 'Likes '; }
       article#timeline section.card .status .likes .likes-count:after {
         content: ' People'; }
+        article#timeline section.card .status .views{
+          align-self: center;
+          position:relative;
+          margin-right: 10px;
+          font-size: 20px;
+          font-weight: bold;
+          color: #888888;}
+        article#timeline section.card .status .views:before{
+          content: '';
+          position:absolute;
+          top:-1px;
+          left:-32px;
+          width:22px;
+          height:22px;
+          background-image: url('');
+          -moz-background-size:567px auto;
+          -o-background-size:567px auto;
+          -webkit-background-size:567px auto;
+          background-size:567px auto;}
     article#timeline section.card .status .time {
       float: right;
       position: relative;
@@ -351,26 +371,6 @@ border-radius: 10px;}
         -o-background-size: 567px auto;
         -webkit-background-size: 567px auto;
         background-size: 567px auto; }
-        article#timeline section.card .status .views{
-          align-self: center;
-          position:relative;
-          margin-right: 10px;
-          font-size: 20px;
-          color: #888888;
-        }
-        article#timeline section.card .status .views:before{
-          content: '';
-          position:absolute;
-          top:-1px;
-          left:-32px;
-          width:22px;
-          height:22px;
-          background-image: url('');
-          -moz-background-size:567px auto;
-          -o-background-size:567px auto;
-          -webkit-background-size:567px auto;
-          background-size:567px auto;
-        }
   article#timeline section.card .comment {
     clear: both;
     padding-top: 20px;
