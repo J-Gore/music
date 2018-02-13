@@ -329,6 +329,7 @@ border-radius: 10px;}
         -webkit-background-size: 567px auto;
         background-size: 567px auto; }
         article#timeline section.card .status .views{
+          display: inline-block;
           align-self: center;
           position:relative;
           margin-right: 100px;
