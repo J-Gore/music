@@ -19,7 +19,7 @@ function GetYoutubeData(w){
 			var s=x.split('-');
 			var z=s[0]+"/"+s[1]+"/"+s[2];
 			c.getElementsByClassName("time")[0].innerHTML=z;
-			c.getElementsByClassName("vid_title").innerHTML=t;
+			c.getElementsByClassName("vid_title")[0].innerHTML=t;
 		});
 }
 function GetChannelStats(){
