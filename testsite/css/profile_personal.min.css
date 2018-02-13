@@ -232,12 +232,12 @@ border-radius: 10px;}
     width: 692px;
     height: 422px;
     background-color: #000; }
-    article#timeline section.card .movie .play{
+    article#timeline section.card .movie .play {
       position: absolute;
       width: 100%;
       height: 100%;
       cursor: pointer;}
-      article#timeline section.card .movie .play:before{
+      article#timeline section.card .movie .play:before {
         content: '';
         position: absolute;
         z-index: 1000;
