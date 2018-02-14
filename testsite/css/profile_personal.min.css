@@ -341,7 +341,9 @@ border-radius: 10px;}
           left:-32px;
           width:22px;
           height:22px;
-          background-image: url('/testsite/css/img/views.png');
+          background-image: url('/testsite/css/img/web_sprites.png');
+          background-position: 0 -279px;
+          background-repeat: no-repeat;
           -moz-background-size:567px auto;
           -o-background-size:567px auto;
           -webkit-background-size:567px auto;
