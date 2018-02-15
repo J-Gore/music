@@ -36,6 +36,25 @@ function GetChannelStats(){
 		document.getElementById("total_views").innerHTML+=" Total Channel Views: "+y+"!";
 	});
 }
+function GetVidIds(){
+	var vidIds;
+	alert("Getting vids");
+		$.getJSON("https://www.googleapis.com/youtube/v3/playlistItems",{
+			key:"AIzaSyD6XBI5r8UWTPCtF00EwJOb5ZlxunvxYTw",
+			part:"statistics",
+			playlistId:"PL1BxM-1kDL2jDaZWiNUWk7_gOuM_m7MZr"
+			maxResults=50;
+		},function(data){
+			alert("Got data");
+			for(i=0;i<data.items.count;i++)
+			{
+				alert(data.item[i].snippet.title);
+
+			}
+		});
+
+	return vidIds;
+}
 function GetNoVids(){
 	var v=1;
 	var e=false;
