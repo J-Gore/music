@@ -49,7 +49,7 @@ function GetVidIds(){
 			for(i=0;i<5;i++)
 			{
 				alert("in for " + i);
-				alert(data.item[i].snippet.title);
+				alert(data.items[i].snippet.title);
 
 			}
 		});
