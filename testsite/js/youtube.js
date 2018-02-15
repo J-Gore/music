@@ -46,9 +46,12 @@ function GetVidIds(){
 			maxResults:"50"
 		},function(data){
 			alert("Got data");
-			for(i=0;i<5;i++)
+			var count=data.pageInfo.totalResults;
+			for(i=0;i<count;i++)
 			{
-				alert(data.items[i].snippet.title);
+				var v=i+i;
+				alert("Set vidid "+v+" to vid title "+data.items[i].snippet.title);
+				document.getElementById("vid_"+v).getElementsByClassName("movie")[0].setAttribute("data-youtube")=data.items[i].snippet.resourceId.videoId;
 			}
 		});
 
