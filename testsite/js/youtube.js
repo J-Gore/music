@@ -41,7 +41,7 @@ function GetVidIds(){
 	alert("Getting vids");
 		$.getJSON("https://www.googleapis.com/youtube/v3/playlistItems",{
 			key:"AIzaSyD6XBI5r8UWTPCtF00EwJOb5ZlxunvxYTw",
-			part:"statistics",
+			part:"snippet",
 			playlistId:"PL1BxM-1kDL2jDaZWiNUWk7_gOuM_m7MZr",
 			maxResults:"50"
 		},function(data){
