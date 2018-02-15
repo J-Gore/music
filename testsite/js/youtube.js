@@ -46,7 +46,7 @@ function GetVidIds(){
 			//maxResults=50;
 		},function(data){
 			alert("Got data");
-			for(i=0;i<data.items.count;i++)
+			for(i=0;i<5;i++)
 			{
 				alert(data.item[i].snippet.title);
 
