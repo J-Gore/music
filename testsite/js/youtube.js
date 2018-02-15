@@ -42,8 +42,8 @@ function GetVidIds(){
 		$.getJSON("https://www.googleapis.com/youtube/v3/playlistItems",{
 			key:"AIzaSyD6XBI5r8UWTPCtF00EwJOb5ZlxunvxYTw",
 			part:"statistics",
-			playlistId:"PL1BxM-1kDL2jDaZWiNUWk7_gOuM_m7MZr"
-			maxResults="50";
+			playlistId:"PL1BxM-1kDL2jDaZWiNUWk7_gOuM_m7MZr",
+			maxResults="50"
 		},function(data){
 			alert("Got data");
 			for(i=0;i<5;i++)
