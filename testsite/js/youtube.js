@@ -49,7 +49,7 @@ function GetVidIds(){
 			alert("Count = " + count);
 			for(i=0;i<count;i++)
 			{
-				var v=i+i;
+				var v=i+1;
 				alert("Set vidid "+v+" to vid title "+data.items[i].snippet.title);
 				document.getElementById("vid_"+v).getElementsByClassName("movie")[0].setAttribute("data-youtube",data.items[i].snippet.resourceId.videoId);
 			}
