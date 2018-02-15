@@ -48,9 +48,7 @@ function GetVidIds(){
 			alert("Got data");
 			for(i=0;i<5;i++)
 			{
-				alert("in for " + i);
-				//alert(data.items[i].snippet.title);
-
+				alert(data.items[i].snippet.title);
 			}
 		});
 
