@@ -46,10 +46,12 @@ function GetVidIds(){
 			maxResults:"50"
 		},function(data){
 			var count=data.pageInfo.totalResults;
-			alert("Count = " + count);
+			varIds.push(count);
+			alert("Count = "+count);
 			for(i=0;i<count;i++)
 			{
 				var v=i+1;
+				
 				alert("Set vidid "+v+" to vid title "+data.items[i].snippet.title);
 				document.getElementById("vid_"+v).getElementsByClassName("movie")[0].setAttribute("data-youtube",data.items[i].snippet.resourceId.videoId);
 			}
