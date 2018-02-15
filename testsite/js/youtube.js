@@ -51,7 +51,7 @@ function GetVidIds(){
 			{
 				var v=i+i;
 				alert("Set vidid "+v+" to vid title "+data.items[i].snippet.title);
-				document.getElementById("vid_"+v).getElementsByClassName("movie")[0].setAttribute("data-youtube")=data.items[i].snippet.resourceId.videoId;
+				document.getElementById("vid_"+v).getElementsByClassName("movie")[0].setAttribute("data-youtube",data.items[i].snippet.resourceId.videoId);
 			}
 		});
 
