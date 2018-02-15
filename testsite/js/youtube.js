@@ -45,8 +45,8 @@ function GetVidIds(){
 			playlistId:"PL1BxM-1kDL2jDaZWiNUWk7_gOuM_m7MZr",
 			maxResults:"50"
 		},function(data){
-			alert("Got data");
 			var count=data.pageInfo.totalResults;
+			alert("Count = " + count);
 			for(i=0;i<count;i++)
 			{
 				var v=i+i;
