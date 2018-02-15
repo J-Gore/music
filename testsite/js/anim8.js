@@ -1,7 +1,7 @@
 function MoveSubscribe(){
 var screenwidth = screen.width;
 var pc = screenwidth - (screenwidth/4);
-var mobile = screenwidth + (screenwidth/2);
+var mobile = screenwidth;
 if(_ua.Mobile[0]){
   $("#subscribe_button").css("left",mobile);
   $("#subscribe_button").css("width",196);
