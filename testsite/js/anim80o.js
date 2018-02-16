@@ -8,7 +8,10 @@ function MoveSubscribe(){
     $("#subscribe_button").css("width",196);
     $("#subscribe_button").css("height",50);
     $("#subscribe_button").css("font-size",25);
-  }else $("#subscribe_button").css("left",pc);
+  }else{
+    $("#subscribe_button").css("left",pc);
+    alert($("#subscribe_button").css("left"));
+  }
 }
 $(window).resize(function(){
   var screenwidth = screen.width;
