@@ -1,6 +1,7 @@
 function MoveSubscribe(){
   var screenwidth = screen.width;
-  var pc = screenwidth - (screenwidth/4);
+  //var pc = screenwidth - (screenwidth/4);
+var pc = screenwidth + (screenwidth*30);
   var mobile = screenwidth + (screenwidth*30);
   //screensizes: 360, 278 too far, 170 fits...
   if(_ua.Mobile[0]){
