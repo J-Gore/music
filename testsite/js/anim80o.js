@@ -10,7 +10,7 @@ function MoveSubscribe(){
     $("#subscribe_button").css("font-size",25);
   }else{
     $("#subscribe_button").css("left",pc);
-    alert($("#subscribe_button").css("left"));
+    alert($("#subscribe_button").css("left").splice(0,-2));
   }
 }
 $(window).resize(function(){
