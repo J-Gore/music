@@ -27,6 +27,7 @@ else exit=true;
   }else{
 $("#subscribe_button").css("left",pc);
 alert("Set CSS");
+alert("Screenwidth: " + screenwidth + " button: " + (196 + $("#subscribe_button").css("left")));
     if(screenwidth < (196 + $("#subscribe_button").css("left")))
     {var count=100;
       var exit = false;
