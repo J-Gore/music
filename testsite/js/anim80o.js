@@ -8,21 +8,7 @@ function MoveSubscribe(){
     $("#subscribe_button").css("width",196);
     $("#subscribe_button").css("height",50);
     $("#subscribe_button").css("font-size",25);
-  }else{
-    $("#subscribe_button").css("left",pc);
-    var data=$("#subscribe_button").css("left");
-    data=data.substring(0,data.length-2);
-    if(screenwidth<data){
-      var exit=false;
-      var count=100;
-      do{
-        alert("data: " + data + " count: " + count);
-        data-=count;
-        if(screenwidth<data)count+=100;
-        else exit=true;
-      }while(exit==false);
-    }
-  }
+  }else $("#subscribe_button").css("left",pc);
 }
 $(window).resize(function(){
   var screenwidth = screen.width;
