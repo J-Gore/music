@@ -20,7 +20,7 @@ function MoveSubscribe(){
         data-=count;
         if(screenwidth<data)count+=100;
         else exit=true;
-      }while(exit=false);
+      }while(exit==false);
     }
   }
 }
