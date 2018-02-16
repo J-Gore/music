@@ -26,9 +26,12 @@ else exit=true;
 
   }else{
 $("#subscribe_button").css("left",pc);
+alert("Set CSS");
     if(screenwidth < (196 + $("#subscribe_button").css("left")))
     {var count=100;
+      var exit = false;
       var newMobile;
+      alert("TRIGGERED");
     do{
       newMobile=count+mobile;
       alert("IN LOOP");
