@@ -27,8 +27,8 @@ else exit=true;
   }else{
 $("#subscribe_button").css("left",pc);
 alert("Set CSS");
-alert("Screenwidth: " + screenwidth + " button: " + (196 + $("#subscribe_button").css("left").substring(0,-2)));
-    if(screenwidth < (196 + $("#subscribe_button").css("left").substring(0,-2)))
+alert("Screenwidth: " + screenwidth + " button: " + (196 + parseInt($("#subscribe_button").css("left").substring(0,-2))));
+    if(screenwidth < (196 + parseInt($("#subscribe_button").css("left").substring(0,-2))))
     {var count=100;
       var exit = false;
       var newMobile;
@@ -37,7 +37,7 @@ alert("Screenwidth: " + screenwidth + " button: " + (196 + $("#subscribe_button"
       newMobile=count+pc;
       alert("IN LOOP");
         $("#subscribe_button").css("left",newMobile);
-        if(screenwidth < (196 + $("#subscribe_button").css("left").substring(0,-2)))count+=100;
+        if(screenwidth < (196 + parseInt($("#subscribe_button").css("left").substring(0,-2))))count+=100;
     else exit=true;
 
     }while (exit==false);
