@@ -26,6 +26,8 @@ else exit=true;
 
   }else{
 $("#subscribe_button").css("left",pc);
+alert(196 + parseInt($("#subscribe_button").css("left").substring(0,-2)));
+/*
 alert("Set CSS");
 alert("Screenwidth: " + screenwidth + " button: " + (196 + parseInt($("#subscribe_button").css("left").substring(0,-2))));
     if(screenwidth < (196 + parseInt($("#subscribe_button").css("left").substring(0,-2))))
@@ -42,7 +44,7 @@ alert("Screenwidth: " + screenwidth + " button: " + (196 + parseInt($("#subscrib
 
     }while (exit==false);
     }
-  }
+  }*/
 }
 $(window).resize(function(){
   var screenwidth = screen.width;
