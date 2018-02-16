@@ -26,7 +26,7 @@ else exit=true;
 
   }else{
 $("#subscribe_button").css("left",pc);
-var data=$("#subscribe_button").css("left").slice(0,-2);
+var data=$("#subscribe_button").css("left");
 alert(data);
 /*
 alert("Set CSS");
