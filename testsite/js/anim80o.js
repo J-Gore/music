@@ -26,7 +26,8 @@ else exit=true;
 
   }else{
 $("#subscribe_button").css("left",pc);
-alert(196 + parseInt($("#subscribe_button").css("left").substring(0,-2)));
+var data=parseInt($("#subscribe_button").css("left").substring(0,-2));
+alert(data);
 /*
 alert("Set CSS");
 alert("Screenwidth: " + screenwidth + " button: " + (196 + parseInt($("#subscribe_button").css("left").substring(0,-2))));
