@@ -16,6 +16,7 @@ function MoveSubscribe(){
       var exit=false;
       var count=100;
       do{
+        alert("data: " + data + " count: " + count);
         data-=count;
         if(screenwidth<data)count+=100;
         else exit=true;
