@@ -24,5 +24,19 @@ $("#contents").on("click",".account",function(){
   behavior: 'smooth'
 });
 });
+$("#contents").on("click",".account",function(){
+  window.scroll({
+  top: 0,
+  left: 0,
+  behavior: 'smooth'
+});
+});
+$("#y2013btn").click(function() {
+  window.scroll({
+    top: $('#y2013').top,
+    left: $('#y2013').left,
+    behavior:'smooth'
+  });
+});
 });
 
