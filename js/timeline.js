@@ -32,6 +32,7 @@ $("#contents").on("click",".account",function(){
 });
 });
 $("#y2013btn").click(function() {
+  console.log($('#y2013').top);
   window.scroll({
     top: $('#y2013').top,
     left: $('#y2013').left,
