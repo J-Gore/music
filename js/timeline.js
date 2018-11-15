@@ -25,9 +25,9 @@ $("#contents").on("click",".account",function(){
 });
 })
 $("#y2013btn").click(function() {
-  $('html, body').animate({
-      scrollTop: $("#y2013").offset().top
-  }, 2000);
-});
+  window.scroll({
+    behavior:'smooth'
+  });
+})
 });
 
