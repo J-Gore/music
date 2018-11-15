@@ -25,3 +25,10 @@ $("#contents").on("click",".account",function(){
 });
 })
 });
+$(function(){
+  $(".side__list__2013").on("click",function(){
+    window.scroll({
+      behavior: 'smooth'
+    });
+  })
+});
