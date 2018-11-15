@@ -31,8 +31,7 @@ $("#contents").on("click",".account",function(){
   behavior: 'smooth'
 });
 });
-$("#y2013btn").click(function() {
-  console.log($('#y2013').offset().top);
+$(".scrollBtn").click(function() {
   window.scroll({
     top: $('#y2013').offset().top,
     left: 0,
