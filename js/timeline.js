@@ -24,13 +24,6 @@ $("#contents").on("click",".account",function(){
   behavior: 'smooth'
 });
 });
-$("#contents").on("click",".account",function(){
-  window.scroll({
-  top: 0,
-  left: 0,
-  behavior: 'smooth'
-});
-});
 
 $(".scrollBtn").click(function() {
   var topScroll;
