@@ -49,6 +49,7 @@ $(".scrollBtn").click(function() {
     //top: $('#y2013').offset().top,
     top: topScroll,
     left: 0,
+    behavior: 'smooth',
     easing: "easeInOutQuart",
     duration: 800
   });
