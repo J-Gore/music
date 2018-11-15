@@ -24,10 +24,5 @@ $("#contents").on("click",".account",function(){
   behavior: 'smooth'
 });
 });
-$("#sidenavList a").on("click", function(e){
-  e.preventDefault();
-  var _target = $(this).attr('href');
-  Common.autoScroll(_target, 1200, 0, -100);
-});
 });
 
