@@ -53,7 +53,7 @@ article#timeline #infscr-loading {
     margin-left: -80px;
     width: 160px;
     height: 160px;
-    background-image: url('../css/img/web_sprites.png');
+    background-image: url('/css/img/web_sprites.png');
     background-position: 0 -759px;
     background-repeat: no-repeat;
     -moz-background-size: 567px auto;
@@ -82,7 +82,7 @@ article#timeline #infscr-loading {
     margin-left: -83px;
     width: 166px;
     height: 30px;
-    background-image: url('../css/img/web_sprites.png');
+    background-image: url('/css/img/web_sprites.png');
     background-position: 0 -728px;
     background-repeat: no-repeat;
     -moz-background-size: 567px auto;
@@ -115,7 +115,7 @@ border-radius: 10px;}
     right: -14px;
     width: 10px;
     height: 100%;
-    background-image: url('../css/img/timeline_bg.png'); }
+    background-image: url('/css/img/timeline_bg.png'); }
   article#timeline section.card:after {
     content: '';
     position: absolute;
@@ -123,7 +123,7 @@ border-radius: 10px;}
     left: 6px;
     width: 700px;
     height: 10px;
-    background-image: url('../css/img/timeline_bg.png'); }
+    background-image: url('/css/img/timeline_bg.png'); }
   article#timeline section.card a.account {
     float: left;
     margin: 20px 0 20px 140px;
@@ -198,7 +198,7 @@ border-radius: 10px;}
       article#timeline section.card .sns li.tw a {
         width: 70px;
         height: 70px;
-        background-image: url('../css/img/web_sprites.png');
+        background-image: url('/css/img/web_sprites.png');
         background-position: 0 -657px;
         background-repeat: no-repeat;
         -moz-background-size: 567px auto;
@@ -211,7 +211,7 @@ border-radius: 10px;}
       article#timeline section.card .sns li.fb a {
         width: 70px;
         height: 70px;
-        background-image: url('../css/img/web_sprites.png');
+        background-image: url('/css/img/web_sprites.png');
         background-position: 0 -303px;
         background-repeat: no-repeat;
         -moz-background-size: 567px auto;
@@ -246,7 +246,7 @@ border-radius: 10px;}
         margin: -50px 0 0 -50px;
         width: 104px;
         height: 114px;
-        background-image: url('../css/img/web_sprites.png');
+        background-image: url('/css/img/web_sprites.png');
         background-position: 0 -494px;
         background-repeat: no-repeat;
         -moz-background-size: 567px auto;
@@ -299,7 +299,7 @@ border-radius: 10px;}
         left: -38px;
         width: 33px;
         height: 28px;
-        background-image: url('../css/img/web_sprites.png');
+        background-image: url('/css/img/web_sprites.png');
         background-position: 0 -374px;
         background-repeat: no-repeat;
         -moz-background-size: 567px auto;
@@ -320,7 +320,7 @@ border-radius: 10px;}
       article#timeline section.card .status .likes.active:before {
         width: 33px;
         height: 28px;
-        background-image: url('../css/img/web_sprites.png');
+        background-image: url('/css/img/web_sprites.png');
         background-position: 0 -434px;
         background-repeat: no-repeat;
         -moz-background-size: 567px auto;
@@ -344,7 +344,7 @@ border-radius: 10px;}
         left: -32px;
         width: 22px;
         height: 22px;
-        background-image: url('../css/img/web_sprites.png');
+        background-image: url('/css/img/web_sprites.png');
         background-position: 0 -609px;
         background-repeat: no-repeat;
         -moz-background-size: 567px auto;
@@ -368,7 +368,7 @@ border-radius: 10px;}
   article#timeline section.card.whitby .account {
     color: #ffbdd6; }
     article#timeline section.card.whitby .account:before {
-      background-image: url('../css/img/whitby_profile_pic.png'); }
+      background-image: url('/css/img/whitby_profile_pic.png'); }
     article#timeline section.card.whitby .account em:after {
       border-color: #ffbdd6; }
   article#timeline section.card.whitby .comment .name {
@@ -376,7 +376,7 @@ border-radius: 10px;}
   article#timeline section.card.official .account {
     color: #4cb6ae; }
     article#timeline section.card.official .account:before {
-      background-image: url(../img/common/account_official.png); }
+      background-image: url('../img/common/account_official.png'); }
     article#timeline section.card.official .account em:after {
       border-color: #4cb6ae; }
   article#timeline section.card.official .comment .name {
@@ -411,7 +411,7 @@ article#about {
     left: 0;
     width: 100%;
     height: 51px;
-    background-image: url('../css/img/border.png');
+    background-image: url('/css/img/border.png');
     background-repeat: repeat-x; }
   article#about a.account {
     display: inline-block;
@@ -482,7 +482,7 @@ article#about {
   article#about .sns li.tw a {
     width: 70px;
     height: 70px;
-    background-image: url('../css/img/web_sprites.png');
+    background-image: url('/css/img/web_sprites.png');
     background-position: 0 -657px;
     background-repeat: no-repeat;
     -moz-background-size: 567px auto;
@@ -496,7 +496,7 @@ article#about {
   article#about .sns li.fb a {
     width: 70px;
     height: 70px;
-    background-image: url('../css/img/web_sprites.png');
+    background-image: url('/css/img/web_sprites.png');
     background-position: 0 -303px;
     background-repeat: no-repeat;
     -moz-background-size: 567px auto;
@@ -515,13 +515,13 @@ article#about {
   article#about.whitby .account {
     color: #ffbdd6; }
     article#about.whitby .account:before {
-      background-image: url('../css/img/whitby_profile_pic.png'); }
+      background-image: url('/css/img/whitby_profile_pic.png'); }
     article#about.whitby .account em:after {
       border-color: #ffbdd6; }
   article#about.official .account {
     color: #4cb6ae; }
     article#about.official .account:before {
-      background-image: url(../img/common/account_official.png); }
+      background-image: url('/img/common/account_official.png'); }
     article#about.official .account em:after {
       border-color: #4cb6ae; }
 
