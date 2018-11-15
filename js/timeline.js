@@ -32,10 +32,10 @@ $("#contents").on("click",".account",function(){
 });
 });
 $("#y2013btn").click(function() {
-  console.log($('#y2013').top);
+  console.log($('#y2013').offset().top);
   window.scroll({
-    top: $('#y2013').top,
-    left: $('#y2013').left,
+    top: $('#y2013').offset().top,
+    left: 0,
     behavior:'smooth'
   });
 });
