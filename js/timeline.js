@@ -32,8 +32,23 @@ $("#contents").on("click",".account",function(){
 });
 });
 $(".scrollBtn").click(function() {
+  switch(this.id){
+    case "2013Scroll":
+    console.log("2013");
+    break;
+    case"2016Scroll":
+    console.log("2016");
+    break;
+    case("2017Scroll"):
+    console.log("2017");
+    break;
+    case("2018Scroll"):
+    console.log("2018");
+    break;
+  }
   window.scroll({
-    top: $('#y2013').offset().top,
+    //top: $('#y2013').offset().top,
+    top: 0,
     left: 0,
     behavior:'smooth'
   });
