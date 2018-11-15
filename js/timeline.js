@@ -24,11 +24,10 @@ $("#contents").on("click",".account",function(){
   behavior: 'smooth'
 });
 })
+$("#y2013btn").click(function() {
+  $('html, body').animate({
+      scrollTop: $("#y2013").offset().top
+  }, 2000);
 });
-$(function(){
-  $(".side__list__2013").on("click",function(){
-    window.scroll({
-      behavior: 'smooth'
-    });
-  })
 });
+
