@@ -32,23 +32,24 @@ $("#contents").on("click",".account",function(){
 });
 });
 $(".scrollBtn").click(function() {
+  var topScroll;
   switch(this.id){
     case "2013Scroll":
-    console.log("2013");
+    topScroll = $('#y2013').offset().top;
     break;
     case"2016Scroll":
-    console.log("2016");
+    topScroll = $('#y2016').offset().top;
     break;
     case("2017Scroll"):
-    console.log("2017");
+    topScroll = $('#y2017').offset().top;
     break;
     case("2018Scroll"):
-    console.log("2018");
+    topScroll = $('#y2018').offset().top;
     break;
   }
   window.scroll({
     //top: $('#y2013').offset().top,
-    top: 0,
+    top: topScroll,
     left: 0,
     behavior:'smooth'
   });
