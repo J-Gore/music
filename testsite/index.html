@@ -5,30 +5,41 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
 	<title>Whitbyfish Music</title>
-	<link rel="shortcut icon" href="/testsite/css/img/whitby_icon.ico">
+	<link rel="shortcut icon" href="../css/img/whitby_icon.ico">
 
 	<script src="//code.jquery.com/jquery-1.12.4.min.js"></script>
-	<script src="/testsite/js/jquery/jquery.inview.min.js"></script>
-	<script src="/testsite/js/common.min.js"></script>
-	<script src="/testsite/js/timeline.min.js"></script>
-	<script src="/testsite/js/youtube.js"></script>
-	<script src="/testsite/js/anim80o.js"></script>
-	<script src="/testsite/js/infinitescroll.js"></script>
+	<script src="../js/jquery/jquery.inview.min.js"></script>
+	<script src="../js/common.min.js"></script>
+	<script src="../js/timeline.min.js"></script>
+	<script src="../js/youtube.js"></script>
+	<script src="../js/anim80o.js"></script>
+	<script src="../js/infinitescroll.js"></script>
 	<script type='text/javascript'>var likes = {"ajaxurl":"http:\/\/music.matthewwhitby.co.uk\/testsite\/php\/admin-ajax.php"};</script>
-	<script type='text/javascript' src='/testsite/js/likes.min.js?ver=4.7.2'></script>
+	<script type='text/javascript' src='../js/likes.min.js?ver=4.7.2'></script>
 
-	<link rel="stylesheet" href="/testsite/css/common.min.css" type="text/css" media="all">
-	<link rel="stylesheet" href="/testsite/css/profile_personal.min.css" type="text/css" media="all">
+	<link rel="stylesheet" href="../css/common.min.css" type="text/css" media="all">
+	<link rel="stylesheet" href="../css/profile_personal.min.css" type="text/css" media="all">
 </head>
 <body>
 	<main>
 		<button class="subscribe_button" id="subscribe_button">SUBSCRIBE</button>
 		<script type='text/javascript'>!function(e){var o=e(".subscribe_button"),n=o.offset().top,t=screen.height/2-screen.height/9;e(window).on("scroll",function(i){var r=e(window).scrollTop();o.stop(!1,!1).animate({top:r<n?0:r-n+t},{duration:1e3,queue:!1})}),e(window).on("scroll",function(n){e({deg:0}).animate({deg:360},{duration:1e3,queue:!1,step:function(e){o.css({transform:"rotate("+e+"deg)"})}})})}(jQuery);</script>
+		<section class="sidenav">
+				<div class="sidenav__inner">
+				  <div class="sidenav__nav">
+					 <ul id="sidenavList">
+						<li class="sidenav__list__2013"><a href="#y2013"><span>2013</span></a></li>
+						<li class="sidenav__list__2016"><a href="#y2016"><span>2016</span></a></li>
+						<li class="sidenav__list__2017"><a href="#y2017"><span>2017</span></a></li>
+						<li class="sidenav__list__2018"><a href="#y2018"><span>2018</span></a></li>
+					 </ul>
+				  </div>
+				</div>
+			 </section>
 		<div class="contents" id="contents">
 			<article id="key-visual">
-				<h1><img data-src="/testsite/css/img/gif-material.gif" src="/testsite/css/img/broken.gif"></h1>
+				<h1><img data-src="../css/img/gif-material.gif" src="../css/img/broken.gif"></h1>
 			</article>
-
 			<article id="about" class="whitby">
 				<a class="account">
 					<span class="name">Whitbyfish</span>
@@ -767,7 +778,7 @@
 			</section></article>
 
 			<div id="nav-below">
-				<a href="/testsite/page/2/" >Next Page &raquo;</a>
+				<a href="../page/2/" >Next Page &raquo;</a>
 			</div>
 			<footer>
 			</footer>
@@ -778,7 +789,7 @@
 <script type='text/javascript'>
 var infinite_scroll="{\"loading\":{\"msgText\":\"<img alt=\\\"\\\" src=\\\"http:\\\/\\\/music.matthewwhitby.co.uk\\\/testsite\\\/css\\\/img\\\/loader.gif\\\" class=\\\"alignnone\\\" width=\\\"220\\\" height=\\\"19\\\" \\\/><img alt=\\\"\\\" src=\\\"http:\\\/\\\/music.matthewwhitby.co.uk\\\/testsite\\\/css\\\/img\\\/loader.gif\\\" class=\\\"alignnone\\\" width=\\\"220\\\" height=\\\"19\\\" \\\/><img alt=\\\"\\\" src=\\\"http:\\\/\\\/music.matthewwhitby.co.uk\\\/testsite\\\/css\\\/img\\\/loader.gif\\\" class=\\\"alignnone\\\" width=\\\"220\\\" height=\\\"19\\\" \\\/>\",\"finishedMsg\":\"<em>WIP<\\\/em>\",\"img\":\"http:\\\/\\\/music.matthewwhitby.co.uk\\\/testsite\\\/css\\\/img\\\/loader.gif\"},\"nextSelector\":\"#nav-below a:first\",\"navSelector\":\"#nav-below\",\"itemSelector\":\".card\",\"contentSelector\":\"#timeline\",\"debug\":false,\"behavior\":\"\",\"callback\":\"\"}";
 </script>
-<script type='text/javascript' src='/testsite/js/jquery/jquery.infinitescroll.js?ver=2.6.1'></script>
+<script type='text/javascript' src='../js/jquery/jquery.infinitescroll.js?ver=2.6.1'></script>
 <script type="text/javascript">// Because the `wp_localize_script` method makes everything a string
 infinite_scroll=jQuery.parseJSON(infinite_scroll);jQuery(infinite_scroll.contentSelector).infinitescroll(infinite_scroll,function(newElements,data,url){eval(infinite_scroll.callback);});</script>
 <script type="text/javascript">var e=GetNoVids();for(i=e-1;i>0;i--)window.onload=GetYoutubeData(i);GetChannelStats();MoveSubscribe();</script>
